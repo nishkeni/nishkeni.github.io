@@ -7,16 +7,15 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Shraddha Barke"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Shraddha Barke"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://shraddhabarke.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "shraddhabarke.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 comments:
@@ -56,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &shraddha_96
 facebook:
   username               :
   app_id                 :
@@ -79,33 +78,33 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Shraddha Barke"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Computer Science PhD student"
+  location         : "San Diego, California"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  googlescholar    :
+  email            : "sbarke@eng.ucsd.edu"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "shraddha6596"
   foursquare       :
-  github           : "academicpages"
+  github           : "shraddhabarke"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "shraddhabarke"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         :  "shraddha-barke-111b4694"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "shraddha_96"
   vine             :
   weibo            :
   xing             :
@@ -170,13 +169,10 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -194,8 +190,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
-      share: true
+      comments:
+      share:
       related: true
   # _pages
   - scope:
@@ -204,15 +200,15 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _projects
   - scope:
       path: ""
-      type: teaching
+      type: projects
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share:
+      comments:
   # _publications
   - scope:
       path: ""
@@ -220,17 +216,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+      share:
+      comments:
   # _talks
   - scope:
       path: ""
@@ -238,7 +225,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share:
 
 # Sass/SCSS
 sass:
@@ -304,3 +291,5 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+github: [metadata]
