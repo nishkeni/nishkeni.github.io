@@ -293,3 +293,5 @@ compress_html:
     envs: development
 
 github: [metadata]
+
+theme: jekyll-theme-slate
