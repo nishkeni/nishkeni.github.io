@@ -25,4 +25,4 @@ I am currently serving as one of the [Outreachy coordinators](https://www.outrea
 
 News
 ------
-* August 2018 - I joined the [Programming Systems](http://cseweb.ucsd.edu/groups/progsys/) group as a PhD student!
+* August 2018 - I joined Amazon as an Applied Scientist Intern - Machine Learning!
