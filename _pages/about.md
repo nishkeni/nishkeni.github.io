@@ -9,13 +9,12 @@ redirect_from:
 ---
 
 I’m a first-year PhD student at [UC San Diego](https://ucsd.edu/) advised by [Nadia Polikarpova](https://cseweb.ucsd.edu/~npolikarpova/). I am a member of the [Programming Systems](http://cseweb.ucsd.edu/groups/progsys/) group.
-I graduated from BITS Pilani, Goa with an Electronics Bachelor's degree in Fall 2017. Following my graduation, I worked as a research assistant in the [Software Technology Group](https://softech.informatik.uni-kl.de/homepage/en/) at [TU Kaiserslautern](https://www.uni-kl.de/en/home/).<br/>
-Previously, I participated in the [December 2015 - March 2016 round](https://wiki.gnome.org/Outreachy/2015/DecemberMarch) of [Outreachy](https://www.outreachy.org/) working on Staging driver cleanup with Linux Foundation.
+I am an Electronics, Electrical and Computer Engineer by Formal Education, and I like to believe myself to be a budding Engineering Mathematician by passion. I am currently pursuing my M.S. in Electrical and Computer Engineering at [Georgia Tech](https://www.gatech.edu/), Atlanta with specialization in Digital Signal Processing. Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from VJTI, Mumbai. At Georgia Tech, I have worked with the amazing Dr. Justin Romberg and Dr. Ghassan AlRegib, in Statistical Learning and Computational Seismic Interpretation respectively. Before joining Amazon as an Applied Scientist Intern in the Machine Learning Team, I was a Visiting Scholar with Dr. Dawn Song at the University of California, Berkeley for Summer 2018 where I worked on Adversarial Defenses for Learning Models (Defense against the Dark Arts, Goodfellow ’18).
 
 Research Interests
 ======
 
-I am interested in programming languages and formal methods research, with an emphasis on automated program synthesis and verification techniques. My goal is to develop synthesis tools and apply the techniques to various domains such as Human-computer interaction and Linguistics.
+My research is focussed at the intersection of Machine Learning, Statistics (and Modelling) Optimization and Signal Processing; and I love to think about Design & Analysis of Algorithms. My prime hobby is ‘Thinking’ and I like to model real-life scenarios to find their solutions through Mathematics (for e.g. The Linear Inverse Problem Theory relates to how Humans perceive each other; Schizophrenia maybe modeled as an Adversarial Attack on the Neuron-Ocular system). I also like to think about the fusion of Machine Learning and Game Theory, as both these model the most supreme agents we live with; the former created by Humans while the later created out of Science! 
 
 Diversity Activities
 ======
