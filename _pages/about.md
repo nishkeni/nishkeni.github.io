@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m a first-year PhD student at [UC San Diego](https://ucsd.edu/) advised by [Nadia Polikarpova](https://cseweb.ucsd.edu/~npolikarpova/). I am a member of the [Programming Systems](http://cseweb.ucsd.edu/groups/progsys/) group.
+
 I am an Electronics, Electrical and Computer Engineer by Formal Education, and I like to believe myself to be a budding Engineering Mathematician by passion. I am currently pursuing my M.S. in Electrical and Computer Engineering at [Georgia Tech](https://www.gatech.edu/), Atlanta with specialization in Digital Signal Processing. Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from VJTI, Mumbai. At Georgia Tech, I have worked with the amazing Dr. Justin Romberg and Dr. Ghassan AlRegib, in Statistical Learning and Computational Seismic Interpretation respectively. Before joining Amazon as an Applied Scientist Intern in the Machine Learning Team, I was a Visiting Scholar with Dr. Dawn Song at the University of California, Berkeley for Summer 2018 where I worked on Adversarial Defenses for Learning Models (Defense against the Dark Arts, Goodfellow ’18).
 
 Research Interests
