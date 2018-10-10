@@ -2,7 +2,7 @@
 permalink: 
 title: "Adversarial Vector Machines"
 collection: projects
-venue: "UC San Diego"
+venue: "University of California, Berkeley"
 period: "May - August2018"
 ---
 
