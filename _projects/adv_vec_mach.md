@@ -3,7 +3,7 @@ permalink:
 title: "Adversarial Vector Machines"
 collection: projects
 venue: "University of California, Berkeley"
-period: "May - August2018"
+period: "May - August, 2018"
 ---
 
 {% include base_path %}
