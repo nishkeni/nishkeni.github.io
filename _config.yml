@@ -80,9 +80,9 @@ analytics:
 author:
   name             : "Nishant Keni"
   avatar           : "profile.png"
-  bio              : "Georgia Institute of Technology (M.S.) | Univeristy of California, Berkeley (VSPA) "
-  location         : "Atlanta, Georgia"
-  employer         : "Amazon"
+  bio              : "Electrical & Computer Engineering @ Georgia Tech (M.S.) | Computer Science @ UC Berkeley (VSPA) "
+  location         : 
+  employer         : "Amazon, Applied Scientist Intern - Machine Learning"
   googlescholar    :
   email            : "nishant.keni@gatech.edu"
   uri              :
