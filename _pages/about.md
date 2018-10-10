@@ -16,11 +16,6 @@ Research Interests
 
 My research is focussed at the intersection of Machine Learning, Statistics (and Modelling) Optimization and Signal Processing; and I love to think about Design & Analysis of Algorithms. My prime hobby is ‘Thinking’ and I like to model real-life scenarios to find their solutions through Mathematics (for e.g. The Linear Inverse Problem Theory relates to how Humans perceive each other; Schizophrenia maybe modeled as an Adversarial Attack on the Neuron-Ocular system). I also like to think about the fusion of Machine Learning and Game Theory, as both these model the most supreme agents we live with; the former created by Humans while the later created out of Science! 
 
-Diversity Activities
-======
-
-I am currently serving as one of the [Outreachy coordinators](https://www.outreachy.org/communities/cfp/linux-kernel/coordinator/preview/shraddha96/) for Linux kernel! I also served on the review committee for the _open source track_ of [GHC 2017](https://ghc.anitab.org/2017-connect-with-abi/ghc-17-committees/) and [GHC 2018](https://ghc.anitab.org/2018-connect/ghc-18-committees/).
-
 
 News
 ------
