@@ -1,10 +1,10 @@
 ---
 title: "Image Compression using Adaptive Quantized Masking of Cosine Basis"
 collection: publications
-permalink: /publication/2017-03-10-adaptive_cosine
+permalink: /publication/ 2017-08-05-adaptive_cosine
 excerpt: ''
-date: 2017-03-10
-venue: '(Accepted) (IEEE) 6th International Conference on Computer Applications in Electrical Engineering - Recent Advances (CERA)'
+date: 2017-08-05
+venue: '(Accepted) (IEEE) 2016, 6th International Conference on Computer Applications in Electrical Engineering - Recent Advances (CERA)'
 ---
 
 The classic JPEG and JPEG 2000 compression techniques are often considered as benchmarks in image compression. Both these techniques operate locally on nonoverlapping blocks of size 8x8 pixels in the image. The JPEG
