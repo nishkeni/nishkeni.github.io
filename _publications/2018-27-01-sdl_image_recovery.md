@@ -2,8 +2,8 @@
 title: "Reconstruction of Compressively Sensed Images using Convex Tikhonov Sparse Dictionary Learning
 and Adaptive Spectral Filtering"
 collection: publications
-permalink: /publication/sdl_image_recovery
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+permalink: /publication/2018-27-01-sdl_image_recovery
+excerpt: ''
 date: 2018-27-01
 venue: 'arXiv (Preprint)'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
