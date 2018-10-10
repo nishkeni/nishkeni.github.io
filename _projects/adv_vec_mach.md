@@ -1,5 +1,5 @@
 ---
-permalink: /projects/adv_vec_mach/
+permalink: /projects/adv_vec_mach
 title: "Adversarial Vector Machines"
 collection: projects
 venue: "University of California, Berkeley"
