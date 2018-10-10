@@ -5,5 +5,5 @@ permalink: /publications/
 author_profile: true
 ---
 
-Work in Progress.
+Coming Soon!
 
