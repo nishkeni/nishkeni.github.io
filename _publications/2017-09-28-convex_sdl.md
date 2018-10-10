@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2017-09-28-convex_sdl
 excerpt: ''
 date: 2017-09-28
-venue: '(IEEE) 2017 4th International Conference on Signal Processing and Integrated Networks (SPIN)'
+venue: '(IEEE) 2017, 4th International Conference on Signal Processing and Integrated Networks (SPIN)'
 
 ---
 
