@@ -1,5 +1,5 @@
 ---
-permalink: 
+permalink: /projects/blind_kernel_m_est/
 title: "Blind Kernel M-Estimation"
 collection: projects
 venue: "Center for Signal and Information Processing (CSIP), Georgia Tech"
