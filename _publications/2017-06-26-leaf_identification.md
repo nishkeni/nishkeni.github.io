@@ -1,9 +1,9 @@
 ---
 title: "Neural Networks based Leaf Identification using Shape and Structural Decomposition"
 collection: publications
-permalink: /publication/2017-09-28-leaf_identification
+permalink: /publication/2017-06-26-leaf_identification
 excerpt: ''
-date: 2017-09-28
+date: 2017-06-26
 venue: '(IEEE) 2016 International Conference on Global Trends in Signal Processing, Information Computing and Communication (ICGTSPICC)'
 
 ---
