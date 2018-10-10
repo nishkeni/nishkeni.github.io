@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Shraddha Barke"
+title                    : "Nishant Keni"
 title_separator          : "-"
-name                     : &name "Shraddha Barke"
+name                     : &name "Nishant Keni"
 description              : &description "personal description"
-url                      : https://shraddhabarke.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://nishkeni.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "shraddhabarke.github.io"
+repository               : "nishkeni.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 future                   : true
@@ -78,33 +78,33 @@ analytics:
 
 # Site Author
 author:
-  name             : "Shraddha Barke"
+  name             : "Nishant Keni"
   avatar           : "profile.png"
-  bio              : "Computer Science PhD student"
-  location         : "San Diego, California"
-  employer         :
+  bio              : "Electrical and Computer Engineering (M.S.), Georgia Institute of Technology"
+  location         : "Atlanta, Georgia"
+  employer         : "Amazon | University of California, Berkeley"
   googlescholar    :
-  email            : "sbarke@eng.ucsd.edu"
+  email            : "nishant.keni@gatech.edu"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "shraddha6596"
+  facebook         : "NishKeni"
   foursquare       :
-  github           : "shraddhabarke"
+  github           : "nishkeni"
   google_plus      :
   keybase          :
-  instagram        : "shraddhabarke"
+  instagram        : "nish_keni"
   lastfm           :
-  linkedin         :  "shraddha-barke-111b4694"
+  linkedin         :  "nishant-keni"
   orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "shraddha_96"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
