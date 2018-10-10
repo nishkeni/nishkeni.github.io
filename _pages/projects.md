@@ -5,7 +5,6 @@ permalink: /projects/
 author_profile: true
 ---
 
-<!--- Include Comment Here
 
 {% include base_path %}
 
@@ -13,6 +12,3 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
---->
-
-Coming Soon!
