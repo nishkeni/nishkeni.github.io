@@ -1,5 +1,5 @@
 ---
-permalink: /projects/tara
+permalink: /projects/shilling
 title: "Detecting Shilling Attacks on Recommender Systems."
 collection: projects
 venue: "Georgia Institute of Technology"
