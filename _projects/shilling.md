@@ -1,6 +1,6 @@
 ---
 permalink: /projects/shilling
-title: "Detecting Shilling Attacks on Recommender Systems."
+title: "Detecting Shilling Attacks on Recommender Systems"
 collection: projects
 venue: "Georgia Institute of Technology"
 period: "January - May, 2018"
