@@ -20,9 +20,10 @@ My research is focussed at the intersection of Machine Learning, Statistics (and
 
 If any of the above interests you, I am looking forward to talking to you. Cheers!
 
+---
 Nishant,
 ###### Never-Ending Curiosity since 1995!
-
+---
 
 News
 ------
