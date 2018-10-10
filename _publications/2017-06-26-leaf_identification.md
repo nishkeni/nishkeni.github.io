@@ -12,4 +12,4 @@ Plants are sine-qua-non for existence of human life. The benefits provided by pl
 
 [PDF](https://ieeexplore.ieee.org/document/7955302)
 
-# Awarded Best Paper of the Session.
+## Awarded Best Paper of the Session.
