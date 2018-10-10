@@ -1,5 +1,5 @@
 ---
-title: "Non-Paremetric Detection of Network Communities; The Natural Way - A Cascaded Stackelberg Game"
+title: "Non-Parametric Detection of Network Communities; The Natural Way - A Cascaded Stackelberg Game"
 collection: publications
 permalink: /publication/2018-01-18-community_stackerlberg
 excerpt: ''
