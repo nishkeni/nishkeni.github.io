@@ -53,7 +53,7 @@ Publications
 
 Projects
 ======
-  <ul>{% for post in site.projects reversed %}
+  <ul>{% for post in site.projects %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
