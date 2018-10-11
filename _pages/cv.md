@@ -11,8 +11,10 @@ redirect_from:
 
 Education
 ======
-* B.Tech. (Institute Gold Medal) in Electronics Engineering, V.J.T.I. Mumbai, 2017.
+
 * M.S. in Electrical and Computer Engineering, Georgia Institue of Technology, 2019 (expected)
+* B.Tech. (Institute Gold Medal) in Electronics Engineering, V.J.T.I. Mumbai, 2017.
+
 
 <br> 
 
@@ -43,7 +45,7 @@ Work experience
   
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
@@ -51,7 +53,7 @@ Publications
   
 Certifications
 ======
-  <ul>{% for post in site.talks %}
+  <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
