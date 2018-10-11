@@ -1,7 +1,7 @@
 ---
 title: "Cryptography and Information Security"
 collection: talks
-type: ""
+type: 
 permalink: /talks/a_certif
 venue: "University of Colorado"
 date: 2018-04-02
