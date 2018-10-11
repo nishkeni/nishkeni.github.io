@@ -14,6 +14,7 @@ Education
 * B.Tech. in Electronics Engineering, V.J.T.I. Mumbai, 2017
 * M.S. in Electrical and Computer Engineering, Georgia Institue of Technology, 2019 (expected)
 
+
 Work experience
 ======
 
@@ -37,17 +38,20 @@ Work experience
   * Duties included: Software Development in Dynamic SQL Query Adapter
   * Supervisor: Mr. Gaurav Lad (Associate Vice President, Credit Suisse)
   
+  
 Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
+  
 Certifications
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
+  
   
 Honors
 ======
