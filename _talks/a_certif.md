@@ -8,6 +8,7 @@ date: 2018-04-02
 location: "Colorado Springs, Colorado"
 ---
 
+
 Coursera License: 43KBT22WGFSG
 
 [Certificate](https://www.coursera.org/account/accomplishments/verify/43KBT22WGFSG)
