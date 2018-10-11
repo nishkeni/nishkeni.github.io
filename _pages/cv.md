@@ -1,15 +1,12 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-Coming soon!
-
-<!----
 {% include base_path %}
 
 Education
