@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.Tech. in Electronics Engineering, V.J.T.I. Mumbai, 2017
+* B.Tech. (Institute Gold Medal) in Electronics Engineering, V.J.T.I. Mumbai, 2017.
 * M.S. in Electrical and Computer Engineering, Georgia Institue of Technology, 2019 (expected)
 
 <br> 
@@ -60,9 +60,11 @@ Certifications
 Honors
 ======
 
-* Department Rank 1 <i>(Institute Gold Medal)</i> in Electronics Engineering at V.J.T.I. Mumbai: Batch of 2017
+* Department Rank 1 <i>(Institute Gold Medal)</i> in Electronics Engineering at V.J.T.I. Mumbai: Batch of 2017.
 * Awarded the <i>Best Paper of the Session</i>: International Conference on Global Trends in Signal Processing, Information Computing and Communication, 2016 (IEEE).
 * Secured an All India Rank 695 in J.E.E. Mains - 2013 out of 13,00,000 candidates.
-* Attained a position among the Top 350 (State Top 1%) in India in the National Standard Examination in Astronomy to qualify for the Indian National Astronomy Olympiad (INAO).
-* Received the <i>Dr.Homi Bhaha Young Scientist Award</i>, Silver Medal.
+* Attained a position among the Top 350 (State Top 1%) in India in the National Standard Examination in Astronomy to qualify for the Indian National Astronomy Olympiad (INAO), 2013.
+* Received the <i>Dr.Homi Bhaha Young Scientist Award</i>, Silver Medal (2009).
+* Recepient of Maharashtra State Pravinya & Pradnya Award for Mathematics (2008).
+* Recepient of Maharashtra State Primary & Secondary Scholarships (2004, 2007).
 
