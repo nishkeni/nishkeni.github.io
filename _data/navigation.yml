@@ -3,14 +3,14 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
+  - title: "Certification"
     url: /talks/    
 
   - title: "Projects"
     url: /projects/
         
-  - title: "Blog Posts"
+  - title: "Blogs"
     url: /year-archive/
     
-  - title: "CV"
+  - title: "Resume"
     url: /cv/
