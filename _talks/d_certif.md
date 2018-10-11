@@ -3,7 +3,7 @@ title: "Machine Learning (Specialization): Regression, Classification, Clusterin
 collection: talks
 type: "Coursera"
 permalink: /talks/d_certif
-venue: "University fo Washington"
+venue: "University of Washington"
 date: 2017-05-04
 location: "Seattle WA, USA"
 ---
