@@ -37,7 +37,7 @@ Work experience
   * Supervisor: Dr. Charles Isbell
   
 * Summer 2016: Information Technology Intern
-  * Credit Suisse
+  * Credit Suisse (Advanced Executional Services)
   * Duties included: Software Development in Dynamic SQL Query Adapter
   * Supervisor: Mr. Gaurav Lad (Associate Vice President, Credit Suisse)
  
