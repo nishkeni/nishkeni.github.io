@@ -1,10 +1,10 @@
 ---
 title: "Cryptography and Information Security"
 collection: talks
-type: "University of Colorado"
+type: "Coursera"
 permalink: /talks/a_certif
-venue: "Colorado Springs"
+venue: "University of Colorado"
 date: 2018-04-02
-location: "CO, USA"
+location: "Colorado Springs CO, USA"
 ---
 
