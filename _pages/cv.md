@@ -50,6 +50,14 @@ Publications
   {% endfor %}</ul>
   
 <br> 
+
+Projects
+======
+  <ul>{% for post in site.projects reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+<br> 
   
 Certifications
 ======
