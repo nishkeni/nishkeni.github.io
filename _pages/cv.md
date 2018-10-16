@@ -24,7 +24,7 @@ Work experience
 * Fall 2018: Applied Scientist Intern - Machine Learning
   * Amazon
   * Duties included: Combining Reinforcement Learning & Game Theory to build something interesting!
-  * Supervisor: Pooja A. (Sr. Machine Learning Scientist, Amazon)
+  * Supervisor: Mrs. Pooja A. (Sr. Machine Learning Scientist, Amazon)
   
 * Summer 2018: Visiting Student Researcher
   * University of California, Berkeley (Computer Science)
