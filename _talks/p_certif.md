@@ -1,5 +1,5 @@
 ---
-title: "Probabilistic Graphical Models (Specialization) : Representation"
+title: "Probabilistic Graphical Models (Specialization): Representation"
 collection: talks
 type: "Coursera"
 permalink: /talks/p_certif
