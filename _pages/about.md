@@ -26,4 +26,4 @@ News
 ------
 * August 2018 - I joined Amazon as an Applied Scientist Intern - Machine Learning for this Fall!
 
-* May 2018 - I will be joining Dr. Dawn Song as a Visiting Student Researcher at the University of California, Berkeley (EECS | Computer Science).
+* May 2018 - I will be joining Dr. Dawn Song as a Visiting Student Researcher at the University of California, Berkeley (EECS, Computer Science).
