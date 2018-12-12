@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I am an Electronics, Electrical and Computer Engineer by Formal Education, and I like to believe myself to be a budding Engineering Mathematician by passion. I am currently pursuing my M.S. in Electrical and Computer Engineering at [Georgia Tech](https://www.gatech.edu/), Atlanta with specialization in Digital Signal Processing. Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from VJTI, Mumbai. 
+I am an Electronics, Electrical and Computer Engineer by Formal Education, and I like to believe myself to be a budding Engineering Mathematician by passion. I am currently pursuing my M.S. in Electrical and Computer Engineering at [Georgia Tech](https://www.gatech.edu/), Atlanta with specialization in Digital Signal Processing. Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from [VJTI](https://www.vjti.ac.in/), Mumbai. I am passively affiliated to the [Center of Excellence (CoE) in Complex and Non-Linear Dynamical Systems (CNDS)](https://www.vjti.ac.in/images/coe-cnds/project/index.html), VJTI.
 
 As a background context, I am aggressively protective of my time, as I believe we all should be. As a researcher and developer, I wear the hat of a maker. [Here](http://www.paulgraham.com/makersschedule.html) is an excellent essay about why disruptions are corrosive and disruptive to a maker's schedule.
 
@@ -21,9 +21,13 @@ My research is focussed at the intersection of Machine Learning, Statistics (and
 
 If any of the above interests you, I am looking forward to talking to you. If you've read this, I already like you!
 
+-Nishant 
+Never-Ending Curiosity since 1995! | Designing Artificial Intelligence for Natural Intelligence
+
 
 News
 ------
+
 * August 2018 - I joined Amazon as an Applied Scientist Intern - Machine Learning for this Fall!
 
 * May 2018 - I will be joining Dr. Dawn Song as a Visiting Student Researcher at the University of California, Berkeley (EECS | Computer Science).
