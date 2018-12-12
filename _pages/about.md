@@ -11,7 +11,7 @@ redirect_from:
 
 I am an Electronics, Electrical and Computer Engineer by Formal Education, and I like to believe myself to be a budding Engineering Mathematician by passion. I am currently pursuing my M.S. in Electrical and Computer Engineering at [Georgia Tech](https://www.gatech.edu/), Atlanta with specialization in Digital Signal Processing. Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from [VJTI](https://www.vjti.ac.in/), Mumbai. I am, however, still passively affiliated to the [Center of Excellence (CoE) in Complex and Non-Linear Dynamical Systems (CNDS)](https://www.vjti.ac.in/images/coe-cnds/project/index.html), VJTI.
 
-As a background context, I am aggressively protective of my time, as I believe we all should be. As a researcher and developer, I wear the hat of a maker. [Here](http://www.paulgraham.com/makersschedule.html) is an excellent essay about why disruptions are corrosive to a maker's schedule.
+As a background context, I am aggressively protective of my time, as I believe we all should be. As a researcher and a developer, I wear the hat of a maker. [Here](http://www.paulgraham.com/makersschedule.html) is an excellent essay about why disruptions are corrosive to a maker's schedule.
 
 
 Research Interests
