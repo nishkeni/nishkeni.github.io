@@ -15,7 +15,6 @@ As a background context, I am aggressively protective of my time, as I believe w
 
 
 
-
 Research Interests
 ======
 
@@ -25,12 +24,10 @@ If any of the above interests you, I am looking forward to talking to you. If yo
 
 
 
-
 Get in Touch
 ======
 
 If you want to chat with me, please consider using [this](https://calendly.com/nishant-keni) to find a time that works best for you! 
-
 
 
 
