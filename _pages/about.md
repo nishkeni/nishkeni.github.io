@@ -14,12 +14,21 @@ I am an Electronics, Electrical and Computer Engineer by Formal Education, and I
 As a background context, I am aggressively protective of my time, as I believe we all should be. As a researcher and a developer, I wear the hat of a maker. [Here](http://www.paulgraham.com/makersschedule.html) is an excellent essay about why disruptions are corrosive to a maker's schedule.
 
 
+
 Research Interests
 ======
 
  My research is focussed at the intersection of Statistical Learning, Optimization and Signal Processing; and I love to think about the Design & Analysis of Algorithms. My prime hobby is ‘Thinking’ and I like to model real-life scenarios to find their solutions through Mathematics (for e.g. The Linear Inverse Problem Theory relates to how Humans perceive each other). I also like to think about the fusion of Machine Learning and Game Theory, as both these model the most supreme agents we live with; the former created by Humans while the later created out of Natural Science! 
 
-If any of the above interests you, I am looking forward to talking to you. If you've read this, I already like you!
+If any of the above interests you, I am looking forward to talking to you. If you've read this before talking to me, I already like you!
+
+
+
+Get in Touch
+======
+
+If you want to chat with me, please consider using [this](https://calendly.com/nishant-keni) to find a time that works best for you! 
+
 
 
 News
