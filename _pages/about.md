@@ -13,7 +13,7 @@ I am an Electronics, Electrical and Computer Engineer by Formal Education, and I
 
 As a background context, I am aggressively protective of my time, as I believe we all should be. As a researcher and a developer, I wear the hat of a maker. [Here](http://www.paulgraham.com/makersschedule.html) is an excellent essay about why disruptions are corrosive to a maker's schedule.
 
-
+</br>
 
 Research Interests
 ======
@@ -22,14 +22,14 @@ Research Interests
 
 If any of the above interests you, I am looking forward to talking to you. If you've read this before talking to me, I already like you!
 
-
+</br>
 
 Get in Touch
 ======
 
 If you want to chat with me, please consider using [this](https://calendly.com/nishant-keni) to find a time that works best for you! 
 
-
+</br>
 
 News
 ------
