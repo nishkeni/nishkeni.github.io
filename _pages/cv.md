@@ -24,7 +24,7 @@ Work experience
 * Fall 2018: Applied Scientist Intern - Machine Learning
   * Amazon
   * Duties included: Dynamic Incentivization using Reinforcement Learning
-  * Supervisor: Mr. Arijit Biswas (Sr. Machine Learning Scientist, Amazon) & Mrs. Pooja A. (Sr. Machine Learning Scientist, Amazon)
+  * Supervisor: Mr. Arijit Biswas & Mrs. Pooja A. (Sr. Machine Learning Scientist, Amazon)
   
 * Summer 2018: Visiting Student Researcher
   * University of California, Berkeley (Computer Science)
