@@ -12,8 +12,9 @@ redirect_from:
 Education
 ======
 
-* M.S. in Electrical and Computer Engineering, Georgia Institue of Technology, 2019 (expected)
-* B.Tech. (Institute Gold Medal) in Electronics Engineering, V.J.T.I. Mumbai, 2017.
+* MicroMasters in Statistics and Data Science, Massachusetts Institute of Technology (MIT), Cambridge, MA, 2020 (expected).
+* M.S. in Electrical and Computer Engineering, Georgia Institue of Technology, Atlanta, GA, May 2019.
+* B.Tech. (Institute Gold Medal) in Electronics Engineering, V.J.T.I. Mumbai, May 2017.
 
 
 <br> 
