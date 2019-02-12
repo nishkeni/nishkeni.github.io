@@ -32,7 +32,7 @@ Work experience
   * Duties included: Research in Adversarial Defenses for Learning Models
   * Supervisor: Dr. Dawn Song
 
-* Spring 2019: Graduate Teaching Assistant
+* Spring 2018, 2019: Graduate Teaching Assistant
   * Machine Learning (CS 4641/7641A): Georgia Institute of Technology (College of Computing)
   * Duties included: Conducting Office Hours, Grading
   * Supervisor: Dr. Charles Isbell
