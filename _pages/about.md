@@ -33,6 +33,9 @@ If you want to chat with me, please consider using [this](https://calendly.com/n
 
 News
 ------
+
+* July 2019 - I will be joining Amazon as a Data Scientist!
+
 * August 2018 - I am joining Amazon as an Applied Scientist Intern - Machine Learning for this Fall!
 
 * May 2018 - I will be joining Dr. Dawn Song as a Visiting Student Researcher for the Summer at the University of California, Berkeley (EECS, Computer Science)!
