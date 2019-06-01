@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I am an Electronics, Electrical and Computer Engineer by Formal Education, and I like to believe myself to be a budding Engineering Mathematician by passion. I am currently pursuing my M.S. in Electrical and Computer Engineering at [Georgia Tech](https://www.gatech.edu/), Atlanta with specialization in Digital Signal Processing. Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from [VJTI](https://www.vjti.ac.in/), Mumbai. I am, however, still passively affiliated to the [Center of Excellence (CoE) in Complex and Non-Linear Dynamical Systems (CNDS)](https://www.vjti.ac.in/images/coe-cnds/project/index.html), VJTI.
+I am an Electronics, Electrical and Computer Engineer by Formal Education, and I like to believe myself to be a budding Engineering Mathematician by passion. I recently completed my M.S. in Electrical and Computer Engineering at [Georgia Tech](https://www.gatech.edu/), Atlanta with specialization in Digital Signal Processing. Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from [VJTI](https://www.vjti.ac.in/), Mumbai. I am, however, still passively affiliated to the [Center of Excellence (CoE) in Complex and Non-Linear Dynamical Systems (CNDS)](https://www.vjti.ac.in/images/coe-cnds/project/index.html), VJTI.
 
 As a background context, I am <b><i>aggressively</i></b> protective of my time, as I believe we all should be. I love to wear the hats of both a researcher and a developer. 
 
@@ -36,6 +36,8 @@ News
 
 * July 2019 - I will be joining Amazon as a Data Scientist!
 
-* August 2018 - I am joining Amazon as an Applied Scientist Intern - Machine Learning for this Fall!
+* June 2019 - I received the Secure and Private AI Scholarship by Facebook AI & Udacity.
 
-* May 2018 - I will be joining Dr. Dawn Song as a Visiting Student Researcher for the Summer at the University of California, Berkeley (EECS, Computer Science)!
+* August 2018 - I joined Amazon.in as an Applied Scientist Intern - Machine Learning for this Fall!
+
+* May 2018 - I joined Dr. Dawn Song as a Visiting Student Researcher for the Summer at the University of California, Berkeley (EECS, Computer Science)!
