@@ -37,6 +37,6 @@ News
 
 * June 2019 - I received the Secure and Private AI Scholarship by Facebook AI & Udacity.
 
-* August 2018 - I joined Amazon.in as an Applied Scientist Intern - Machine Learning for this Fall!
+* August 2018 - I joined Amazon.in as an Applied Scientist Intern - Machine Learning in the India Machine Learning (IML) Team!
 
 * May 2018 - I joined Dr. Dawn Song as a Visiting Student Researcher for the Summer at the University of California, Berkeley (EECS, Computer Science)!
