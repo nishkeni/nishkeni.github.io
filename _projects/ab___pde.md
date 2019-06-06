@@ -1,8 +1,8 @@
 ---
-permalink: /projects/adv_vec_mach
+permalink: /projects/ab___pde
 title: "Adversaries meet PDEs: A First Look at Fluidic Adversarial Robustification"
 collection: projects
-venue: "Georgia Tech"
+venue: "Georgia Institute of Technology (ECE 6560: PDEs for Image Processing & Computer Vision)"
 period: "January - April, 2019"
 ---
 
