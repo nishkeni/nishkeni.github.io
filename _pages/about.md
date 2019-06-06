@@ -9,9 +9,8 @@ redirect_from:
 ---
 
 
-I am an Electronics, Electrical and Computer Engineer by Formal Education, and a budding Engineering Statistician by passion. I recently completed my M.S. in Electrical and Computer Engineering at [Georgia Tech, Atlanta](https://www.gatech.edu/) with specialization in Digital Signal Processing, where I was fortunate to work with [Gari Clifford](http://gdclifford.info/people/gari) and [Justin Romberg](https://jrom.ece.gatech.edu). Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from [VJTI, Mumbai](https://www.vjti.ac.in/), where I was involved in research with Rizwan Ahmed & Faruk Kazi.I am, however, still passively affiliated to the [Center of Excellence (CoE) in Complex and Non-Linear Dynamical Systems (CNDS)](https://www.vjti.ac.in/images/coe-cnds/project/index.html), VJTI.
+I am an Electronics, Electrical and Computer Engineer by Formal Education, and a budding Engineering Statistician by passion. I recently completed my M.S. in Electrical and Computer Engineering at [Georgia Tech, Atlanta](https://www.gatech.edu/) with specialization in Digital Signal Processing, where I was fortunate to work with [Gari Clifford](http://gdclifford.info/people/gari) and [Justin Romberg](https://jrom.ece.gatech.edu). Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from [VJTI, Mumbai](https://www.vjti.ac.in/), where I was involved in research with Rizwan Ahmed & [Faruk Kazi](https://www.vjti.ac.in/images/coe-cnds/project/resume/kazi_sir.pdf). I am, however, still passively affiliated to the [Center of Excellence (CoE) in Complex and Non-Linear Dynamical Systems (CNDS)](https://www.vjti.ac.in/images/coe-cnds/project/index.html), VJTI.
 
-During my 
 
 <br>
 
