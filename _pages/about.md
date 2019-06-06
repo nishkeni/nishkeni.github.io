@@ -9,32 +9,32 @@ redirect_from:
 ---
 
 
-I am an Electronics, Electrical and Computer Engineer by Formal Education, and I like to believe myself to be a budding Engineering Mathematician by passion. I recently completed my M.S. in Electrical and Computer Engineering at [Georgia Tech](https://www.gatech.edu/), Atlanta with specialization in Digital Signal Processing. Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from [VJTI](https://www.vjti.ac.in/), Mumbai. I am, however, still passively affiliated to the [Center of Excellence (CoE) in Complex and Non-Linear Dynamical Systems (CNDS)](https://www.vjti.ac.in/images/coe-cnds/project/index.html), VJTI.
+I am an Electronics, Electrical and Computer Engineer by Formal Education, and a budding Engineering Statistician by passion. I recently completed my M.S. in Electrical and Computer Engineering at [Georgia Tech, Atlanta](https://www.gatech.edu/) with specialization in Digital Signal Processing, where I was fortunate to work with [Gari Clifford](http://gdclifford.info/people/gari) and [Justin Romberg](https://jrom.ece.gatech.edu). Before that, I completed my B.Tech. in Electronics Engineering (Institute Gold Medal) from [VJTI, Mumbai](https://www.vjti.ac.in/), where I was involved in research with Rizwan Ahmed & Faruk Kazi.I am, however, still passively affiliated to the [Center of Excellence (CoE) in Complex and Non-Linear Dynamical Systems (CNDS)](https://www.vjti.ac.in/images/coe-cnds/project/index.html), VJTI.
 
-As a background context, I am <b><i>aggressively</i></b> protective of my time, as I believe we all should be. I love to wear the hats of both a researcher and a developer. 
+During my 
 
 <br>
 
 Research Interests
 ======
 
- My research is focussed at the intersection of Statistical Learning, Optimization and Signal Processing; and I love to think about the Design & Analysis of Algorithms. My prime hobby is ‘Thinking’ and I like to model real-life scenarios to find their solutions through Mathematics (for e.g. The Linear Inverse Problem Theory relates to how Humans perceive each other). I also like to think about the fusion of Machine Learning and Game Theory, as both these model the most supreme agents we live with; the former created by Humans while the later created out of Bio-Science! 
-
-If any of the above interests you, I am looking forward to talking to you!
+My research areas lie in Statistical Learning, Optimization, Causal Inference & Bioinformatics; and I love to think about the Design & Analysis of Algorithms. My prime hobby is ‘Thinking’ and I like to model real-life scenarios to find their solutions through Mathematics (for e.g. The Linear Inverse Problem Theory relates to how Humans perceive each other). I also like to think about the fusion of Machine Learning and Game Theory, as both these model the most supreme agents we live with; the former created by Humans while the later created out of Bio-Science! 
 
 <br>
 
 Get in Touch
 ======
 
-If you want to chat with me, please consider using [this](https://calendly.com/nishant-keni) to find a time that works best for you. 
+As a background context, I am <b><i>aggressively</i></b> protective of my time, as I believe all of us should be. I love to wear the hats of both a researcher and a developer. [Here's](http://www.paulgraham.com/makersschedule.html) an interesting perspective on why disruptions are so corrosive to a maker's schedule. If you want to chat with me, please consider e-mailing me first for context, and then using [this](https://calendly.com/nishant-keni) to find a time that works best for us. 
+
+If there's anything you believe I can assist you with, I am looking forward to talking to you!
 
 <br>
 
 News
 ------
 
-* July 2019 - I will be joining Amazon as a Data Scientist!
+* July 2019 - I will be joining Amazon.com as a Data Scientist in Advertising Measurement & Optimization!
 
 * June 2019 - I received the Secure and Private AI Scholarship by Facebook AI & Udacity.
 
