@@ -1,5 +1,5 @@
 ---
-permalink: /projects/adv_vec_mach
+permalink: /projects/ab__clifford
 title: "Blind Source Separation in Critical Care Environments"
 collection: projects
 venue: "Clifford Lab, Emory University & Georgia Tech"
