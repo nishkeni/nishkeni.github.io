@@ -30,6 +30,10 @@ If there's anything you believe I can assist you with, I am looking forward to t
 
 <br>
 
+Thank you for reading through about me. I already like you!
+
+<br>
+
 News
 ------
 
