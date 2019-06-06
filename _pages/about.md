@@ -24,9 +24,9 @@ My research areas lie in Statistical Learning, Optimization, Causal Inference & 
 Get in Touch
 ======
 
-As a background context, I am <b><i>aggressively</i></b> protective of my time, as I believe all of us should be. I love to wear the hats of both a researcher and a developer. [Here's](http://www.paulgraham.com/makersschedule.html) an interesting perspective on why disruptions are so corrosive to a maker's schedule. If you want to chat with me, please consider e-mailing me first for context, and then using [this](https://calendly.com/nishant-keni) to find a time that works best for us. 
+As a background context, I am <b><i>aggressively</i></b> protective of my time, as I believe all of us should be. I love to wear the hats of both a researcher and a developer. [Here's](http://www.paulgraham.com/makersschedule.html) an interesting perspective on why disruptions are so corrosive to a maker's schedule. 
 
-If there's anything you believe I can assist you with, I am looking forward to talking to you!
+If there's anything you believe I can assist you with, I am looking forward to talking to you! If you want to chat with me, please consider e-mailing me first for context, and then using [this](https://calendly.com/nishant-keni) to find a time that works best for you.
 
 <br>
 
