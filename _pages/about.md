@@ -33,7 +33,7 @@ If there's anything you believe I can assist you with, I am looking forward to t
 News
 ------
 
-* July 2019 - I will be joining Amazon.com as a Data Scientist in Advertising Measurement & Optimization!
+* July 2019 - I am joining Amazon.com as a Data Scientist in Advertising Measurement & Optimization!
 
 * June 2019 - I received the Secure and Private AI Scholarship by Facebook AI & Udacity.
 
