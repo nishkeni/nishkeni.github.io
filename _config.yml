@@ -80,10 +80,10 @@ analytics:
 author:
   name             : "Nishant Keni"
   avatar           : "profile.png"
-  bio              : "ECE @ Georgia Tech | CS @ UC Berkeley | AI @ Columbia | Data Science @ Stanford"
+  bio              : "ECE @ Georgia Tech | CS @ UC Berkeley | Data Science @ Stanford | AI @ Columbia"
   location         : 
-  employer         : "Data Science @ Amazon"
-  googlescholar    :
+  employer         : "Data Scientist @ Amazon"
+  googlescholar    : "nishantk.ece.vjti@gmail.com"
   email            : "nishant.keni@outlook.edu"
   uri              :
   bitbucket        :
