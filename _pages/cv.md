@@ -13,7 +13,7 @@ Education
 ======
 
 * MicroMasters in Artifical Intelligence, Columbia University in the City of New York, NY, 2020 (expected).
-* Professional Certificate in Foundations for Data Science, Stanford University, CA, June 2019 (expected). 
+* Professional Certificate in Foundations for Data Science, Stanford University, CA, July 2019 (expected). 
 * M.S. in Electrical and Computer Engineering, Georgia Institue of Technology, Atlanta, GA, May 2019.
 * B.Tech. (Institute Gold Medal) in Electronics Engineering, V.J.T.I. Mumbai, May 2017.
 
