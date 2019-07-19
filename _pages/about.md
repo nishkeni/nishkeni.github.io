@@ -35,7 +35,7 @@ Thank you for reading through about me. I already like you!
 News
 ======
 
-* July 2019 - I am joining Amazon.com as a Data Scientist in the Marketing Measurement Team!
+* July 2019 - I am joining Amazon.com as a Data Scientist in the Advertising Measurement & Optimization Team!
 
 * June 2019 - I received the Secure and Private AI Scholarship by Facebook AI & Udacity.
 
