@@ -41,7 +41,7 @@ Work experience
   * Machine Learning (CS 4641/7641A): Georgia Institute of Technology (College of Computing)
   * Duties included: Conducting Office Hours, Grading
   * Supervisor: Dr. Charles Isbell
- <br>
+<br>
 * Summer 2016: Information Technology Intern
   * Credit Suisse (Advanced Executional Services)
   * Duties included: Software Development in Dynamic SQL Query Adapter
