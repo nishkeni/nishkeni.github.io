@@ -22,10 +22,15 @@ Education
 Work experience
 ======
 
+* July 2019 - Present: Data Scientist - Advertising Measurement & Optimization
+  * Amazon.com
+  * Duties included: Causal Inference, Statistical Estimation.
+  * Supervisor: Mr. Hadi Purnomo (Sr. Research Scientist, Amazon.com)
+
 * Fall 2018: Applied Scientist Intern - Machine Learning
-  * Amazon
+  * Amazon.in
   * Duties included: Dynamic Incentivization using Reinforcement Learning
-  * Supervisor: Mr. Arijit Biswas & Mrs. Pooja A. (Sr. Machine Learning Scientist, Amazon)
+  * Supervisor: Mr. Arijit Biswas & Mrs. Pooja A. (Sr. Machine Learning Scientist, Amazon.in)
   
 * Summer 2018: Visiting Student Researcher
   * University of California, Berkeley (Computer Science)
