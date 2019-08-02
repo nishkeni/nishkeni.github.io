@@ -27,20 +27,24 @@ Work experience
   * Duties included: Causal Inference, Statistical Estimation.
   * Supervisor: Mr. Hadi Purnomo (Sr. Research Scientist, Amazon.com)
 
+
 * Fall 2018: Applied Scientist Intern - Machine Learning
   * Amazon.in
   * Duties included: Dynamic Incentivization using Reinforcement Learning
   * Supervisor: Mr. Arijit Biswas & Mrs. Pooja A. (Sr. Machine Learning Scientist, Amazon.in)
+  
   
 * Summer 2018: Visiting Student Researcher
   * University of California, Berkeley (Computer Science)
   * Duties included: Research in Adversarial Defenses for Learning Models
   * Supervisor: Dr. Dawn Song
 
+
 * Spring 2018, 2019: Graduate Teaching Assistant
   * Machine Learning (CS 4641/7641A): Georgia Institute of Technology (College of Computing)
   * Duties included: Conducting Office Hours, Grading
   * Supervisor: Dr. Charles Isbell
+  
   
 * Summer 2016: Information Technology Intern
   * Credit Suisse (Advanced Executional Services)
