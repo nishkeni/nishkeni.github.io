@@ -15,7 +15,7 @@ I am an Electronics, Electrical and Computer Engineer by Formal Education, and a
 Research Interests
 ======
 
-My research interests are eclectic and lie in Statistical Learning & Inference, Statistics & Optimization, Signal & Image Processing and, Network Science & Game Theory; and I love to keep learning more about Bioinformatics & Medicine. My prime hobby is ‘Thinking’ and I like to model real-life scenarios to find their solutions through Mathematics (for e.g. The Linear Inverse Problem Theory relates to how Humans perceive each other). I also like to think about the fusion of Machine Learning and Game Theory, as both these model the most supreme agents we live with; the former created by Humans while the later created by Biological Science! 
+My research interests are eclectic and lie in Statistical Learning & Inference, Statistics & Optimization, Signal & Image Processing and, Network Science & Game Theory; and I love to keep learning more about Bioinformatics & Computational Medicine. My prime hobby is ‘Thinking’ and I like to model real-life scenarios to find their solutions through Mathematics (for e.g. The Linear Inverse Problem Theory relates to how Humans perceive each other). I also like to think about the fusion of Machine Learning and Game Theory, as both these model the most supreme agents we live with; the former created by Humans while the later created by Biological Science! 
 
 <br>
 
