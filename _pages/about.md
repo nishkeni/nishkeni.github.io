@@ -32,14 +32,14 @@ If there's anything you believe I can assist you with, I am looking forward to t
 News
 ======
 
-* April 2020 - I was surpirised to see that I have a Google's [Knowledge Panel](https://g.co/kgs/1kYofP).
+* April 2020 - I was surprised to see that I have a Google's [Knowledge Panel](https://g.co/kgs/1kYofP).
 
-* January 2020 - I will be presenting my work on Adaptive Containerization for Microservice Deployment at the IEEE Consumer Communications & Networking Conference (CCNC), 2020 at Las Vegas, NV.
+* January 2020 - I will be presenting my work on Adaptive Containerization for Microservice Deployment at the [IEEE Consumer Communications & Networking Conference (CCNC), 2020](https://ccnc2020.ieee-ccnc.org/) at Las Vegas, NV.
 
-* December 2019 - I am presenting my work on Adversarial Defenses at the 21st IEEE International Symnposium on Multimedia (ISM), 2019 at San Diego, CA.
+* December 2019 - I am presenting my work on Adversarial Defenses at the [21st IEEE International Symnposium on Multimedia (ISM), 2019](https://www.ieee-ism.org/) at San Diego, CA.
 
 * July 2019 - I am joining Amazon.com as a Data Scientist in the Advertising Measurement & Optimization Team!
 
 * August 2018 - I joined Amazon.in as an Applied Scientist Intern - Machine Learning in the India Machine Learning (IML) Team!
 
-* May 2018 - I joined Dr. Dawn Song as a Visiting Student Researcher for the Summer at the University of California, Berkeley (EECS, Computer Science)!
+* May 2018 - I joined [Dr. Dawn Song](https://people.eecs.berkeley.edu/~dawnsong/) as a Visiting Student Researcher for the Summer at the [University of California, Berkeley](https://engineering.berkeley.edu/) (EECS, Computer Science)!
