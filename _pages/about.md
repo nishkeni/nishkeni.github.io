@@ -32,7 +32,7 @@ If there's anything you believe I can assist you with, I am looking forward to t
 News
 ======
 
-* April 2020 - I was surpirised to see that I have a Google's (Knowledge Panel)[https://g.co/kgs/1kYofP].
+* April 2020 - I was surpirised to see that I have a Google's [Knowledge Panel](https://g.co/kgs/1kYofP).
 
 * January 2020 - I will be presenting my work on Adaptive Containerization for Microservice Deployment at the IEEE Consumer Communications & Networking Conference (CCNC), 2020 at Las Vegas, NV.
 
