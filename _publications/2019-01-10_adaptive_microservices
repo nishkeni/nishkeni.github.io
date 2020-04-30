@@ -1,0 +1,10 @@
+---
+title: "Adaptive Containerization for Microservices in Distributed Cloud Systems"
+collection: publications
+permalink: /publication/2019-12-08-pde_adversary
+excerpt: ''
+date: 2019-01-10
+venue: 'IEEE 17th Annual Consumer Communications & Networking Conference (CCNC), 2020'
+---
+
+The traditional monolithic on-premises model of application deployment is fast being replaced by a cloud-based microservices paradigm, driven in part by the rise of numerous cloud infrastructure providers providing seamless access to a variety of computing hardware, and the need for applications to serve an ever-increasing audience necessitating scalability. While container-based virtualization has been the preferred method of microservice deployment, Cloud Consumers have not had much opportunity for cost and resource optimization thus far. To this end, this paper introduces a resource allocation framework for the containerized deployment of microservices, called Adaptive Containerization for Microservices in Distributed Cloud Systems, which helps reduce operating costs while ensuring a minimum guaranteed level of service. Further, a variety of performance evaluation metrics have been provided to reinforce the validity of the proposed framework.
