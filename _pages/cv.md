@@ -13,7 +13,7 @@ Education
 ======
 
 * Professional Certificate in Medical Statistics, Stanford University, CA, 2020 - 2021 (expected).
-* Professional Certificate in Artificial Intelligence, Stanford University, CA, 2019 - 2020 (expected). 
+* Professional Certificate in Artificial Intelligence, Stanford University, CA, 2019 - 2021 (expected). 
 * M.S. in Electrical and Computer Engineering, Georgia Institue of Technology, Atlanta, GA, May 2019.
 * B.Tech. (Institute Gold Medal) in Electronics Engineering, V.J.T.I. Mumbai, May 2017.
 
