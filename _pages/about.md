@@ -32,7 +32,7 @@ If there's anything you believe I can assist you with, I am looking forward to t
 News
 ======
 
-* December 2020 - I am promoted to a Data Scientist II in the Advertising Measurement & Optimization Team at Amazon.com!
+* December 2020 - I am promoted to be a Data Scientist II in the Advertising Measurement & Optimization Team at Amazon.com!
 
 * April 2020 - I was surprised to see that I have a Google's [Knowledge Panel](https://g.co/kgs/Fgs1XW)!
 
