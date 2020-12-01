@@ -23,17 +23,24 @@ Education
 Work experience
 ======
 
+* December 2020 - Present: Data Scientist II - Advertising Measurement & Optimization
+  * Amazon.com
+  * Duties included: Causal Inference, Statistical Estimation, Forecasting, Noise Reduction
+  * Supervisor: Chirag Mandaviya (Applied Science Manager, Amazon.com)
+  
+<br>
+
 * July 2019 - Present: Data Scientist - Advertising Measurement & Optimization
   * Amazon.com
   * Duties included: Causal Inference, Statistical Estimation.
-  * Supervisor: Mr. Hadi Purnomo (Sr. Research Scientist, Amazon.com); Mr. Jason Quehl (Sr. Manager, Amazon.com)
+  * Supervisor: Hadi Purnomo (Sr. Research Scientist, Amazon.com); Jason Quehl (Sr. Manager, Amazon.com)
   
 <br>
 
 * Fall 2018: Applied Scientist Intern - Machine Learning
   * Amazon.in
   * Duties included: Dynamic Incentivization using Reinforcement Learning
-  * Supervisor: Mr. Arijit Biswas & Mrs. Pooja A. (Sr. Machine Learning Scientist, Amazon.in)
+  * Supervisor: Arijit Biswas & Pooja A. (Sr. Machine Learning Scientist, Amazon.in)
   
 <br>
 
