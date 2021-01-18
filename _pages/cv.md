@@ -23,7 +23,14 @@ Education
 Work experience
 ======
 
-* December 2020 - Present: Data Scientist II - Advertising Measurement & Optimization
+* January 2021 - Present: Data Scientist II - Global Talent Management Science
+  * Amazon.com
+  * Duties included: Recommender Systems, Causal Inference, Hypothesis Testing
+  * Supervisor: Dr. Prakarsh Singh (Sr. Economist, Science Manager, Amazon.com)
+  
+<br>
+
+* December 2020 - January 2021: Data Scientist II - Advertising Measurement & Optimization
   * Amazon.com
   * Duties included: Causal Inference, Statistical Estimation, Forecasting, Noise Reduction
   * Supervisor: Chirag Mandaviya (Applied Science Manager, Amazon.com)
