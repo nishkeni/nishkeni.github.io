@@ -15,7 +15,7 @@ I am an Electronics, Electrical and Computer Engineer by formal education, an [E
 Research Interests
 ======
 
-My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in  Probabilistic Robotics, Network Science, Statistical Signal Processing and Bioinformatics. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life scenarios by _'kernelling'_ them into a Mathematical World [[More about it here]](https://nishkeni.github.io/year-archive/). I also like to think about the fusion of Machine Learning and Game Theory, as these disciplines model the most supreme agents we live with; the former created by Humans while the later created by Biological Science! 
+My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in  Probabilistic Robotics, Network Science, Statistical Signal Processing and Bioinformatics. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life scenarios by _'kernelling'_ them into a Mathematical World. I also like to think about the fusion of Machine Learning and Game Theory, as these disciplines model the most supreme agents we live with; the former created by Humans while the later created by Biological Science! 
 
 <br>
 
