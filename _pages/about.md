@@ -22,7 +22,7 @@ My broad research interest lies in building Statistical Models and Algorithms wh
 Get in Touch
 ======
 
-As a background context, I am <i>aggressively</i> protective of my time, as I believe we all should be. I love to wear the hats of both a researcher and a maker. [Here's](http://www.paulgraham.com/makersschedule.html) an interesting perspective on why disruptions are so corrosive to a maker's schedule. 
+As a background context, I am <i>aggressively</i> protective of my time, as I believe we all should be. Aas a researhcer, I love to wear the hats of both a theoretician and a maker. [Here's](http://www.paulgraham.com/makersschedule.html) an interesting perspective on why disruptions are corrosive to a maker's schedule. 
 
 If there's anything you believe I can assist you with, I am looking forward to talking to you! If you want to chat with me, please consider e-mailing me first for context, and then using [this](https://calendly.com/nishant-keni) to find a time that works best for you.
 
