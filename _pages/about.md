@@ -15,14 +15,14 @@ I am an Electronics, Electrical and Computer Engineer by formal education, an [E
 Research Interests
 ======
 
-My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in  Probabilistic Robotics, Network Science, Statistical Signal Processing and Bioinformatics. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World. I also like to think about the fusion of Machine Learning and Game Theory, as these disciplines model the most supreme agents we live with; the former created by Humans while the later created by Biological Science! 
+My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in  Probabilistic Robotics, Network Science, Statistical Signal Processing and Bioinformatics. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World. I also like to think about the fusion of Machine Learning and Game Theory, as these disciplines model the most supreme agents we live with!
 
 <br>
 
 Get in Touch
 ======
 
-As a background context, I am <i>aggressively</i> protective of my time, as I believe we all should be. As a researcher, I love to wear the hats of both a theoretician and a maker. [Here's](http://www.paulgraham.com/makersschedule.html) an interesting perspective on why disruptions are corrosive to a maker's schedule. 
+As a background context, I am <i>aggressively</i> protective of my time, as I believe we all should be. As a researcher, I love to wear the hats of both a theoretician and a maker. [Here's](http://www.paulgraham.com/makersschedule.html) an interesting perspective on what meetings mean for makers. 
 
 If there's anything you believe I can assist you with, I am looking forward to talking to you! If you want to chat with me, please consider e-mailing me first for context, and then using [this](https://calendly.com/nishant-keni) to find a time that works best for you.
 
