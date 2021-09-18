@@ -22,7 +22,14 @@ Education
 Work experience
 ======
 
-* January 2021 - Present: Data Scientist II - Global Talent Management Science
+* August 2021 - Present: Data Scientist II - Advertising Measurement & Optimization
+  * Amazon.com
+  * Duties included: Causal Model Calibration, Measurement Noise Reduction, Portfolio Planning
+  * Supervisor: Carlos Avello (Senior Manager, Data Science, Amazon.com)
+  
+<br>
+
+* January 2021 - July 2021: Data Scientist II - Global Talent Management Science
   * Amazon.com
   * Duties included: Recommender Systems, Causal Inference, Hypothesis Testing
   * Supervisor: Dr. Prakarsh Singh (Sr. Economist, Science Manager, Amazon.com)
