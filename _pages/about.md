@@ -15,7 +15,7 @@ I am an Electronics, Electrical and Computer Engineer by formal education, a [Ma
 Research Interests
 ======
 
-My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in Statistical Modelling, Network Science, Robotics and Algorithmic Search (Planning). My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World. I also like to think about the fusion of Machine Learning and Game Theory, as these disciplines model the most supreme agents we live with!
+My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in Statistical Modelling, Network Science, Robotics and Optimization. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World. I also like to think about the fusion of Machine Learning and Game Theory, as these disciplines model the most supreme agents we live with!
 
 <br>
 
