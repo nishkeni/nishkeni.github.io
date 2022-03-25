@@ -15,7 +15,7 @@ I am an Electronics, Electrical and Computer Engineer by formal education, a [Ma
 Research Interests
 ======
 
-My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in Statistical Modelling, Network Science, Robotics and Optimization. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World. I also like to think about the fusion of Machine Learning and Game Theory, as these disciplines model the most supreme agents we live with!
+My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in Statistical Signal Processing & Modeling, Robotics, Network Science, and Biological Modeling. I am also an Autodidact of Medicine and Surgery. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World. I also like to think about the fusion of Machine Learning and Game Theory, as these disciplines model the most supreme agents we live with!
 
 <br>
 
@@ -39,7 +39,7 @@ News
 
 * December 2020 - I am promoted to a Data Scientist II in the Advertising Measurement & Optimization Team at Amazon.com!
 
-* April 2020 - I was surprised to see that I have a Google's [Knowledge Panel](https://g.co/kgs/Fgs1XW)!
+* April 2020 - I was surprised to see that I have a Google's [Knowledge Panel](https://g.co/kgs/ACAh7S)!
 
 * January 2020 - I will be presenting my work on Adaptive Containerization for Microservice Deployment at the [IEEE Consumer Communications & Networking Conference (CCNC), 2020](https://ccnc2020.ieee-ccnc.org/) at Las Vegas, NV.
 
