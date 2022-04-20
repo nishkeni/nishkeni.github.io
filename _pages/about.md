@@ -22,7 +22,7 @@ My broad research interest lies in building Statistical Models and Algorithms wh
 Get in Touch
 ======
 
-As a researcher, I love to wear the hats of both a theoretician and a maker. I generally tend to minimize meetings; [here's (http://www.paulgraham.com/makersschedule.html) an interesting perspective on what meetings mean for makers. If there's anything you believe I can assist you with, I look forward to talking to you! 
+As a researcher, I love to wear the hats of both a theoretician and a maker. I generally tend to minimize meetings; [here's](http://www.paulgraham.com/makersschedule.html) an interesting perspective on what meetings mean for makers. If there's anything you believe I can assist you with, I look forward to talking to you! 
 
 If you want to chat with me, please use [this](https://calendly.com/nishant-keni) to find a time that works best for you.
 
