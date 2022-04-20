@@ -15,7 +15,7 @@ I am an Electronics, Electrical and Computer Engineer by formal education, a [Ma
 Research Interests
 ======
 
-My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in Statistical Signal Processing, Robotics (Medical, Surgical and beyond), Network Science, and Biological Modeling. Besides these, I am actively self-studying subjects in Medicine, Theoretical Surgery and Oncology. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World.
+My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference and Learning. My key areas of focus are in Statistical Signal Processing & Optimization, Robotics, Network Science, and Biological Modeling. Besides these, I actively self-study subjects in Medicine, Theoretical Surgery and Oncology. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World.
 
 <br>
 
