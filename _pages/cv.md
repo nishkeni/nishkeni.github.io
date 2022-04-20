@@ -22,9 +22,16 @@ Education
 Work experience
 ======
 
-* August 2021 - Present: Data Scientist II - Advertising Measurement & Optimization
+* April 2022 - Present: Research Scientist II - Next Science, Customer Behavior Analytics
   * Amazon.com
-  * Duties included: Causal Model Calibration, Measurement Noise Reduction, Portfolio Planning
+  * Duties included: Causal Model Calibration, Statistical Noise Reduction, Portfolio Planning
+  * Supervisor: Carlos Avello (Senior Manager, Data Science, Amazon.com)
+  
+<br>
+
+* August 2021 - April 2022: Data Scientist II - Advertising Measurement & Optimization
+  * Amazon.com
+  * Duties included: Causal Model Calibration, Statistical Noise Reduction, Portfolio Planning
   * Supervisor: Carlos Avello (Senior Manager, Data Science, Amazon.com)
   
 <br>
