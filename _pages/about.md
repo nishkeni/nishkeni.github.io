@@ -34,7 +34,7 @@ If you want to chat with me, please use [this](https://calendly.com/nishant-keni
 News
 ======
 
-* April 2022 - I got accepted in the online cohort (HMX) of the program on the Fundamentals of Medicine at the Harvard Medical School (HMS) which starts in June 2022. The subjects I will be studying are Immunology, Pharmacology, Physiolgy and Biochemistry.
+* April 2022 - I got accepted in the online cohort (HMX) of the program on the Fundamentals of Medicine at the Harvard Medical School (HMS) which starts in June 2022. The subjects I will be studying are Immunology, Pharmacology, Physiology and Biochemistry.
 
 * April 2022 - I am promoted to a Research Scientist II in the Next Science Team of Customer Behavior Analytics at Amazon.com!
 
