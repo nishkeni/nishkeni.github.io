@@ -38,8 +38,6 @@ News
 
 * April 2022 - I am promoted to a Research Scientist II in the Next Science Team of Customer Behavior Analytics at Amazon.com!
 
-* Feb 2022 - I got accepted to collaboratively work with Dr. Arpita Sinha's group at the Autonomous Robots and Multi-robot Systems (ARMS) Lab, Systems and Control Engineering Department, IIT Bombay.
-
 * August 2021 - I am back in the Advertising Measurement & Optimization Team at Amazon.com as a Data Scientist II!
 
 * Januray 2021 - I am joining the Global Talent Management Science team (HR Analytics) as a Data Scientist II at Amazon.com!
