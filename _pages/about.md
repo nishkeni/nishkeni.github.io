@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an Electronics, Electrical and Computer Engineer by formal education, an [Applied Mathematician](https://en.wikipedia.org/wiki/Applied_mathematics#:~:text=Applied%20mathematics%20is%20the%20application,mathematical%20science%20and%20specialized%20knowledge.) & Autonomous Roboticist by action, and a [Precision Medicinist](https://en.wikipedia.org/wiki/Precision_medicine) _(Neuro-Oncology)_ by passion. I am currently a Research Scientist II in the [Advertising Measurement and Optimization](https://www.amazon.jobs/en/internal/search?base_query=avelloc) team at [Amazon.com, Inc.](https://www.amazon.jobs/en/principles) where I work on challenges in _Causal Inference, Signal Processing & Optimization_. In parallel, I am pursuing Certification Programs in Medicine Fundamentals _(Physiology, Pharmacology)_ and Specialities _(Precision Oncology, Immuno-oncology, Cancer Genomics)_ at [Harvard Medical School](https://hms.harvard.edu/).
+I am an Electronics, Electrical and Computer Engineer by formal education, an [Applied Mathematician](https://en.wikipedia.org/wiki/Applied_mathematics#:~:text=Applied%20mathematics%20is%20the%20application,mathematical%20science%20and%20specialized%20knowledge.) & Autonomous Roboticist by action, and a [Precision Medicinist](https://en.wikipedia.org/wiki/Precision_medicine) _(Neuro-Oncology)_ by passion. I am currently a Research Scientist II in the [Advertising Measurement and Optimization](https://www.amazon.jobs/en/internal/search?base_query=avelloc) team at [Amazon.com, Inc.](https://www.amazon.jobs/en/principles) where I work on challenges in _Causal Inference, Signal Processing & Optimization_. In parallel, I am pursuing Certification Programs in Medicine at [Harvard Medical School](https://hms.harvard.edu/) and [Stanford Medicine](https://med.stanford.edu/) with specializing focus in Precision Oncology and Cancer Genomics. I am also pursuing a Post-Graduate Certificate in Robotics and Mechatronics at the [Indian Institute of Technology, Guwahati].(https://www.iitg.ac.in/)
 
 I recently obtained my Professional Certificate in Artificial Intelligence (_with a focus in Natural Language Processing, Statistical Modelling and Graph Learning_) at [Stanford University](https://www.stanford.edu), School of Engineering. Prior to joining [Amazon.com, Inc.](https://www.amazon.jobs/en/principles), I completed my [M.S. in Electrical and Computer Engineering](https://github.com/nishkeni/nishkeni.github.io/blob/master/images/MS_ECE_DegreeCertificate_NishantKeni.pdf) at [Georgia Tech, Atlanta](https://www.gatech.edu/) with a focus in Digital Signal Processing, where I was fortunate to work with [Gari Clifford](http://gdclifford.info/people/gari) and [Justin Romberg](https://jrom.ece.gatech.edu). Before that, I completed my B.Tech. in Electronics Engineering (Gold Medal) at [VJTI, Mumbai](https://www.vjti.ac.in/), where I was involved in research with Rizwan Ahmed and [Faruk Kazi](https://www.vjti.ac.in/images/coe-cnds/project/resume/kazi_sir.pdf).
 
@@ -17,7 +17,7 @@ I recently obtained my Professional Certificate in Artificial Intelligence (_wit
 Research Interests
 ======
 
-My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference, Optimization and Learning. My key areas of focus are in Robot Motion Planning, Autonomous Control, Probabilistic Decision-Making and Signal Processing. Besides these, I actively self-study subjects in Theoretical Surgery & Internal Medicine. My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World.
+My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference, Optimization and Learning. My key areas of focus are in Robot Motion Planning & Autonomous Control, Probabilistic Decision-Making, Systems Biology and Signal Processing. Besides these, I actively self-study subjects in Theoretical Surgery & Internal Medicine (Neurology, Cardiology). My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World.
 
 <br>
 
@@ -30,10 +30,10 @@ If you want to chat with me, please use [this](https://calendly.com/nishant-keni
 
 <br>
 
-Get in Touch
+Visitors
 ======
 
-To keep up with the tradition of my group, I setup this visitor counter by country starting Jan 3, 2022.
+To keep up with the tradition of my group, I setup this visitor counter by country starting Jan 3, 2022. Thank you for visiting my website!
 
 <a href="https://info.flagcounter.com/8r6o"><img src="https://s01.flagcounter.com/countxl/8r6o/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_20/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
 
