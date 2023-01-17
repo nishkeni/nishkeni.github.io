@@ -30,7 +30,7 @@ If you want to chat with me, please use [this](https://calendly.com/nishant-keni
 
 <br>
 
-Visitors
+Miscellaneous
 ======
 
 To keep up with the tradition of my group, I setup this visitor counter by country starting Jan. 9, 2023. Thank you for visiting my website!
