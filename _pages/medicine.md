@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: ""
-permalink: /cv/
+permalink: /medicine/
 author_profile: true
 redirect_from:
   - /Medicine
