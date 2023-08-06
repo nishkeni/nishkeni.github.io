@@ -17,7 +17,7 @@ In 2021, I obtained my Professional Certificate in Artificial Intelligence (_wit
 Research Interests
 ======
 
-My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference, Optimization and Learning. My key areas of focus are in Planning & Control Theory, Probabilistic Decision-Making, Systems Biology and Neuroscience. Besides these, I actively self-study subjects in Theoretical Surgery & Internal Medicine (Neurology, Cardiology). My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World.
+My broad research interest lies in building Statistical Models and Algorithms which can efficiently perform Inference, Optimization and Learning. My key areas of focus are in Control Theory, Probabilistic Decision-Making, Systems Biology and Neuroscience. Besides these, I actively self-study subjects in Theoretical Surgery & Internal Medicine (Neurology, Cardiology). My prime hobby is _'Thinking'_ and I like to find algorithmic solutions to real-life problems by _'kernelling'_ them into the Mathematical World.
 
 <br>
 
