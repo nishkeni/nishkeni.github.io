@@ -37,8 +37,6 @@ To keep up with the tradition of my group, I setup this visitor counter by count
 
 <a href="https://info.flagcounter.com/8r6o"><img src="https://s01.flagcounter.com/countxl/8r6o/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_20/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
 
-
-<iframe src="https://calendar.google.com/calendar/embed?src=mr.nishant.keni%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 <br>
 
 News
