@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<h1 style="color: red;">This website is outdated and will be refreshed on May 1, 2025. Please consume content with deliberation. Thank you!</h1>
+[<h1 style="color: red;">This website is outdated and will be refreshed on May 1, 2025. Please consume content with deliberation. Thank you!</h1>]
 
 <br>
 
