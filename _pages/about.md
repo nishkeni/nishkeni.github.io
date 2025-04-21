@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-<h1 color="red">[This website is outdated, and will be refreshed on May 1, 2025. Please consume content with deliberation. Thank you!]</h1>
+<h1 style="color: red;">This website is outdated and will be refreshed on May 1, 2025. Please consume content with deliberation. Thank you!</h1>
+
+<br>
 
 I am an Electrical Engineer _(Signal Processing)_ by formal education, an Applied Mathematician _(Estimation and Control Theory)_ by action, and a Computational Oncologist _(Super Specialty: Neuro and Thoracic Oncology)_ by passion. I am working with [Amazon.com, Inc.](https://www.amazon.jobs/en/principles) as a Research Scientist II in the [Advertising Measurement and Optimization](https://www.amazon.jobs/en/internal/search?base_query=avelloc) team where I work on challenges in Causal Inference, Signal Processing & Optimization. In parallel, I am pursuing Certification Programs in Medicine at [Harvard Medical School](https://hms.harvard.edu/) and [Stanford Medicine](https://med.stanford.edu/) specializing in Precision Oncology and Cancer Genomics. 
 
