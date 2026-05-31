@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishant Keni — Principal AI Research Engineer</title>
+  <meta name="description" content="Mathematician by specialization, AI Engineer by action, Computational Oncologist by passion. Principal AI Engineer at CuePilot AI." />
+  <meta name="theme-color" content="#E9E3D9" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,300;1,9..144,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ════════════ NAV ════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Keni Nishant Deepak Veena<span class="dot">.</span></a>
+      <div class="nav-status">
+        <span class="hero-spinner"></span>
+        <span class="hero-status-verb" data-pill="0"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Research</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">&#10005;</button>
+    <ul>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#publications" class="mobile-link">Research</a></li>
+      <li><a href="#awards" class="mobile-link">Awards</a></li>
+    </ul>
+  </div>
+
+  <!-- ════════════ HERO ════════════ -->
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+
+    <div class="hero-main">
+      <p class="hero-mission" id="heroMission">the best teachers can't reach every child, nor can the best doctor attend every patient —<br><span class="ms-accent">so I build <span class="ms-bot">🤖</span> that can</span> <span class="agent-loop" id="agentLoop"><span class="al-step al-1"><i class="tk"></i><span class="al-word">perceive</span></span><span class="al-sep">, </span><span class="al-step al-2"><i class="tk"></i><span class="al-word">reason</span></span><span class="al-sep">, </span><span class="al-step al-3"><i class="tk"></i><span class="al-word">act</span></span><span class="al-sep">, </span><span class="al-step al-4"><i class="tk"></i><span class="al-word">reflect</span></span><span class="al-sep"> &amp; </span><span class="al-step al-5"><i class="tk"></i><span class="al-word">impact</span></span></span></p>
+      <div class="hero-mission-dash"></div>
+
+      <div class="hero-quad">
+
+      <div class="hero-grid hero-stage">
+
+        <!-- Row 1, Col 1: Education -->
+        <div class="hero-block">
+          <p class="hero-block-label">🎓 Education</p>
+          <div class="hero-creds">
+            <div class="hero-cred">
+              <img src="https://images.seeklogo.com/logo-png/20/2/vjti-college-logo-png_seeklogo-209443.png" alt="VJTI" class="cred-logo">
+              <div class="cred-info">
+                <span class="cred-field">Electrical Engineering</span>
+                <span class="cred-school">VJTI, Mumbai</span>
+              </div>
+            </div>
+            <div class="hero-cred">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg" alt="Georgia Tech" class="cred-logo">
+              <div class="cred-info">
+                <span class="cred-field">Computer Engineering</span>
+                <span class="cred-school">Georgia Tech</span>
+              </div>
+            </div>
+            <div class="hero-cred">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Seal_of_Leland_Stanford_Junior_University.svg" alt="Stanford" class="cred-logo">
+              <div class="cred-info">
+                <span class="cred-field">Artificial Intelligence</span>
+                <span class="cred-school">Stanford University</span>
+              </div>
+            </div>
+            <div class="hero-cred">
+              <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg" alt="IIT Bombay" class="cred-logo">
+              <div class="cred-info">
+                <span class="cred-field">Computer Science</span>
+                <span class="cred-school">IIT Bombay <span class="cred-live">●</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 1, Col 2: Get in Touch -->
+        <div class="hero-block">
+          <p class="hero-block-label">🤝 Get in Touch</p>
+          <div class="hero-connect">
+            <a href="https://linkedin.com/in/nishant-keni" target="_blank" rel="noopener" class="hero-connect-card">
+              <div class="hero-connect-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="hero-connect-info">
+                <span class="hero-connect-name">LinkedIn</span>
+                <span class="hero-connect-sub">/in/nishant-keni</span>
+              </div>
+            </a>
+            <a href="https://scholar.google.com/citations?user=MlaT-RgAAAAJ" target="_blank" rel="noopener" class="hero-connect-card">
+              <div class="hero-connect-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="hero-connect-info">
+                <span class="hero-connect-name">Scholar</span>
+                <span class="hero-connect-sub">55 citations · h-index 4</span>
+              </div>
+            </a>
+            <a href="https://topmate.io/nishant_keni" target="_blank" rel="noopener" class="hero-connect-card">
+              <div class="hero-connect-icon"><i class="fas fa-handshake"></i></div>
+              <div class="hero-connect-info">
+                <span class="hero-connect-name">Topmate</span>
+                <span class="hero-connect-sub">Book a session</span>
+              </div>
+            </a>
+            <a href="mailto:nishant.keni@outlook.com" class="hero-connect-card">
+              <div class="hero-connect-icon"><i class="fas fa-envelope"></i></div>
+              <div class="hero-connect-info">
+                <span class="hero-connect-name">Email</span>
+                <span class="hero-connect-sub">nishant.keni@outlook.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-sep hero-stage"><span class="hero-node"></span></div>
+
+      <div class="explore-row hero-stage">
+        <div class="explore-tag">
+          <span class="explore-label-text">feeling agentic? talk to me in bash or MCP</span>
+          <svg class="explore-arrow" width="24" height="22" viewBox="0 0 24 22" fill="none">
+            <path d="M4 4 Q12 4 12 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M8 11 L12 16 L16 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="term-shell hero-term">
+          <div class="term-topbar">
+            <div class="term-dots"><span class="td-r"></span><span class="td-y"></span><span class="td-g"></span></div>
+            <div class="term-tabs">
+              <button class="term-tab active" data-tab="bash">⌨&nbsp;&nbsp;bash</button>
+              <button class="term-tab" data-tab="mcp">🔌&nbsp;&nbsp;mcp</button>
+            </div>
+            <span class="term-status st-live" id="termStatus"><span class="live-dot"></span>LIVE</span>
+          </div>
+
+          <div class="term-panel" data-panel="bash">
+            <div class="term-body" id="termBody">
+              <div id="termOut"></div>
+              <div class="term-row">
+                <span class="term-ps1">nk<span class="ps1-at">@</span>agent<span class="ps1-at">:</span><span class="ps1-tilde">~</span><span class="ps1-at">$</span>&nbsp;</span>
+                <input type="text" id="termInput" class="term-input" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="type help…" />
+              </div>
+            </div>
+          </div>
+
+          <div class="term-panel" data-panel="mcp" hidden>
+            <div class="mcp-body" id="mcpBody">
+              <div id="mcpOut"></div>
+              <div class="mcp-row" id="mcpRow" style="display:none">
+                <span class="mcp-ps1">mcp&nbsp;▸&nbsp;</span>
+                <input type="text" id="mcpInput" class="mcp-input" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="call a tool…" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <a href="#experience" class="hero-scroll-label hero-stage">
+        <span class="explore-label-text">or just scroll down</span>
+        <svg class="scroll-arrow" width="24" height="22" viewBox="0 0 24 22" fill="none">
+          <path d="M4 4 Q12 4 12 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M8 11 L12 16 L16 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════════ EXPERIENCE ════════════ -->
+  <section id="experience" class="section-padding exp-section">
+    <div class="section-bg-text">EXPERIENCE</div>
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow reveal-up">Career</p>
+        <h2 class="section-title reveal-up">Professional Journey</h2>
+        <div class="accent-bar centered reveal-up"></div>
+      </div>
+      <div class="exp-bento">
+
+        <!-- Hero: current role -->
+        <div class="exp-card exp-card--hero reveal-up">
+          <div class="exp-card-head">
+            <span class="exp-live"><span class="exp-live-dot"></span>LIVE</span>
+            <span class="exp-date-badge">2026 – Present</span>
+          </div>
+          <h3 class="exp-title">Principal AI Engineer</h3>
+          <p class="exp-co"><i class="fas fa-circle-notch fa-spin"></i> CuePilot AI</p>
+          <p class="exp-desc">Building the AI-native Preschool OS. Leading agentic pipeline architecture, harness engineering for AI workflows, and observability systems for production LLM deployments.</p>
+          <div class="exp-stats">
+            <span><i class="fas fa-dollar-sign"></i> $1.8M raised</span>
+            <span><i class="fas fa-trophy"></i> 2026 GSV Cup 50</span>
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag--hot">Agentic AI</span>
+            <span class="exp-tag--hot">Harness Engineering</span>
+            <span class="exp-tag--hot">AI Observability</span>
+          </div>
+        </div>
+
+        <!-- Amazon RS-II -->
+        <div class="exp-card reveal-up" data-delay="80">
+          <div class="exp-card-head">
+            <span class="exp-date-badge">Apr 2022 – 2024</span>
+          </div>
+          <h3 class="exp-title">Research Scientist</h3>
+          <p class="exp-co"><i class="fab fa-amazon"></i> Amazon</p>
+          <p class="exp-desc">Causal model calibration, statistical noise reduction, and portfolio planning in Next Science / Customer Behavior Analytics at Amazon scale.</p>
+          <div class="exp-tags">
+            <span>Causal Inference</span>
+            <span>Statistical Modeling</span>
+            <span>Portfolio Optimization</span>
+          </div>
+        </div>
+
+        <!-- Amazon DS-II -->
+        <div class="exp-card reveal-up" data-delay="120">
+          <div class="exp-card-head">
+            <span class="exp-date-badge">2019 – 2022</span>
+          </div>
+          <h3 class="exp-title">Data Scientist</h3>
+          <p class="exp-co"><i class="fab fa-amazon"></i> Amazon</p>
+          <p class="exp-desc">Advertising Measurement and Talent Management — causal inference and recommender systems informing billion-dollar decisions.</p>
+          <div class="exp-tags">
+            <span>Causal Inference</span>
+            <span>Recommender Systems</span>
+            <span>A/B Testing</span>
+          </div>
+        </div>
+
+        <!-- UC Berkeley -->
+        <div class="exp-card reveal-up" data-delay="160">
+          <div class="exp-card-head">
+            <span class="exp-date-badge">Summer 2018</span>
+          </div>
+          <h3 class="exp-title">Visiting Researcher</h3>
+          <p class="exp-co"><i class="fas fa-university"></i> UC Berkeley</p>
+          <p class="exp-desc">Adversarial ML defense under Prof. Dawn Song — certified robustness for deep neural networks.</p>
+          <div class="exp-tags">
+            <span>Adversarial ML</span>
+            <span>Deep Learning</span>
+            <span>Security</span>
+          </div>
+        </div>
+
+        <!-- Amazon Intern -->
+        <div class="exp-card reveal-up" data-delay="200">
+          <div class="exp-card-head">
+            <span class="exp-date-badge">Fall 2018</span>
+          </div>
+          <h3 class="exp-title">Applied Scientist Intern</h3>
+          <p class="exp-co"><i class="fab fa-amazon"></i> Amazon.in</p>
+          <p class="exp-desc">Dynamic incentivization via reinforcement learning for marketplace engagement.</p>
+          <div class="exp-tags">
+            <span>Reinforcement Learning</span>
+            <span>Dynamic Pricing</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ EDUCATION ════════════ -->
+  <section id="education" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow reveal-up">Academic Background</p>
+        <h2 class="section-title reveal-up">Education</h2>
+        <div class="accent-bar centered reveal-up"></div>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card edu-card--gold reveal-up">
+          <div class="edu-medal">🥇 Gold Medal</div>
+          <div class="edu-icon edu-icon--gold"><i class="fas fa-star"></i></div>
+          <span class="edu-year">2013 – 2017</span>
+          <h3>B.Tech. Electronics Engineering</h3>
+          <p class="edu-school">VJTI, Mumbai</p>
+          <p class="edu-note">Department Rank 1 · Institute Gold Medal</p>
+          <p class="edu-desc">Signal theory, applied mathematics, and electronics — graduated top of department.</p>
+          <div class="edu-chips"><span>Electronics</span><span>Signal Theory</span><span>Applied Math</span></div>
+        </div>
+        <div class="edu-card reveal-up" data-delay="80">
+          <div class="edu-icon"><i class="fas fa-microchip"></i></div>
+          <span class="edu-year">2017 – 2019</span>
+          <h3>M.S. Electrical &amp; Computer Engineering</h3>
+          <p class="edu-school">Georgia Institute of Technology</p>
+          <p class="edu-note">Digital Signal Processing</p>
+          <p class="edu-desc">DSP, computer vision, adversarial ML research. IEEE Best Paper Award 2016.</p>
+          <div class="edu-chips"><span>DSP</span><span>Computer Vision</span><span>ML Research</span></div>
+        </div>
+        <div class="edu-card reveal-up" data-delay="160">
+          <div class="edu-icon"><i class="fas fa-brain"></i></div>
+          <span class="edu-year">2019 – 2021</span>
+          <h3>Artifical Intelligence</h3>
+          <p class="edu-school">Stanford University</p>
+          <p class="edu-note">NLP · Statistical Modelling · Graph Learning</p>
+          <p class="edu-desc">Advanced AI coursework from top Stanford faculty.</p>
+          <div class="edu-chips"><span>NLP</span><span>Graph Learning</span><span>Statistics</span></div>
+        </div>
+        <div class="edu-card edu-card--active reveal-up" data-delay="240">
+          <div class="edu-medal edu-medal--live">🟢 Active</div>
+          <div class="edu-icon"><i class="fas fa-code-branch"></i></div>
+          <span class="edu-year">Aug 2025 – Present</span>
+          <h3>Postgraduate Degree, CS &amp; Engineering</h3>
+          <p class="edu-school">Indian Institute of Technology, Bombay</p>
+          <p class="edu-note">Postgraduate Programme · IIT Bombay</p>
+          <p class="edu-desc">Postgraduate programme in CS &amp; Engineering at one of India's most prestigious institutes.</p>
+          <div class="edu-chips"><span>CS &amp; Engineering</span><span>IIT Bombay</span><span>PG Degree</span></div>
+        </div>
+      </div>
+      <div class="edu-grid edu-grid--medical">
+        <div class="edu-card reveal-up">
+          <div class="edu-icon"><i class="fas fa-stethoscope"></i></div>
+          <span class="edu-year">2024 – 2025</span>
+          <h3>Fellowship (CPD-UK)</h3>
+          <p class="edu-school">Apollo Hospitals Education &amp; Research Foundation</p>
+          <p class="edu-note">Clinical Oncology</p>
+          <p class="edu-desc">Clinical oncology fellowship accredited by the CPD Standards Office, UK.</p>
+          <div class="edu-chips"><span>Clinical Oncology</span><span>CPD-UK</span></div>
+        </div>
+        <div class="edu-card reveal-up" data-delay="80">
+          <div class="edu-icon"><i class="fas fa-dna"></i></div>
+          <span class="edu-year">2023 – 2025</span>
+          <h3>Master's, Medical Oncology</h3>
+          <p class="edu-school">TECH Global University</p>
+          <p class="edu-note">Medical Oncology</p>
+          <p class="edu-desc">Advanced graduate study in medical oncology, cancer biology, and treatment protocols.</p>
+          <div class="edu-chips"><span>Medical Oncology</span><span>Cancer Biology</span></div>
+        </div>
+        <div class="edu-card reveal-up" data-delay="160">
+          <div class="edu-icon"><i class="fas fa-brain"></i></div>
+          <span class="edu-year">2024</span>
+          <h3>Master's, Counseling Psychology</h3>
+          <p class="edu-school">IISDT</p>
+          <p class="edu-note">Counseling Psychology</p>
+          <p class="edu-desc">Postgraduate programme in counseling psychology and mental health.</p>
+          <div class="edu-chips"><span>Psychology</span><span>Counseling</span><span>Mental Health</span></div>
+        </div>
+        <div class="edu-card reveal-up" data-delay="240">
+          <div class="edu-icon"><i class="fas fa-ribbon"></i></div>
+          <span class="edu-year">Jan 2025</span>
+          <h3>Certified Cancer Coach</h3>
+          <p class="edu-school">Cancer Wellness Institute</p>
+          <p class="edu-note">Certification</p>
+          <p class="edu-desc">Professional certification in cancer coaching and patient wellness support.</p>
+          <div class="edu-chips"><span>Cancer Coaching</span><span>Wellness</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════ PUBLICATIONS ════════════ -->
+  <section id="publications" class="section-padding pub-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow reveal-up">Research Output</p>
+        <h2 class="section-title reveal-up">Publications</h2>
+        <div class="accent-bar centered reveal-up"></div>
+        <p class="section-sub reveal-up">10 peer-reviewed publications · <strong>55 citations</strong> · h-index 4</p>
+      </div>
+      <div class="pub-grid">
+
+        <!-- Hero: top cited paper -->
+        <div class="pub-card pub-card--hero reveal-up">
+          <div class="pub-card-top">
+            <span class="pub-num">01</span>
+            <span class="pub-cite pub-cite--top"><i class="fas fa-star"></i> 27 citations</span>
+          </div>
+          <h4 class="pub-title">Adaptive Containerization for Microservices in Distributed Cloud Systems</h4>
+          <p class="pub-venue">IEEE CCNC 2020</p>
+          <div class="pub-chips"><span>Microservices</span><span>Cloud</span><span>IEEE</span></div>
+        </div>
+
+        <div class="pub-card reveal-up" data-delay="60">
+          <div class="pub-card-top">
+            <span class="pub-num">02</span>
+            <span class="pub-cite"><i class="fas fa-star"></i> 14</span>
+          </div>
+          <h4 class="pub-title">Neural Networks Based Leaf Identification Using Shape &amp; Structural Decomposition</h4>
+          <p class="pub-venue">GTSP 2016</p>
+          <div class="pub-chips"><span>Neural Networks</span><span>Signal Processing</span></div>
+        </div>
+
+        <div class="pub-card reveal-up" data-delay="100">
+          <div class="pub-card-top">
+            <span class="pub-num">03</span>
+            <span class="pub-cite"><i class="fas fa-star"></i> 6</span>
+          </div>
+          <h4 class="pub-title">Convex Optimization Based Sparse Dictionary Learning for Image Compression</h4>
+          <p class="pub-venue">SPIN 2017</p>
+          <div class="pub-chips"><span>Optimization</span><span>Sparse Coding</span><span>Compression</span></div>
+        </div>
+
+        <div class="pub-card reveal-up" data-delay="140">
+          <div class="pub-card-top">
+            <span class="pub-num">04</span>
+            <span class="pub-cite"><i class="fas fa-star"></i> 6</span>
+          </div>
+          <h4 class="pub-title">Content Based Image Retrieval Using Structural Features &amp; Neural Networks</h4>
+          <p class="pub-venue">SPIN 2017</p>
+          <div class="pub-chips"><span>Image Retrieval</span><span>Neural Nets</span></div>
+        </div>
+
+        <div class="pub-card reveal-up" data-delay="180">
+          <div class="pub-card-top">
+            <span class="pub-num">05</span>
+            <span class="pub-cite"><i class="fas fa-star"></i> 1</span>
+          </div>
+          <h4 class="pub-title">Reconstruction of Compressively Sensed Images via Regularized Sparse Dictionary Learning</h4>
+          <p class="pub-venue">IEEE ISM 2019</p>
+          <div class="pub-chips"><span>Compressed Sensing</span><span>IEEE ISM</span></div>
+        </div>
+
+        <div class="pub-card reveal-up" data-delay="220">
+          <div class="pub-card-top">
+            <span class="pub-num">06</span>
+            <span class="pub-cite"><i class="fas fa-star"></i> 1</span>
+          </div>
+          <h4 class="pub-title">Computational Intelligence for Cancer Detection Using Artificial Immune System</h4>
+          <p class="pub-venue">CI: Theories, Applications &amp; Future Directions 2018</p>
+          <div class="pub-chips"><span>Comp. Intelligence</span><span>Oncology</span></div>
+        </div>
+
+        <div class="pub-card pub-card--group reveal-up" data-delay="260">
+          <div class="pub-card-top">
+            <span class="pub-num">07–10</span>
+          </div>
+          <h4 class="pub-title">Industry Research: Causal Inference, Advertising Measurement &amp; ML Systems</h4>
+          <p class="pub-venue">Amazon ML Conference · Consumer Science Summit 2022</p>
+          <div class="pub-chips"><span>Causal Inference</span><span>Advertising</span><span>ML Systems</span></div>
+        </div>
+
+      </div>
+      <div class="centered-cta reveal-up">
+        <a href="https://scholar.google.com/citations?user=MlaT-RgAAAAJ" target="_blank" rel="noopener" class="btn-outline">
+          <i class="fas fa-graduation-cap"></i> Google Scholar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ AWARDS ════════════ -->
+  <section id="awards" class="section-padding awards-section">
+    <div class="section-bg-text">AWARDS</div>
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow reveal-up">Recognition</p>
+        <h2 class="section-title reveal-up">Awards &amp; Honors</h2>
+        <div class="accent-bar centered reveal-up"></div>
+      </div>
+      <div class="awards-grid">
+        <div class="award-card award-card--hero reveal-up">
+          <div class="award-icon award-icon--gold"><i class="fas fa-medal"></i></div>
+          <div>
+            <h3>🥇 Institute Gold Medal</h3>
+            <p class="award-meta">VJTI Mumbai · 2017</p>
+            <p>Department Rank 1 in Electronics Engineering — highest academic distinction by the institute.</p>
+          </div>
+        </div>
+        <div class="award-card reveal-up" data-delay="100">
+          <div class="award-icon"><i class="fas fa-trophy"></i></div>
+          <h3>IEEE Best Paper Award</h3>
+          <p class="award-meta">IEEE · 2016</p>
+          <p>Outstanding research in signal processing and neural network compression.</p>
+        </div>
+        <div class="award-card reveal-up" data-delay="150">
+          <div class="award-icon"><i class="fas fa-list-ol"></i></div>
+          <h3>JEE Mains AIR 695</h3>
+          <p class="award-meta">IIT-JEE · 2013</p>
+          <p>Top 0.05% of 1.4M+ candidates nationally.</p>
+        </div>
+        <div class="award-card reveal-up" data-delay="200">
+          <div class="award-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h3>Top 1% · National Astronomy</h3>
+          <p class="award-meta">NSEA · 2013</p>
+          <p>Top 1 percentile nationally in the National Standard Examination in Astronomy.</p>
+        </div>
+        <div class="award-card reveal-up" data-delay="250">
+          <div class="award-icon"><i class="fas fa-atom"></i></div>
+          <h3>Dr. Homi Bhabha Young Scientist</h3>
+          <p class="award-meta">Silver Medal · 2009</p>
+          <p>Recognizing exceptional scientific aptitude among young Indian scientists.</p>
+        </div>
+        <div class="award-card reveal-up" data-delay="300">
+          <div class="award-icon"><i class="fas fa-award"></i></div>
+          <h3>Maharashtra State Scholarships</h3>
+          <p class="award-meta">2004 – 2008</p>
+          <p>Multiple consecutive state-level awards for academic excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ VISITORS ════════════ -->
+  <section id="visitors" class="section-padding visitors-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow reveal-up">Global Reach</p>
+        <h2 class="section-title reveal-up">Visitors by Country</h2>
+        <div class="accent-bar centered reveal-up"></div>
+        <p class="section-sub reveal-up">Tracking since January 9, 2023.</p>
+      </div>
+      <div class="flag-wrap reveal-up">
+        <a href="https://info.flagcounter.com/8r6o" target="_blank" rel="noopener">
+          <img src="https://s01.flagcounter.com/countxl/8r6o/bg_F5F1EB/txt_6B6360/border_E5E0D8/columns_4/maxflags_20/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" class="flag-img" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo">NK<span class="dot">.</span></a>
+      <p class="footer-copy">© 2026 Nishant Keni &nbsp;·&nbsp; 🤖 AI Research Engineer &nbsp;·&nbsp; 📐 Applied Mathematician &nbsp;·&nbsp; 🔬 Computational Oncologist</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/nishant-keni" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://scholar.google.com/citations?user=MlaT-RgAAAAJ" target="_blank" rel="noopener" aria-label="Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://topmate.io/nishant_keni" target="_blank" rel="noopener" aria-label="Topmate"><i class="fas fa-handshake"></i></a>
+        <a href="mailto:nishant.keni@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
