@@ -782,13 +782,7 @@ DOMAIN
 
 ● VJTI Mumbai  (2013–2017)
   B.Tech Electronics Engineering
-  🥇 Institute Gold Medal (Department Rank 1)
-
-ONGOING CERTIFICATIONS
-  Cancer Biology  (Johns Hopkins · 2025)
-  Certified Cancer Coach  (CWI · 2025)
-  AI for Breast Cancer Detection  (JHU · 2023)
-  Medical Statistics  (Stanford · 2021)`
+  🥇 Institute Gold Medal (Department Rank 1)`
     }),
 
     research: () => ({ type:'info', text:
