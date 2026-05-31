@@ -164,15 +164,19 @@ img { max-width:100%; display:block; }
 
 .hero-main { position:relative; z-index:2; width:100%; max-width:1440px; padding:0 48px; flex:1; display:flex; flex-direction:column; justify-content:center; }
 
-/* agent-loop capabilities — inline, completing the sentence */
-.agent-loop { font-family:var(--mono); font-style:normal; font-weight:600; font-size:.82em; }
+/* agent-loop capabilities — own line, just under the story */
+.agent-loop {
+  text-align:center; font-family:var(--mono); font-style:normal; font-weight:600;
+  font-size:clamp(.82rem,1.2vw,1rem); margin:1px auto 0;
+  opacity:0; transition:opacity .7s ease;
+}
+.agent-loop.show { opacity:1; }
 .al-step {
   display:inline; white-space:nowrap;
   opacity:.4; filter:grayscale(.55); transition:opacity .35s ease, filter .35s ease;
 }
 .al-step.active, .al-step.done { opacity:1; filter:none; }
-.al-sep { font-family:var(--mono); font-style:normal; font-weight:600; color:var(--muted); opacity:0; transition:opacity .4s ease; }
-.hero-mission.revealed .al-sep { opacity:.7; }
+.al-sep { font-family:var(--mono); font-style:normal; font-weight:600; color:var(--muted); opacity:.7; }
 .al-word { display:inline-block; transition:opacity .4s ease, transform .4s ease; }
 .al-word.morph { opacity:0; transform:translateY(-3px); }
 .al-1 { color:var(--accent); }
@@ -199,7 +203,7 @@ img { max-width:100%; display:block; }
 /* the mission statement — fades in once the loop resolves */
 .hero-mission {
   font-family:var(--serif); font-style:italic; font-size:clamp(1rem,1.5vw,1.28rem); font-weight:400;
-  line-height:1.55; color:var(--muted); text-align:center; max-width:940px; margin:0 auto 12px;
+  line-height:1.55; color:var(--muted); text-align:center; max-width:940px; margin:0 auto 2px;
   opacity:0; transition:opacity .8s ease;
 }
 .hero-mission.revealed { opacity:1; }
@@ -225,13 +229,13 @@ img { max-width:100%; display:block; }
 .hero-quad { position:relative; }
 .hero-grid { position:relative; }
 .hero-grid::before {
-  content:''; position:absolute; left:50%; top:0; bottom:-52px; width:1px;
+  content:''; position:absolute; left:50%; top:0; bottom:-28px; width:1px;
   transform:translateX(-.5px); background:rgba(208,201,189,.6); z-index:0; pointer-events:none;
 }
 /* horizontal arm of the cross (between the two rows) */
 .hero-sep {
   position:relative; display:flex; justify-content:center; align-items:center;
-  margin:44px 2vw 30px; z-index:1;
+  margin:28px 2vw 18px; z-index:1;
 }
 .hero-sep::before {
   content:''; position:absolute; left:0; right:0; top:50%; height:1px;

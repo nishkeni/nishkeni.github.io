@@ -82,31 +82,51 @@
   }
 
   function init() {
-    agents = Array.from({ length: 2 }, (_, i) => ({
-      emoji:'🤖', size:32, color:'#F97316', pulse:0,
-      side: i === 0 ? 'L' : 'R',
-      homeX: i === 0 ? W * .2 : W * .8, homeY: H * .28,   // refined once mission is measured
-      x: i === 0 ? W * .2 : W * .8, y: H * .28,
-      t: Math.random() * 10, phase: Math.random() * Math.PI * 2,
-      nextSay: 600 + Math.random() * 2200, nextCall: 1000 + Math.random() * 2200,
-    }));
+    agents = [
+      /* the hub — a single 🤖 hovering in place at the cross centre (most active) */
+      { emoji:'🤖', size:32, color:'#F97316', pulse:0,
+        homeX:W/2, homeY:H*.55, x:W/2, y:H*.55,
+        t: Math.random() * 10, phase: Math.random() * Math.PI * 2,
+        nextSay: 800 + Math.random() * 2000, nextCall: 700 + Math.random() * 1400 },
+      /* two calmer agents flanking the mission line */
+      { emoji:'🤖', size:30, color:'#F97316', pulse:0, side:'L',
+        homeX:W*.18, homeY:H*.28, x:W*.18, y:H*.28,
+        t: Math.random() * 10, phase: Math.random() * Math.PI * 2,
+        nextSay: 1800 + Math.random() * 2200, nextCall: 1700 + Math.random() * 1800 },
+      { emoji:'🤖', size:30, color:'#F97316', pulse:0, side:'R',
+        homeX:W*.82, homeY:H*.28, x:W*.82, y:H*.28,
+        t: Math.random() * 10, phase: Math.random() * Math.PI * 2,
+        nextSay: 1900 + Math.random() * 2200, nextCall: 1900 + Math.random() * 1800 },
+    ];
     bubbles = []; pulses = [];
     agentsPlaced = false;
     placeAgents();
   }
 
-  /* station agents flanking the mission line */
+  /* ghost → DOM node · flanking (side) → mission edges · hub → cross centre */
   function placeAgents() {
-    const m = document.getElementById('heroMission');
-    if (!m || !agents.length) return;
     const cr = canvas.getBoundingClientRect();
-    const r = m.getBoundingClientRect();
-    const midY = r.top - cr.top + r.height / 2;
-    const lx = Math.max(48, r.left - cr.left - 40);
-    const rx = Math.min(W - 48, r.right - cr.left + 40);
+    const m = document.getElementById('heroMission');
+    const mr = m && m.getBoundingClientRect();
+    const sep = document.querySelector('.hero-sep');
+    const sr = sep && sep.getBoundingClientRect();
     agents.forEach(a => {
-      a.homeY = midY;
-      a.homeX = a.side === 'L' ? lx : rx;
+      if (a.dom) {
+        const el = document.querySelector(a.dom);
+        if (el) {
+          const er = el.getBoundingClientRect();
+          a.homeX = a.x = er.left - cr.left + er.width / 2;
+          a.homeY = a.y = er.top - cr.top + er.height / 2;
+        }
+      } else if (a.side && mr) {
+        a.homeY = mr.top - cr.top + mr.height / 2;
+        a.homeX = a.side === 'L'
+          ? Math.max(46, mr.left - cr.left - 44)
+          : Math.min(W - 46, mr.right - cr.left + 44);
+      } else if (sr) {
+        a.homeX = sr.left - cr.left + sr.width / 2;
+        a.homeY = sr.top - cr.top + sr.height / 2;
+      }
     });
   }
 
@@ -123,16 +143,20 @@
   /* pub/sub fans out to one or both agents — only after it receives input.
      queued (not pushed) because broadcast() is called mid-filter on `pulses` */
   let castQueue = [];
-  function broadcast(node) {
+  function broadcast(node, publisher) {
     node.pulse = 1;
-    const targets = Math.random() < .5
-      ? [agents[Math.floor(Math.random() * agents.length)]]   // notify one subscriber
-      : agents;                                               // fan out to both
-    targets.forEach(a => castQueue.push({
+    const others = agents.filter(a => a !== publisher);   // never echo to the publisher
+    if (!others.length) return;
+    const both = Math.random() < .5;                       // deliver to two subs, or one
+    const subs = both
+      ? others.sort(() => Math.random() - .5).slice(0, 2)
+      : [others[Math.floor(Math.random() * others.length)]];
+    subs.forEach(a => castQueue.push({
       from: node, to: a, t: 0, spd: .006, color: node.color,
-      bow: (a.side === 'L' ? -1 : 1) * 64, arc: true, notify: true,
+      bow: (a.side === 'L' ? -1 : a.side === 'R' ? 1 : (a.homeY < node.y ? -1 : 1)) * 60,
+      arc: true, notify: true,
     }));
-    spawnBubble(node, targets.length > 1 ? ['broadcast →', 'notify subs', 'publish →'] : ['notify →', 'deliver', 'push msg']);
+    spawnBubble(node, subs.length > 1 ? ['broadcast →', 'notify subs', 'publish →'] : ['notify →', 'deliver', 'push msg']);
   }
 
   const ease = t => t * t * (3 - 2 * t);
@@ -150,13 +174,14 @@
   let last = 0;
 
   function drawNode(e, spin, am = 1) {
-    const bob = Math.sin(performance.now() / 1000 * 1.1 + e.phase) * 3;
+    const bob = e.ghost ? 0 : Math.sin(performance.now() / 1000 * 1.1 + e.phase) * 3;
     /* pulse ring */
     if (e.pulse > 0) {
       ctx.beginPath(); ctx.arc(e.x, e.y + bob, e.size * .7 + 20 * (1 - e.pulse), 0, Math.PI * 2);
-      ctx.strokeStyle = e.color; ctx.globalAlpha = e.pulse * .5 * am; ctx.lineWidth = 2; ctx.stroke();
+      ctx.strokeStyle = e.color; ctx.globalAlpha = e.pulse * .55 * am; ctx.lineWidth = 2; ctx.stroke();
       e.pulse = Math.max(0, e.pulse - .03); ctx.globalAlpha = 1;
     }
+    if (e.ghost) return;   // DOM already renders the 🤖 / hub node — canvas only adds the pulse ring
     ctx.save();
     ctx.translate(e.x, e.y + bob);
     if (spin) { e.rot += .009; ctx.rotate(e.rot); }
@@ -209,7 +234,7 @@
         const [hx, hy] = ptOn(p, p.t);
         ctx.beginPath(); ctx.arc(hx, hy, 3, 0, Math.PI * 2);
         ctx.fillStyle = p.color; ctx.globalAlpha = .9; ctx.fill(); ctx.globalAlpha = 1;
-        if (p.t >= 1) { if (p.notify) p.to.pulse = 1; return false; }
+        if (p.t >= 1) { if (p.notify) { p.to.pulse = 1; spawnBubble(p.to, AGENT_SAYS); } return false; }
         return true;
       }
       const [x, y] = ptOn(p, p.t);
@@ -221,7 +246,7 @@
       ctx.globalAlpha = 1;
       if (p.t >= 1) {
         p.to.pulse = 1;
-        if (p.to.label === 'pub/sub') broadcast(p.to);   // input received → only the broadcast bubble
+        if (p.to.label === 'pub/sub') broadcast(p.to, p.from);   // deliver to the OTHER agent, not the publisher
         else spawnBubble(p.to, p.to.says || AGENT_SAYS);
         return false;
       }
@@ -242,16 +267,23 @@
     /* agents */
     {
       agents.forEach(a => {
-        a.t += .02;
-        a.x = a.homeX + Math.cos(a.t * .9 + a.phase) * 11;
-        a.y = a.homeY + Math.sin(a.t * 1.3 + a.phase) * 8;
+        if (a.dom) {
+          a.x = a.homeX; a.y = a.homeY;            // anchored, no hover
+        } else {
+          const amp = a.side ? 10 : 4;             // flanking drift more; hub stays on the cross
+          a.t += .016;
+          a.x = a.homeX + Math.cos(a.t * .9 + a.phase) * amp;
+          a.y = a.homeY + Math.sin(a.t * 1.3 + a.phase) * amp * .8;
+        }
         drawNode(a, false, agentReveal);
 
         if (agentReveal < 1) return;   // hold off activity until fully present
-        a.nextSay -= dt;
-        if (a.nextSay <= 0) { spawnBubble(a, AGENT_SAYS); a.nextSay = 1300 + Math.random() * 1800; }
+        if (!a.dom) {                  // hub + flanking "think" aloud (flanking calmer)
+          a.nextSay -= dt;
+          if (a.nextSay <= 0) { spawnBubble(a, AGENT_SAYS); a.nextSay = (a.side ? 2200 : 1300) + Math.random() * 2000; }
+        }
         a.nextCall -= dt;
-        if (a.nextCall <= 0) { spawnCall(a); a.nextCall = 550 + Math.random() * 900; }
+        if (a.nextCall <= 0) { spawnCall(a); a.nextCall = (a.dom ? 1400 : a.side ? 1900 : 550) + Math.random() * 1500; }
       });
     }
 
@@ -389,8 +421,8 @@ if (pillEls.length) {
   if (!loop || !mission) return;
   const steps = [...loop.querySelectorAll('.al-step')];
 
-  /* 1) the sentence fades in (verbs dim, as gerunds) */
-  setTimeout(() => mission.classList.add('revealed'), 250);
+  /* 1) the sentence fades in, with the capability line just below it */
+  setTimeout(() => { mission.classList.add('revealed'); loop.classList.add('show'); }, 250);
 
   /* 2) the agent loop resolves each verb inline (spinner → ✓) */
   let i = 0;
