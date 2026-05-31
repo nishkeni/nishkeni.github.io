@@ -1,0 +1,21 @@
+{
+  "name": "nk-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nishant Keni — a personally-addressable MCP server (résumé as tools).",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "inspect": "npx @modelcontextprotocol/inspector"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "agents": "^0.0.80",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250510.0",
+    "typescript": "^5.5.4",
+    "wrangler": "^4.20.0"
+  }
+}

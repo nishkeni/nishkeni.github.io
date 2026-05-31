@@ -25,6 +25,55 @@
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   DARK THEME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+html[data-theme="dark"] {
+  --bg:      #262624;   /* Claude Desktop warm charcoal */
+  --bg2:     #30302E;   /* raised surfaces / cards */
+  --bg3:     #1F1E1C;   /* recessed sections */
+  --border:  #3D3B37;
+  --accent:  #E8783C;   /* Claude terracotta-orange */
+  --cyan:    #38BDF8;
+  --green:   #4ADE80;
+  --neon:    #4ADE80;
+  --gold:    #E0A458;
+  --text:    #F3F1EA;
+  --muted:   #B0A99D;
+  --dim:     #79736B;
+}
+html[data-theme="dark"] #navbar {
+  background:linear-gradient(180deg, rgba(38,38,36,.62), rgba(38,38,36,.38));
+  border-bottom:1px solid rgba(255,255,255,.07);
+  box-shadow:0 4px 24px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
+}
+html[data-theme="dark"] #navbar.scrolled {
+  background:linear-gradient(180deg, rgba(38,38,36,.88), rgba(38,38,36,.74));
+  box-shadow:0 6px 28px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.07);
+}
+html[data-theme="dark"] .hero-cred,
+html[data-theme="dark"] .hero-connect-card,
+html[data-theme="dark"] .btn-ghost,
+html[data-theme="dark"] .nav-status { background:rgba(255,255,255,.045); }
+html[data-theme="dark"] .cred-logo { mix-blend-mode:normal; background:#fff; padding:2px; }
+html[data-theme="dark"] .hero-grid::before,
+html[data-theme="dark"] .hero-sep::before { background:rgba(255,255,255,.13); }
+html[data-theme="dark"] .mobile-menu { background:rgba(31,30,28,.97); }
+html[data-theme="dark"] .hero-glow--1 { background:radial-gradient(circle, rgba(249,115,22,.17) 0%, transparent 70%); }
+html[data-theme="dark"] .hero-glow--2 { background:radial-gradient(circle, rgba(251,191,36,.11) 0%, transparent 70%); }
+
+body, .section-padding, #navbar, .hero-cred, .hero-connect-card, .exp-card, .edu-card, .pub-card {
+  transition: background-color .4s ease, color .4s ease, border-color .4s ease;
+}
+
+/* theme toggle button */
+.theme-toggle {
+  flex-shrink:0; width:34px; height:34px; margin-left:14px; border-radius:9px;
+  border:1px solid var(--border); background:rgba(255,255,255,.04); color:var(--muted);
+  display:flex; align-items:center; justify-content:center; font-size:.85rem; cursor:none; transition:all .2s;
+}
+.theme-toggle:hover { color:var(--accent); border-color:var(--accent); transform:translateY(-1px); }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    RESET
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }

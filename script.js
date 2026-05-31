@@ -10,6 +10,15 @@
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
 
+  /* node-label colour follows the theme */
+  let ink = '#1C1917';
+  function readInk() {
+    const c = getComputedStyle(document.documentElement).getPropertyValue('--text').trim();
+    if (c) ink = c;
+  }
+  readInk();
+  window.addEventListener('themechange', readInk);
+
   /* fixed infra — anchored in the left & right margins */
   const INFRA = [
     { emoji:'⚙️', label:'engine',  side:'L', fy:.20, size:40, color:'#E8670A', spin:true,
@@ -259,7 +268,7 @@
       drawNode(n, n.spin, agentReveal);
       /* label under node */
       ctx.font = `600 9px 'JetBrains Mono',monospace`;
-      ctx.fillStyle = '#1C1917'; ctx.globalAlpha = .5 * agentReveal; ctx.textAlign = 'center';
+      ctx.fillStyle = ink; ctx.globalAlpha = .5 * agentReveal; ctx.textAlign = 'center';
       ctx.fillText(n.label, n.x, n.y + n.size * .62 + 13); ctx.globalAlpha = 1;
       /* infra speaks only when it receives a message (reactive) */
     });
@@ -375,6 +384,23 @@ document.getElementById('mobileClose').addEventListener('click', () => mm.classL
 document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mm.classList.remove('open')));
 
 
+/* ─── DAY / NIGHT TOGGLE ───────────────────────────────────────────── */
+(function () {
+  const root = document.documentElement;
+  const btn = document.getElementById('themeToggle');
+  if (!btn) return;
+  const icon = () => { btn.innerHTML = root.dataset.theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>'; };
+  icon();   // theme already applied by the inline <head> script
+  btn.addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    localStorage.setItem('theme', next);
+    icon();
+    window.dispatchEvent(new Event('themechange'));
+  });
+})();
+
+
 /* ─── HERO SKILL PILLS (Claude-style spinner + rotating skills) ────── */
 const verbs = [
   'Agentic AI 🤖',
@@ -483,25 +509,10 @@ document.getElementById('btt').addEventListener('click', () => window.scrollTo({
   const body = document.getElementById('mcpBody');
   if (!out) return;
 
-  const TOOLS = [
-    { name: 'get_profile',        desc: 'Return identity, role & status'    },
-    { name: 'get_experience',     desc: 'Return full career history'        },
-    { name: 'get_education',      desc: 'Return degrees & institutions'     },
-    { name: 'list_publications',  desc: 'List peer-reviewed papers'         },
-    { name: 'get_expertise',      desc: 'Return skills grouped by domain'   },
-    { name: 'get_awards',         desc: 'Return honors & recognitions'      },
-    { name: 'get_research',       desc: 'Return research focus & areas'     },
-    { name: 'book_session',       desc: 'Open a Topmate booking link'       },
-  ];
-
-  const PROFILE = {
-    name:    'Nishant Keni',
-    role:    'Principal AI Engineer',
-    company: 'CuePilot AI',
-    domains: ['Agentic AI', 'Harness', 'Observability', 'EdTech'],
-    h_index: 4,
-    status:  'ACTIVE',
-  };
+  /* live MCP server (Cloudflare Worker) — humans hit /api, agents hit /sse */
+  const API = 'https://nk-mcp.mr-nishant-keni.workers.dev';
+  let toolNames = ['get_profile', 'get_experience', 'get_education', 'list_publications',
+                   'get_expertise', 'get_awards', 'get_research', 'book_session', 'contact'];
 
   function emit(cls, text) {
     const el = document.createElement('div');
@@ -510,149 +521,84 @@ document.getElementById('btt').addEventListener('click', () => window.scrollTo({
     out.appendChild(el);
     if (body) body.scrollTop = body.scrollHeight;
   }
-  function emitLines(lines) { lines.forEach(([c, t]) => emit(c, t)); }
-
   function line(cls, text, delayMs) {
-    return new Promise(resolve => {
-      setTimeout(() => { emit(cls, text); resolve(); }, delayMs);
+    return new Promise(resolve => { setTimeout(() => { emit(cls, text); resolve(); }, delayMs); });
+  }
+  /* pretty-print a JSON value with syntax colours */
+  function printJSON(obj) {
+    JSON.stringify(obj, null, 2).split('\n').forEach(ln => {
+      const t = ln.trim();
+      let cls = 'mcp-val';
+      if (/^[[{]/.test(t) || /^[\]}],?$/.test(t)) cls = 'mcp-bracket';
+      else if (/^"[^"]+":/.test(t)) cls = 'mcp-key';
+      else if (/^"/.test(t)) cls = 'mcp-str';
+      emit(cls, ln);
     });
   }
 
-  /* ── tool responses (also used interactively) ── */
-  const handlers = {
-    'tools/list': () => {
-      emit('mcp-bracket', '{');
-      emit('mcp-key', '  "tools": [');
-      TOOLS.forEach(t => {
-        emit('mcp-str', `    { "name": "${t.name}",`);
-        emit('mcp-val', `      "desc": "${t.desc}" },`);
-      });
-      emit('mcp-bracket', '  ]');
-      emit('mcp-bracket', '}');
-    },
-    'get_profile': () => emitLines([
-      ['mcp-bracket', '{'],
-      ['mcp-key', `  "name":    "${PROFILE.name}",`],
-      ['mcp-key', `  "role":    "${PROFILE.role}",`],
-      ['mcp-key', `  "company": "${PROFILE.company}",`],
-      ['mcp-key', `  "domains": ${JSON.stringify(PROFILE.domains)},`],
-      ['mcp-val', `  "status":  "● ${PROFILE.status}"`],
-      ['mcp-bracket', '}'],
-    ]),
-    'get_experience': () => emitLines([
-      ['mcp-bracket', '{'],
-      ['mcp-key', '  "current":  '],
-      ['mcp-str', '  "Principal AI Engineer · CuePilot AI · 2026–present",'],
-      ['mcp-key', '  "previous": ['],
-      ['mcp-str', '    "Research Scientist II · Amazon · 2022–2024",'],
-      ['mcp-str', '    "Data Scientist II · Amazon · 2020–2022",'],
-      ['mcp-str', '    "Visiting Researcher · UC Berkeley · 2018",'],
-      ['mcp-str', '    "Applied Scientist Intern · Amazon.in · 2018"'],
-      ['mcp-bracket', '  ]'],
-      ['mcp-bracket', '}'],
-    ]),
-    'get_education': () => emitLines([
-      ['mcp-bracket', '{'],
-      ['mcp-str', '  "B.Tech Electrical Eng · VJTI Mumbai · Gold Medal",'],
-      ['mcp-str', '  "M.S. Computer Eng · Georgia Tech",'],
-      ['mcp-str', '  "AI Certificate · Stanford University",'],
-      ['mcp-val', '  "PG CS & Engineering · IIT Bombay · ● active"'],
-      ['mcp-bracket', '}'],
-    ]),
-    'list_publications': () => emitLines([
-      ['mcp-bracket', '{'],
-      ['mcp-key', '  "count": 10,  "citations": 55,  "h_index": 4,'],
-      ['mcp-key', '  "top": ['],
-      ['mcp-str', '    "Adaptive Containerization · IEEE CCNC 2020 · 27 cites",'],
-      ['mcp-str', '    "Neural Leaf Identification · GTSP 2016 · 14 cites",'],
-      ['mcp-str', '    "Convex Sparse Dictionary Learning · SPIN 2017 · 6 cites"'],
-      ['mcp-bracket', '  ]'],
-      ['mcp-bracket', '}'],
-    ]),
-    'get_awards': () => emitLines([
-      ['mcp-bracket', '{'],
-      ['mcp-str', '  "Institute Gold Medal · VJTI · 2017",'],
-      ['mcp-str', '  "IEEE Best Paper Award · 2016",'],
-      ['mcp-str', '  "JEE Mains AIR 695 · top 0.05%",'],
-      ['mcp-str', '  "Dr. Homi Bhabha Young Scientist"'],
-      ['mcp-bracket', '}'],
-    ]),
-    'get_expertise': () => emitLines([
-      ['mcp-bracket', '{'],
-      ['mcp-key', '  "Agentic AI": ["orchestration", "harness eng", "observability", "MCP"],'],
-      ['mcp-key', '  "ML & Stats": ["causal inference", "signal processing", "computer vision"],'],
-      ['mcp-val', '  "Oncology":   ["computational oncology", "cancer detection"]'],
-      ['mcp-bracket', '}'],
-    ]),
-    'get_research': () => emitLines([
-      ['mcp-bracket', '{'],
-      ['mcp-key', '  "focus":   "Computational oncology × applied AI",'],
-      ['mcp-key', '  "areas":   ['],
-      ['mcp-str', '    "cancer detection via computational intelligence",'],
-      ['mcp-str', '    "adversarial ML defense (UC Berkeley · D. Song)",'],
-      ['mcp-str', '    "causal inference at Amazon scale"'],
-      ['mcp-bracket', '  ]'],
-      ['mcp-bracket', '}'],
-    ]),
-    'book_session': () => {
+  /* ── live calls to the real server ── */
+  async function listTools(echo = true) {
+    if (echo) emit('mcp-send', '← tools/list');
+    try {
+      const res = await fetch(`${API}/api`);
+      const { tools } = await res.json();
+      toolNames = tools.map(t => t.name);
+      emit('mcp-bracket', '{'); emit('mcp-key', '  "tools": [');
+      tools.forEach(t => { emit('mcp-str', `    { "name": "${t.name}",`); emit('mcp-val', `      "desc": "${t.desc}" },`); });
+      emit('mcp-bracket', '  ]'); emit('mcp-bracket', '}');
+    } catch { emit('mcp-recv', '→ network error · server unreachable'); }
+  }
+  async function callTool(name, echo = true) {
+    if (echo) emit('mcp-send', `← tools/call  "${name}"  {}`);
+    if (name === 'book_session') {
       emit('mcp-recv', '→ opening topmate.io/nishant_keni …');
       window.open('https://topmate.io/nishant_keni', '_blank', 'noopener');
-    },
-  };
+      return;
+    }
+    try {
+      const res = await fetch(`${API}/api/${name}`);
+      if (!res.ok) { emit('mcp-recv', `→ error: unknown tool "${name}" · type help`); return; }
+      printJSON(await res.json());
+    } catch { emit('mcp-recv', '→ network error · server unreachable'); }
+    if (body) body.scrollTop = body.scrollHeight;
+  }
 
   async function run() {
-    let d = 0;
     const D = 220;
-
-    await line('mcp-comment', '# nk-mcp server · Model Context Protocol v1.0', d); d += D;
-    await line('mcp-comment', '', d); d += D * .5;
-    await line('mcp-send', '← connecting to nk-profile-server...', d); d += D * 1.2;
-    await line('mcp-recv', '→ handshake OK · session established', d); d += D;
-    await line('mcp-recv', '→ 8 tools available · ready', d); d += D * 1.5;
-    await line('mcp-comment', '', d); d += D * .3;
-
-    await line('mcp-send', '← tools/list', d); d += D;
-    await new Promise(r => setTimeout(() => { handlers['tools/list'](); r(); }, d ? 0 : 0));
-    await new Promise(r => setTimeout(r, D * 1.5));
-
+    await line('mcp-comment', '# nk-mcp · live · mr-nishant-keni.workers.dev', 0);
+    await line('mcp-comment', '', D * .4);
+    await line('mcp-send', '← connecting to nk-mcp…', D);
+    await line('mcp-recv', '→ handshake OK · session established', D);
+    await new Promise(r => setTimeout(r, D * .6));
+    await listTools(true);
+    await new Promise(r => setTimeout(r, D * 1.2));
     await line('mcp-comment', '', 0);
     await line('mcp-send', '← tools/call  "get_profile"  {}', D);
-    await new Promise(r => setTimeout(() => { handlers['get_profile'](); r(); }, D));
+    await callTool('get_profile', false);
     await new Promise(r => setTimeout(r, D));
-
     await line('mcp-comment', '', 0);
     await line('mcp-comment', '# your turn → call a tool or type help', 0);
 
-    // go interactive
     const row = document.getElementById('mcpRow');
     const input = document.getElementById('mcpInput');
     if (row && input) {
       row.style.display = 'flex';
-      if (body) {
-        body.addEventListener('click', () => input.focus());
-        body.scrollTop = body.scrollHeight;
-      }
+      if (body) { body.addEventListener('click', () => input.focus()); body.scrollTop = body.scrollHeight; }
       input.addEventListener('keydown', e => {
         if (e.key !== 'Enter') return;
         const raw = input.value.trim();
         input.value = '';
         if (!raw) return;
         const v = raw.toLowerCase();
-
         if (v === 'clear') { out.innerHTML = ''; return; }
         if (v === 'help') {
-          emit('mcp-comment', '# tools: ' + TOOLS.map(t => t.name).join(', '));
+          emit('mcp-comment', '# tools: ' + toolNames.join(', '));
           emit('mcp-comment', '# also: tools/list · clear');
           return;
         }
-        // normalise "tools/call get_profile {}" or just "get_profile"
         const tool = v.replace(/^tools\/call\s*/, '').replace(/[{}"']/g, '').trim();
-        if (tool === 'tools/list') { emit('mcp-send', '← tools/list'); handlers['tools/list'](); return; }
-        emit('mcp-send', `← tools/call  "${tool}"  {}`);
-        const h = handlers[tool];
-        if (h) h();
-        else emit('mcp-recv', `→ error: unknown tool "${tool}" · type help`);
-        if (body) body.scrollTop = body.scrollHeight;
+        if (tool === 'tools/list') { listTools(true); return; }
+        callTool(tool, true);
       });
     }
   }

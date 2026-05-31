@@ -12,6 +12,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,300;1,9..144,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme') ||
+        (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
 </head>
 <body>
 
@@ -32,6 +39,7 @@
         <li><a href="#publications">Research</a></li>
         <li><a href="#awards">Awards</a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle day / night"><i class="fas fa-moon"></i></button>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
