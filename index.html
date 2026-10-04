@@ -1,560 +1,750 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nishant Keni — Principal AI Research Engineer</title>
-  <meta name="description" content="Mathematician by specialization, AI Engineer by action, Computational Oncologist by passion. Principal AI Engineer at CuePilot AI." />
-  <meta name="theme-color" content="#E9E3D9" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nishant Keni · Chief Applied Scientist, Capsule AI</title>
+<meta name="description" content="Nishant Keni, Chief Applied Scientist at Capsule AI. Mathematics, AI engineering, and oncology, applied to decisions in medicine." />
+<meta name="theme-color" content="#fbfaf6" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Nishant Keni · Chief Applied Scientist, Capsule AI" />
+<meta property="og:description" content="Mathematics, AI engineering, and oncology, applied to decisions in medicine. Open to advisory, board, and leadership conversations." />
+<meta property="og:image" content="https://nishkeni.github.io/profile.png" />
+<meta property="og:url" content="https://nishkeni.github.io/" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%237d1f22'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fbfaf6' text-anchor='middle'%3ENK%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --paper:#fbfaf6; --ink:#1c1b19; --body:#2b2925; --muted:#5f5b53; --dim:#948f84; --rule:#ddd7ca; --wash:#f3f0e8;
+  --acc:#7d1f22; --acc-soft:rgba(125,31,34,.08); --acc-mid:rgba(125,31,34,.18);
+  --display:"EB Garamond",Georgia,serif; --text:"Newsreader",Georgia,serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;scroll-padding-top:70px;}
+body{background:var(--paper);color:var(--body);font-family:var(--text);font-size:18px;line-height:1.66;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+a{color:inherit;}
+::selection{background:var(--acc);color:#fff;}
+.sc{font-variant-caps:all-small-caps;letter-spacing:.07em;}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,44px);}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,300;1,9..144,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    (function () {
-      var t = localStorage.getItem('theme') ||
-        (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      document.documentElement.dataset.theme = t;
-    })();
-  </script>
+/* ── progress + running head ─────────────────────────── */
+#prog{position:fixed;top:0;left:0;height:2px;width:0;background:var(--acc);z-index:60;}
+.runhead{position:fixed;top:0;left:0;right:0;z-index:55;background:rgba(251,250,246,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule);transform:translateY(-100%);transition:transform .45s cubic-bezier(.6,0,.2,1);}
+.runhead.show{transform:none;}
+.runhead .wrap{display:flex;justify-content:space-between;align-items:center;height:52px;font-family:var(--display);font-size:16px;color:var(--muted);}
+.runhead b{font-weight:500;color:var(--ink);}
+.runhead .cur{font-style:italic;}
+.runhead .cur span{color:var(--acc);font-style:normal;margin-right:6px;}
+.runhead a.w{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--acc);}
+
+/* ── masthead ────────────────────────────────────────── */
+.mast{display:flex;justify-content:space-between;align-items:baseline;padding:24px 0 14px;border-bottom:1.5px solid var(--ink);font-family:var(--display);font-size:16px;color:var(--muted);}
+.mast b{font-weight:500;color:var(--ink);font-size:17px;}
+.mast nav{display:flex;gap:24px;}
+.mast nav a{text-decoration:none;transition:color .2s;}
+.mast nav a:hover{color:var(--acc);}
+.mast-sub{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--rule);font-family:var(--display);font-size:13.5px;color:var(--dim);}
+
+/* ── title page ──────────────────────────────────────── */
+.title{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:64px;align-items:end;padding:70px 0 36px;}
+.kind{font-family:var(--display);color:var(--acc);font-size:17px;margin-bottom:16px;}
+h1{font-family:var(--display);font-weight:400;color:var(--ink);font-size:clamp(3.1rem,8vw,6.2rem);line-height:.96;letter-spacing:-.018em;white-space:nowrap;}
+h1 .ln{display:inline-block;opacity:0;transform:translateY(.25em);animation:rise 1s cubic-bezier(.2,.7,.2,1) forwards;}
+h1 .ln:nth-child(2){animation-delay:.12s;}
+@keyframes rise{to{opacity:1;transform:none;}}
+.degrees{font-family:var(--display);font-size:clamp(1.05rem,1.55vw,1.24rem);color:#3b3833;margin-top:18px;line-height:1.55;max-width:58ch;opacity:0;animation:fade 1s .45s forwards;}
+.degrees i{color:var(--muted);}
+.degrees .dl{display:block;}
+.degrees b{font-weight:500;color:var(--ink);letter-spacing:.01em;}
+.degrees .f{color:var(--muted);}
+.degrees .fellow{display:block;margin-top:6px;font-style:italic;color:var(--muted);font-size:.92em;}
+.degrees .fellow.cur{margin-top:1px;}
+.affil{margin-top:18px;font-size:15.5px;color:var(--muted);line-height:1.75;opacity:0;animation:fade 1s .65s forwards;}
+.affil a{text-decoration:none;white-space:nowrap;margin-right:6px;}
+.affil a:hover{color:var(--ink);}
+.affil sup{color:var(--acc);font-size:.72em;margin-right:3px;}
+@keyframes fade{to{opacity:1;}}
+
+/* Fig. 0: portrait plate */
+.fig0{opacity:0;animation:fade 1.2s .3s forwards;}
+.plate{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--rule);background:var(--wash);}
+.plate img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+figcaption{font-size:13.5px;color:var(--muted);line-height:1.45;margin-top:9px;}
+figcaption b{font-family:var(--display);font-weight:600;color:var(--ink);}
+
+/* article metadata */
+.dates{display:flex;flex-wrap:wrap;gap:6px 28px;padding:12px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:14.5px;color:var(--muted);}
+.dates b{font-weight:500;color:var(--ink);}
+.live{display:inline-block;width:7px;height:7px;border-radius:50%;background:#2f9e5b;margin-right:7px;vertical-align:1px;box-shadow:0 0 0 3px rgba(47,158,91,.15);animation:breathe 2.6s ease-in-out infinite;}
+@keyframes breathe{50%{box-shadow:0 0 0 6px rgba(47,158,91,.05);}}
+
+/* ── document grid: contents | body (text + margin) ──── */
+.doc{display:grid;grid-template-columns:170px minmax(0,1fr);gap:52px;padding-top:44px;}
+.toc{position:sticky;top:84px;align-self:start;font-family:var(--display);font-size:15.5px;}
+.toc p{color:var(--dim);font-size:13.5px;margin-bottom:10px;}
+.toc ol{list-style:none;border-left:1px solid var(--rule);}
+.toc a{display:flex;gap:10px;padding:5px 0 5px 14px;margin-left:-1px;border-left:1px solid transparent;text-decoration:none;color:var(--muted);transition:color .25s,border-color .25s;}
+.toc a span{min-width:1em;color:var(--dim);}
+.toc a:hover{color:var(--ink);}
+.toc a.on{color:var(--ink);border-left-color:var(--acc);}
+.toc a.on span{color:var(--acc);}
+.toc .print{margin-top:22px;font-size:14px;color:var(--muted);background:none;border:0;border-bottom:1px solid var(--rule);cursor:pointer;font-family:var(--display);padding:0 0 1px;}
+.toc .print:hover{color:var(--acc);border-color:var(--acc);}
+
+.row{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:50px;}
+.margin{font-size:14.5px;line-height:1.5;color:var(--muted);}
+section{padding:46px 0 10px;}
+h2.sec{font-family:var(--display);font-weight:500;color:var(--ink);font-size:clamp(1.65rem,2.6vw,2.05rem);line-height:1.15;margin-bottom:18px;display:flex;gap:16px;align-items:baseline;}
+h2.sec .n{color:var(--acc);font-size:.8em;min-width:1.3em;}
+h2.sec .pil{font-size:.6em;color:var(--dim);opacity:0;text-decoration:none;transition:opacity .2s;}
+h2.sec:hover .pil{opacity:1;}
+p + p{margin-top:14px;}
+.drop::first-letter{font-family:var(--display);float:left;font-size:4.1em;line-height:.82;padding:6px 10px 0 0;color:var(--acc);}
+
+/* footnotes */
+.ref{color:var(--acc);font-size:.7em;vertical-align:super;line-height:0;cursor:pointer;padding:0 1px;text-decoration:none;}
+.note{display:block;padding:7px 9px;margin:0 -9px 14px;border-radius:2px;transition:background .3s,color .3s;}
+.note sup{color:var(--acc);margin-right:4px;}
+.note.on{background:var(--acc-soft);color:var(--ink);}
+
+/* keyword highlighting */
+.k{transition:background .3s,box-shadow .3s;border-radius:2px;}
+body[data-kw="agentic"] .k-agentic,body[data-kw="causal"] .k-causal,body[data-kw="eval"] .k-eval,
+body[data-kw="onc"] .k-onc,body[data-kw="life"] .k-life{background:var(--acc-mid);box-shadow:0 0 0 2px var(--acc-mid);color:var(--ink);}
+
+/* abstract */
+.abstract{padding:28px 32px 26px;background:var(--wash);border-left:2px solid var(--acc);}
+.abstract h2{font-family:var(--display);font-weight:500;font-size:15px;color:var(--acc);margin-bottom:8px;}
+.abstract > p{font-size:19.5px;line-height:1.62;color:var(--ink);}
+.kws{margin-top:16px;font-size:14.5px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;}
+.kws b{font-weight:500;color:var(--ink);margin-right:2px;}
+.kws button{font-family:var(--text);font-size:14.5px;color:var(--muted);background:transparent;border:1px solid var(--rule);border-radius:2px;padding:2px 9px;cursor:pointer;transition:all .2s;}
+.kws button:hover{border-color:var(--acc);color:var(--acc);}
+.kws button.on{background:var(--acc);border-color:var(--acc);color:#fff;}
+.kws .cnt{font-size:13px;color:var(--acc);font-style:italic;min-width:6em;}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;}
+.btn{display:inline-block;font-family:var(--display);font-size:16.5px;text-decoration:none;padding:10px 20px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);transition:background .2s,border-color .2s,color .2s;cursor:pointer;}
+.btn:hover{background:var(--acc);border-color:var(--acc);}
+.btn.ghost{background:transparent;color:var(--ink);}
+.btn.ghost:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+.card{border:1px solid var(--rule);padding:16px 18px;background:var(--paper);}
+.card b{font-family:var(--display);font-weight:500;color:var(--ink);font-size:16px;display:block;margin-bottom:4px;}
+.card a{color:var(--acc);text-decoration:none;}
+.card a:hover{text-decoration:underline;}
+
+/* equation */
+.eq{margin:28px 0 8px;padding:20px 0 14px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.eq .f{display:flex;justify-content:center;align-items:center;gap:6px;font-family:var(--display);font-size:clamp(1.25rem,2.6vw,1.75rem);color:var(--ink);position:relative;flex-wrap:wrap;}
+.eq .f .no{position:absolute;right:0;color:var(--muted);font-size:.75em;}
+.eq .t{cursor:help;padding:0 3px;border-bottom:1px dotted var(--dim);transition:color .2s,background .2s,border-color .2s;border-radius:2px;}
+.eq .t:hover,.eq .t.on{color:var(--acc);background:var(--acc-soft);border-bottom-color:var(--acc);}
+.eq i{font-style:italic;}
+.eq .ex{text-align:center;font-size:15px;color:var(--muted);margin-top:12px;min-height:1.6em;font-style:italic;transition:opacity .2s;}
+.eq .ex b{font-style:normal;font-weight:500;color:var(--ink);}
+
+/* figure 1: areas of work, each a small ink sketch */
+.fig{margin:26px 0 6px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:22px 0 14px;}
+.areas{display:grid;grid-template-columns:1fr 1fr;gap:28px 34px;}
+.area h3{font-family:var(--display);font-weight:500;font-size:20px;line-height:1.2;color:var(--ink);margin:10px 0 4px;}
+.area p{font-size:15.5px;line-height:1.55;color:var(--muted);}
+.sk{display:block;width:100%;max-width:260px;height:auto;overflow:visible;}
+.sk .ax{stroke:var(--rule);stroke-width:1;}
+.sk .lim{stroke:var(--dim);stroke-width:1;stroke-dasharray:2 3;}
+.sk .ink{fill:none;stroke:var(--ink);stroke-width:1.3;stroke-linecap:round;}
+.sk .red{fill:none;stroke:var(--acc);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.sk .sq{fill:var(--ink);}
+.sk .dia{fill:var(--acc);}
+.sk .ring{fill:var(--acc);stroke:var(--paper);stroke-width:1.5;}
+.sk .bar.g{fill:var(--grey,#c9c3b6);}
+.sk .bar.k{fill:var(--ink);}
+.sk .bar.r{fill:var(--acc);}
+.sk text{font-family:var(--text);font-style:italic;font-size:10px;fill:var(--dim);}
+.sk text.lr{fill:var(--acc);}
+.sk .draw{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s cubic-bezier(.45,0,.2,1);}
+.sk .fade{opacity:0;transition:opacity .9s ease 1.2s;}
+.sk .bar{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(0);transition:transform 1s cubic-bezier(.3,.7,.2,1);}
+#fig1.in .draw{stroke-dashoffset:0;}
+#fig1.in .fade{opacity:1;}
+#fig1.in .bar{transform:none;}
+.area:nth-child(2) .draw,.area:nth-child(2) .bar{transition-delay:.2s;}
+.area:nth-child(3) .draw,.area:nth-child(3) .bar{transition-delay:.4s;}
+.area:nth-child(4) .draw,.area:nth-child(4) .bar{transition-delay:.6s;}
+.area:nth-child(4) .bar.r{transition-delay:1.1s;}
+#fig1 figcaption{margin-top:30px;}
+
+/* figure 2: career timeline */
+.tl{position:relative;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.tl svg{display:block;width:100%;min-width:600px;height:auto;overflow:visible;}
+.tl .track{font-family:var(--display);font-style:italic;font-size:14px;fill:var(--muted);}
+.tl .lane{stroke:var(--rule);stroke-width:1;}
+.tl .tick{font-family:var(--text);font-size:11.5px;fill:var(--dim);font-variant-numeric:tabular-nums;}
+.tl .gt{stroke:var(--rule);stroke-width:1;stroke-dasharray:1 4;}
+.tl .bar{fill:var(--ink);transform-box:fill-box;transform-origin:left center;transform:scaleX(0);transition:fill .2s;}
+.tl.in .bar{animation:grow .9s cubic-bezier(.5,0,.2,1) forwards;}
+@keyframes grow{to{transform:scaleX(1);}}
+.tl .dotm{fill:var(--ink);stroke:var(--paper);stroke-width:2;opacity:0;transition:fill .2s;}
+.tl.in .dotm{animation:fade .5s forwards;}
+.tl .now{fill:var(--acc);}
+.tl .bar.ip{fill:var(--dim);opacity:.6;}
+.tl .mk.hot .bar,.tl .mk.hot .dotm{fill:var(--acc);}
+.tl .hit{fill:transparent;cursor:pointer;}
+.tl .nowl{stroke:var(--acc);stroke-width:1;stroke-dasharray:3 3;}
+.tl .nowt{font-family:var(--display);font-style:italic;font-size:12.5px;fill:var(--acc);}
+.tip{position:fixed;left:0;top:0;pointer-events:none;background:var(--ink);color:var(--paper);font-size:14px;line-height:1.4;padding:8px 11px;max-width:260px;
+  opacity:0;transform:translate(-50%,calc(-100% - 10px));transition:opacity .15s;z-index:70;white-space:normal;box-shadow:0 8px 24px rgba(0,0,0,.18);}
+.tip.below{transform:translate(-50%,10px);}
+.tip.on{opacity:1;}
+.tip b{font-family:var(--display);font-weight:500;display:block;font-size:15px;}
+.tip span{color:#cfcabe;font-size:13px;}
+
+/* tables */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.title>*,.doc>*,.row>*,.body,.fig,.tl{min-width:0;}
+table{width:100%;border-collapse:collapse;font-size:15.5px;}
+caption{caption-side:top;text-align:left;font-size:13.5px;color:var(--muted);padding-bottom:10px;}
+caption b{font-family:var(--display);font-weight:600;color:var(--ink);}
+thead th{font-family:var(--display);font-weight:500;text-align:left;font-variant-caps:all-small-caps;letter-spacing:.07em;color:var(--muted);border-top:1.5px solid var(--ink);border-bottom:1px solid var(--ink);padding:8px 10px 6px;}
+tbody td{padding:13px 10px;border-bottom:1px solid var(--rule);vertical-align:top;}
+tbody tr:last-child td{border-bottom:1.5px solid var(--ink);}
+tbody tr{transition:background .25s;}
+tbody tr:hover{background:var(--wash);}
+tbody tr.flash{animation:flash 1.8s ease;}
+@keyframes flash{0%,40%{background:var(--acc-mid);}100%{background:transparent;}}
+td.yr{white-space:nowrap;color:var(--muted);font-variant-numeric:tabular-nums;}
+td b{font-weight:500;color:var(--ink);}
+td .sub{display:block;color:var(--muted);font-size:14.5px;}
+td sup{color:var(--acc);font-size:.7em;}
+td ul.cl{list-style:none;margin:5px 0 6px;padding:0;}
+td ul.cl li{position:relative;padding-left:13px;margin-top:2px;}
+td ul.cl li::before{content:"·";position:absolute;left:2px;color:var(--acc);font-weight:600;}
+td ul.cl b{font-weight:500;color:var(--ink);margin-right:6px;}
+td ul.cl i{font-style:normal;color:var(--muted);}
+td ul.cl li{color:var(--muted);}
+.hon{display:block;font-family:var(--display);font-style:italic;font-size:15px;color:var(--acc);margin-top:1px;}
+td .hon{display:block;font-family:var(--display);font-style:italic;font-size:15px;color:var(--acc);margin-top:1px;}
+td .tag{font-size:12.5px;color:var(--acc);border:1px solid var(--acc-mid);padding:0 6px;border-radius:2px;margin-left:4px;white-space:nowrap;}
+
+/* references */
+.refs{list-style:none;counter-reset:r;}
+.refs li{counter-increment:r;display:grid;grid-template-columns:36px minmax(0,1fr) 92px;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:16.5px;align-items:baseline;transition:background .25s;}
+.refs li:hover{background:var(--wash);}
+.refs li::before{content:"[" counter(r) "]";color:var(--acc);font-size:15px;padding-left:4px;}
+.refs i{color:var(--muted);}
+.refs .cb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;}
+.refs .cb em{font-style:italic;color:var(--dim);}
+.refs .cb s{display:block;height:4px;border-radius:0 2px 2px 0;background:var(--ink);text-decoration:none;width:0;transition:width 1.2s cubic-bezier(.5,0,.2,1);}
+.metrics{display:grid;grid-template-columns:repeat(3,auto);gap:4px 22px;justify-content:start;}
+.metrics b{display:block;font-family:var(--display);font-size:2.3rem;font-weight:400;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums;}
+.metrics span{font-size:13px;color:var(--muted);}
+
+/* correspondence */
+.corr{margin-top:70px;padding:40px 0 30px;border-top:1.5px solid var(--ink);}
+.corr h2{font-family:var(--display);font-weight:400;color:var(--ink);font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.14;max-width:24ch;}
+.cite{margin-top:30px;border:1px solid var(--rule);}
+.cite .tabs{display:flex;border-bottom:1px solid var(--rule);font-family:var(--display);font-size:14.5px;}
+.cite .tabs button{background:none;border:0;padding:9px 16px;cursor:pointer;color:var(--muted);font:inherit;border-right:1px solid var(--rule);}
+.cite .tabs button.on{color:var(--ink);background:var(--wash);}
+.cite .tabs .copy{margin-left:auto;border-right:0;border-left:1px solid var(--rule);color:var(--acc);}
+.cite pre{font-family:var(--mono);font-size:13px;line-height:1.6;color:var(--body);padding:14px 16px;white-space:pre-wrap;}
+.cite pre.plain{font-family:var(--text);font-size:15px;}
+footer{border-top:1px solid var(--rule);margin-top:40px;padding:16px 0 34px;font-size:13.5px;color:var(--dim);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+footer a{text-decoration:none;}
+footer a:hover{color:var(--acc);}
+
+.rv{opacity:0;transform:translateY(14px);transition:opacity .9s ease,transform .9s ease;}
+.rv.in{opacity:1;transform:none;}
+
+/* ── responsive ──────────────────────────────────────── */
+@media(max-width:1080px){
+  .doc{grid-template-columns:minmax(0,1fr);}
+  .toc{display:none;}
+}
+@media(max-width:860px){
+  .title{grid-template-columns:minmax(0,1fr);gap:26px;padding-top:44px;}
+  .fig0{max-width:230px;}
+  h1{white-space:normal;}
+  .mast nav{display:none;}
+  .row{grid-template-columns:minmax(0,1fr);gap:6px;}
+  .margin{border-left:2px solid var(--rule);padding-left:14px;}
+  .areas{grid-template-columns:1fr;gap:22px;}
+  .refs li{grid-template-columns:32px minmax(0,1fr);}
+  .degrees,.affil{overflow-wrap:anywhere;}
+  table{min-width:520px;}
+  .refs .cb{grid-column:2;}
+  .abstract{padding:22px 20px;}
+  .runhead .cur{display:none;}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;}
+  .rv{opacity:1;transform:none;}
+}
+
+/* ── print: a clean one-document CV ──────────────────── */
+@media print{
+  body{font-size:11pt;background:#fff;}
+  #prog,.runhead,.toc,.mast nav,.actions,.kws button,.cite,.eq .ex,footer{display:none!important;}
+  .doc{grid-template-columns:1fr;padding-top:10px;}
+  .row{grid-template-columns:1fr 180px;}
+  .rv,.fig0,.degrees,.affil,h1 .ln{opacity:1!important;transform:none!important;animation:none!important;}
+  .tl .bar{transform:none!important;}.tl .dotm{opacity:1!important;}
+  #fig1 .draw{stroke-dashoffset:0!important;}#fig1 .fade{opacity:1!important;}#fig1 .bar{transform:none!important;}
+  section{break-inside:avoid;padding-top:18px;}
+  a{text-decoration:none;}
+}
+</style>
 </head>
 <body>
+<div id="prog"></div>
 
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
+<header class="runhead" id="runhead" aria-hidden="true">
+  <div class="wrap"><b>Nishant Keni</b><span class="cur" id="cur"><span>§</span>Abstract</span><a class="w" href="mailto:nishant.keni@outlook.com">Write to me</a></div>
+</header>
 
-  <!-- ════════════ NAV ════════════ -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">Nishant Keni<span class="dot">.</span></a>
-      <div class="nav-status">
-        <span class="hero-spinner"></span>
-        <span class="hero-status-verb" data-pill="0"></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#publications">Research</a></li>
-        <li><a href="#awards">Awards</a></li>
-      </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle day / night"><i class="fas fa-moon"></i></button>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+<div class="wrap">
+  <div class="mast">
+    <b>Nishant Keni</b>
+    <nav><a href="#s1">Introduction</a><a href="#s3">Career</a><a href="#s5">Publications</a><a href="#s6">Education</a><a href="#corr">Correspondence</a></nav>
+    <span>Vol. I, 2026</span>
+  </div>
+  <div class="mast-sub"><span class="sc">Mathematics · AI engineering · Oncology</span><span class="sc">Open access</span></div>
+
+  <!-- ── title page ── -->
+  <header class="title" id="top">
+    <div>
+      <p class="kind">Chief Applied Scientist · Capsule AI</p>
+      <h1><span class="ln">Nishant</span> <span class="ln">Keni</span></h1>
+      <p class="degrees">
+        <span class="dl"><b>BTech</b> <span class="f">(Electronics)</span>, <b>MS</b> <span class="f">(Electrical &amp; Computer Engineering)</span></span>
+        <span class="dl"><b>MPS</b> <span class="f">(Medical Oncology)</span>, <b>MDip</b> <span class="f">(Counseling Psychology)</span></span>
+        <span class="fellow"><b>Fellowship</b> in Clinical Oncology (AHERF), CPD-UK accredited</span>
+        <span class="fellow cur">Currently: <b>PGD</b> in Computer Science &amp; Engineering, IIT Bombay</span>
+      </p>
+      <p class="affil">
+        <a href="#ap1" data-row="ap1"><sup>1</sup>Chief Applied Scientist, Capsule AI</a> &nbsp;
+        <a href="#ap2" data-row="ap2"><sup>2</sup>formerly Research Scientist II, Amazon</a> &nbsp;
+        <a href="#ap4" data-row="ap4"><sup>3</sup>formerly Visiting Researcher, UC Berkeley</a>
+      </p>
     </div>
-  </nav>
+    <figure class="fig0">
+      <div class="plate" id="plate">
+        <img class="base" src="profile.png" alt="Nishant Keni" />
+      </div>
+      <figcaption><b>Fig. 0.</b> The author.</figcaption>
+    </figure>
+  </header>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" id="mobileClose">&#10005;</button>
-    <ul>
-      <li><a href="#experience" class="mobile-link">Experience</a></li>
-      <li><a href="#education" class="mobile-link">Education</a></li>
-      <li><a href="#publications" class="mobile-link">Research</a></li>
-      <li><a href="#awards" class="mobile-link">Awards</a></li>
-    </ul>
+  <div class="dates">
+    <span><b>Received</b> 1995, Mumbai</span>
+    <span><b>Revised</b> continuously</span>
+    <span><b>Correspondence</b> <a href="mailto:nishant.keni@outlook.com">nishant.keni@outlook.com</a></span>
+    <span><span class="live"></span><b>Status</b> open to advisory, board &amp; leadership conversations</span>
   </div>
 
-  <!-- ════════════ HERO ════════════ -->
-  <section id="hero">
-    <canvas id="heroCanvas"></canvas>
-    <div class="hero-glow hero-glow--1"></div>
-    <div class="hero-glow hero-glow--2"></div>
+  <div class="doc">
+    <nav class="toc" aria-label="Contents">
+      <p class="sc">Contents</p>
+      <ol>
+        <li><a href="#abstract"><span>·</span>Abstract</a></li>
+        <li><a href="#s1"><span>1</span>Introduction</a></li>
+        <li><a href="#s2"><span>2</span>Areas of work</a></li>
+        <li><a href="#s3"><span>3</span>Career</a></li>
+        <li><a href="#s4"><span>4</span>Appointments</a></li>
+        <li><a href="#s5"><span>5</span>Publications</a></li>
+        <li><a href="#s6"><span>6</span>Education</a></li>
+        <li><a href="#corr"><span>·</span>Correspondence</a></li>
+      </ol>
+      <button class="print" onclick="window.print()">Print as CV</button>
+    </nav>
 
-    <div class="hero-main">
-      <p class="hero-mission" id="heroMission">the best teachers can't reach every child, nor can the best doctor attend every patient —<br><span class="ms-accent">so I build <span class="ms-bot">🤖</span> that can!</span></p>
-      <div class="agent-loop" id="agentLoop"><span class="al-step al-1"><i class="tk"></i><span class="al-word">perceive</span></span><span class="al-sep">, </span><span class="al-step al-2"><i class="tk"></i><span class="al-word">reason</span></span><span class="al-sep">, </span><span class="al-step al-3"><i class="tk"></i><span class="al-word">act</span></span><span class="al-sep">, </span><span class="al-step al-4"><i class="tk"></i><span class="al-word">reflect</span></span><span class="al-sep"> &amp; </span><span class="al-step al-5"><i class="tk"></i><span class="al-word">impact</span></span></div>
-      <div class="hero-mission-dash"></div>
-
-      <div class="hero-quad">
-
-      <div class="hero-grid hero-stage">
-
-        <!-- Row 1, Col 1: Education -->
-        <div class="hero-block">
-          <p class="hero-block-label">🎓 Education</p>
-          <div class="hero-creds">
-            <div class="hero-cred">
-              <img src="https://images.seeklogo.com/logo-png/20/2/vjti-college-logo-png_seeklogo-209443.png" alt="VJTI" class="cred-logo">
-              <div class="cred-info">
-                <span class="cred-field">Electrical Engineering</span>
-                <span class="cred-school">VJTI, Mumbai</span>
-              </div>
-            </div>
-            <div class="hero-cred">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg" alt="Georgia Tech" class="cred-logo">
-              <div class="cred-info">
-                <span class="cred-field">Computer Engineering</span>
-                <span class="cred-school">Georgia Tech</span>
-              </div>
-            </div>
-            <div class="hero-cred">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Seal_of_Leland_Stanford_Junior_University.svg" alt="Stanford" class="cred-logo">
-              <div class="cred-info">
-                <span class="cred-field">Artificial Intelligence</span>
-                <span class="cred-school">Stanford University</span>
-              </div>
-            </div>
-            <div class="hero-cred">
-              <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg" alt="IIT Bombay" class="cred-logo">
-              <div class="cred-info">
-                <span class="cred-field">Computer Science</span>
-                <span class="cred-school">IIT Bombay <span class="cred-live">●</span></span>
-              </div>
-            </div>
+    <div class="body">
+      <!-- abstract -->
+      <section id="abstract" class="row" data-title="Abstract" data-n="·" style="padding-top:0">
+        <div class="abstract rv">
+          <h2 class="sc">Abstract</h2>
+          <p>I work where mathematics, AI engineering, and oncology meet. At Capsule&nbsp;AI I lead applied science for <span class="k k-agentic">agentic systems</span> that read trials, literature, scans, and records, so that clinical and research teams can act on what they contain. Before this I spent two years as an independent AI consultant to companies in medical AI, information retrieval, and ed-tech, and nearly five years at Amazon on <span class="k k-causal">causal inference</span> and ad measurement. My degrees are in electrical engineering, with postgraduate study in <span class="k k-onc">medical oncology</span>.</p>
+          <div class="kws" id="kws">
+            <b>Keywords:</b>
+            <button data-k="agentic">agentic AI</button>
+            <button data-k="causal">causal inference</button>
+            <button data-k="eval">evaluation</button>
+            <button data-k="onc">computational oncology</button>
+            <button data-k="life">life sciences</button>
+            <span class="cnt" id="kwcnt"></span>
+          </div>
+          <div class="actions">
+            <a class="btn" href="mailto:nishant.keni@outlook.com">Write to me</a>
+            <a class="btn ghost" href="https://topmate.io/nishant_keni" target="_blank" rel="noopener">Book a call</a>
+            <a class="btn ghost" href="https://linkedin.com/in/nishant-keni" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
+        <aside class="margin rv">
+          <div class="card"><b>At a glance</b>Chief Applied Scientist, Capsule&nbsp;AI. Degrees in engineering and in medical oncology. Ten peer-reviewed papers.<br><br><a href="#s3">See Figure 2 →</a></div>
+          <p style="margin-top:14px;font-size:13.5px;font-style:italic;">Tip: select a keyword to highlight where it appears.</p>
+        </aside>
+      </section>
 
-        <!-- Row 1, Col 2: Get in Touch -->
-        <div class="hero-block">
-          <p class="hero-block-label">🤝 Get in Touch</p>
-          <div class="hero-connect">
-            <a href="https://linkedin.com/in/nishant-keni" target="_blank" rel="noopener" class="hero-connect-card">
-              <div class="hero-connect-icon"><i class="fab fa-linkedin-in"></i></div>
-              <div class="hero-connect-info">
-                <span class="hero-connect-name">LinkedIn</span>
-                <span class="hero-connect-sub">/in/nishant-keni</span>
+      <!-- 1 introduction -->
+      <section id="s1" class="row" data-title="Introduction" data-n="1">
+        <div class="rv">
+          <h2 class="sec"><span class="n">1</span>Introduction<a class="pil" href="#s1" aria-label="Link to section">¶</a></h2>
+          <p class="drop">Medicine produces more evidence than any team can read. Trials, literature, imaging, and records hold answers, but in forms that resist use<a class="ref" data-n="1" href="#n1">1</a>. My work is building systems that read that evidence and turn it into decisions a clinical or research team can defend.</p>
+          <div class="eq" id="eq">
+            <div class="f">
+              <span class="t" data-x="<b>d*</b> is the decision we recommend.">d*</span>=
+              <span class="t" data-x="<b>argmax</b>: chosen from among the actions available.">argmax<sub><i>a</i></sub></span>
+              <span class="t" data-x="<b>𝔼[ · ]</b>: averaged over what remains uncertain.">𝔼[</span>
+              <span class="t k k-onc" data-x="<b>U(a, Y)</b>: the value of outcome Y under action a, which only clinical judgment can set."><i>U</i>(<i>a</i>, <i>Y</i>)</span>
+              |
+              <span class="t k k-causal" data-x="<b>do(a)</b>: an intervention, not a correlation. Pearl’s notation for setting a, rather than observing it.">do(<i>a</i>)</span>,
+              <span class="t k k-agentic" data-x="<b>𝓔</b>: the evidence the agents have read, extracted, and checked.">𝓔</span>
+              <span class="t">]</span>
+              <span class="no">(1)</span>
+            </div>
+            <p class="ex" id="eqx">Hover a term of equation (1).</p>
+          </div>
+          <p>Equation (1) is a compact statement of the job, and each term draws on a different discipline. The expectation and the do-operator come from mathematics. Reading and checking the evidence 𝓔 at scale is an engineering problem, and it needs <span class="k k-eval">evaluation</span> and guardrails before anyone should rely on it. The utility <i>U</i> only means something with clinical judgment behind it<a class="ref" data-n="2" href="#n2">2</a>.</p>
+        </div>
+        <aside class="margin rv">
+          <span class="note" id="n1" data-n="1"><sup>1</sup>Most clinical evidence is unstructured: free-text notes, trial protocols in PDF, and images.</span>
+          <span class="note" id="n2" data-n="2"><sup>2</sup>This is why I pursued postgraduate study in medical oncology (MPS) and completed a CPD-UK accredited fellowship in clinical oncology with AHERF.</span>
+        </aside>
+      </section>
+
+      <!-- 2 disciplines -->
+      <section id="s2" class="row" data-title="Areas of work" data-n="2">
+        <div class="rv">
+          <h2 class="sec"><span class="n">2</span>Areas of work<a class="pil" href="#s2" aria-label="Link to section">¶</a></h2>
+          <p>My work falls into four areas. Each needs mathematics, AI engineering, and oncology at once; what changes is which one leads<a class="ref" data-n="3" href="#n3">3</a>.</p>
+          <div class="fig" id="fig1">
+            <div class="areas">
+              <div class="area">
+                <svg class="sk" viewBox="0 0 240 78" aria-hidden="true">
+                  <line class="ax" x1="0" x2="240" y1="72" y2="72"/>
+                  <line class="lim fade" x1="0" x2="240" y1="22" y2="22"/>
+                  <path class="ink draw" pathLength="1" d="M0,40 C22,40 34,62 58,63 C90,64 112,62 132,48 C146,38 156,22 168,10"/>
+                  <path class="red draw" pathLength="1" d="M0,40.0 L3,40.1 L6,40.5 L9,41.2 L12,42.1 L15,43.1 L18,44.3 L21,45.6 L24,46.9 L27,48.1 L30,49.2 L33,50.2 L36,51.1 L39,51.6 L42,51.9 L45,52.0 L48,51.8 L51,51.3 L54,50.5 L57,49.6 L60,48.5 L63,47.3 L66,46.0 L69,44.7 L72,43.5 L75,42.4 L78,41.5 L81,40.7 L84,40.2 L87,40.0 L90,40.1 L93,40.4 L96,41.0 L99,41.8 L102,42.8 L105,43.9 L108,45.2 L111,46.4 L114,47.7 L117,48.9 L120,49.9 L123,50.8 L126,51.5 L129,51.9 L132,52.0 L135,51.9 L138,51.4 L141,50.8 L144,49.9 L147,48.9 L150,47.7 L153,46.4 L156,45.1 L159,43.9 L162,42.7 L165,41.7 L168,40.9 L171,40.4 L174,40.1 L177,40.0 L180,40.3 L183,40.7 L186,41.5 L189,42.4 L192,43.6 L195,45.0 L198,46.4 L201,47.9 L204,49.2 L207,50.5 L210,51.6 L213,52.4 L216,53.1 L219,53.4 L222,53.5 L225,53.4 L228,52.9"/>
+                  <text class="fade" x="172" y="12">maximum dose</text>
+                  <text class="fade lr" x="236" y="38" text-anchor="end">adaptive</text>
+                </svg>
+                <h3>Treatment planning</h3>
+                <p>Models of how a tumour’s sensitive and resistant cells compete, used to design dosing schedules. Agents propose schedules, simulation tests each one, and the best are checked on virtual patients they have never seen.</p>
               </div>
-            </a>
-            <a href="https://scholar.google.com/citations?user=MlaT-RgAAAAJ" target="_blank" rel="noopener" class="hero-connect-card">
-              <div class="hero-connect-icon"><i class="fas fa-graduation-cap"></i></div>
-              <div class="hero-connect-info">
-                <span class="hero-connect-name">Scholar</span>
-                <span class="hero-connect-sub">55 citations · h-index 4</span>
+              <div class="area">
+                <svg class="sk" viewBox="0 0 240 78" aria-hidden="true">
+                  <line class="lim fade" x1="150" x2="150" y1="2" y2="74"/>
+                  <path class="ink draw" pathLength="1" d="M88,10H140"/><rect class="sq fade" x="109" y="7" width="6" height="6"/>
+                  <path class="ink draw" pathLength="1" d="M104,24H152"/><rect class="sq fade" x="124" y="21" width="5" height="5"/>
+                  <path class="ink draw" pathLength="1" d="M120,38H174"/><rect class="sq fade" x="143" y="35.5" width="4.5" height="4.5"/>
+                  <path class="ink draw" pathLength="1" d="M78,52H134"/><rect class="sq fade" x="102" y="49.5" width="5" height="5"/>
+                  <polygon class="dia fade" points="106,66 117,61 128,66 117,71"/>
+                </svg>
+                <h3>Clinical evidence</h3>
+                <p>Agents read trials, papers, and patient records, and extract each result with its uncertainty. Statistics pools them into one estimate, adjusted where the data are observational, that a clinical team can act on.</p>
               </div>
-            </a>
-            <a href="https://topmate.io/nishant_keni" target="_blank" rel="noopener" class="hero-connect-card">
-              <div class="hero-connect-icon"><i class="fas fa-handshake"></i></div>
-              <div class="hero-connect-info">
-                <span class="hero-connect-name">Topmate</span>
-                <span class="hero-connect-sub">Book a session</span>
+              <div class="area">
+                <svg class="sk" viewBox="0 0 240 78" aria-hidden="true">
+                  <line class="ax" x1="40" x2="240" y1="72" y2="72"/>
+                  <line class="lim fade" x1="40" x2="240" y1="60" y2="60"/>
+                  <path class="ink draw" pathLength="1" d="M40,68 C90,67 130,64 160,58 C190,52 214,38 236,10"/>
+                  <circle class="ring fade" cx="160" cy="59" r="5"/>
+                  <text class="fade" x="40" y="54">acceptable error</text>
+                  <text class="fade" x="236" y="85" text-anchor="end">more automated →</text>
+                </svg>
+                <h3>Evaluation &amp; guardrails</h3>
+                <p>Measuring how often agents are wrong, calibrating how sure they are, and deciding when a case should go to a clinician instead. The clinician sets the acceptable error; the mathematics finds where to draw the line.</p>
               </div>
-            </a>
-            <a href="mailto:nishant.keni@outlook.com" class="hero-connect-card">
-              <div class="hero-connect-icon"><i class="fas fa-envelope"></i></div>
-              <div class="hero-connect-info">
-                <span class="hero-connect-name">Email</span>
-                <span class="hero-connect-sub">nishant.keni@outlook.com</span>
+              <div class="area">
+                <svg class="sk" viewBox="0 0 240 78" aria-hidden="true">
+                  <line class="ax" x1="0" x2="240" y1="72" y2="72"/>
+                  <rect class="bar g" x="14" y="44" width="11" height="28"/><rect class="bar k" x="27" y="40" width="11" height="32"/>
+                  <rect class="bar g" x="92" y="58" width="11" height="14"/><rect class="bar r" x="105" y="64" width="11" height="8"/>
+                  <rect class="bar g" x="142" y="48" width="11" height="24"/><rect class="bar r" x="155" y="56" width="11" height="16"/>
+                  <rect class="bar g" x="192" y="28" width="11" height="44"/><rect class="bar r" x="205" y="36" width="11" height="36"/>
+                  <text class="fade" x="26" y="34" text-anchor="middle">overall</text>
+                  <text class="fade" x="154" y="20" text-anchor="middle">within each severity level</text>
+                </svg>
+                <h3>Causal measurement</h3>
+                <p>Separating what a treatment does from who happened to receive it. A comparison that looks harmful overall can reverse once the confounder is accounted for. Practised at scale at Amazon; applied now to clinical data.</p>
               </div>
-            </a>
+            </div>
+            <figcaption><b>Figure 1.</b> Four areas of work, each sketched as the figure it usually ends in: tumour response under two dosing schedules; a forest plot pooling several studies; error against automation, with the clinician’s limit; and an effect that reverses once patients are compared within the same severity.</figcaption>
           </div>
         </div>
+        <aside class="margin rv">
+          <span class="note" id="n3" data-n="3"><sup>3</sup>For example, deciding whether a trial result transfers to a new patient group is at once a causal question, a systems question, and a clinical one.</span>
+        </aside>
+      </section>
 
-      </div>
-
-      <div class="hero-sep hero-stage"></div>
-
-      <div class="explore-row hero-stage">
-        <div class="explore-tag">
-          <span class="explore-label-text">feeling agentic? explore in bash or MCP</span>
-          <svg class="explore-arrow" width="24" height="22" viewBox="0 0 24 22" fill="none">
-            <path d="M4 4 Q12 4 12 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-            <path d="M8 11 L12 16 L16 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="term-shell hero-term">
-          <div class="term-topbar">
-            <div class="term-dots"><span class="td-r"></span><span class="td-y"></span><span class="td-g"></span></div>
-            <div class="term-tabs">
-              <button class="term-tab active" data-tab="bash">⌨&nbsp;&nbsp;bash</button>
-              <button class="term-tab" data-tab="mcp">🔌&nbsp;&nbsp;mcp</button>
-            </div>
-            <span class="term-status st-live" id="termStatus"><span class="live-dot"></span>LIVE</span>
-          </div>
-
-          <div class="term-panel" data-panel="bash">
-            <div class="term-body" id="termBody">
-              <div id="termOut"></div>
-              <div class="term-row">
-                <span class="term-ps1">nk<span class="ps1-at">@</span>agent<span class="ps1-at">:</span><span class="ps1-tilde">~</span><span class="ps1-at">$</span>&nbsp;</span>
-                <input type="text" id="termInput" class="term-input" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="type help…" />
-              </div>
-            </div>
-          </div>
-
-          <div class="term-panel" data-panel="mcp" hidden>
-            <div class="mcp-body" id="mcpBody">
-              <div id="mcpOut"></div>
-              <div class="mcp-row" id="mcpRow" style="display:none">
-                <span class="mcp-ps1">mcp&nbsp;▸&nbsp;</span>
-                <input type="text" id="mcpInput" class="mcp-input" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="call a tool…" />
-              </div>
-            </div>
+      <!-- 3 career -->
+      <section id="s3" class="row" data-title="Career" data-n="3">
+        <div class="rv">
+          <h2 class="sec"><span class="n">3</span>Career<a class="pil" href="#s3" aria-label="Link to section">¶</a></h2>
+          <p>Figure&nbsp;2 lays my training and appointments out on a single time axis, one row per discipline. The rows ran in parallel more often than in sequence.</p>
+          <div class="fig">
+            <div class="tl" id="tl"><svg id="tlsvg" viewBox="0 0 700 262" role="img" aria-label="Figure 2: career timeline, 2013 to present"></svg><div class="tip" id="tip"></div></div>
+            <figcaption><b>Figure 2.</b> Career across the three disciplines, 2013 to present. Bars are degrees and appointments, dots are publications and awards. Hover any mark. Tables 1 and 2 give the same data.</figcaption>
           </div>
         </div>
-      </div>
+        <aside class="margin rv"><span class="note">Medical oncology training began in 2023, alongside industry work, and continues through Capsule&nbsp;AI’s focus on <span class="k k-life">life sciences</span>.</span></aside>
+      </section>
 
-      </div>
+      <!-- 4 appointments -->
+      <section id="s4" class="row" data-title="Appointments" data-n="4">
+        <div class="rv">
+          <h2 class="sec"><span class="n">4</span>Appointments<a class="pil" href="#s4" aria-label="Link to section">¶</a></h2>
+          <div class="tw"><table>
+            <caption><b>Table 1.</b> Professional appointments, most recent first.</caption>
+            <thead><tr><th style="width:84px">Period</th><th style="width:34%">Role</th><th>Focus</th></tr></thead>
+            <tbody>
+              <tr id="ap1"><td class="yr">2026–</td><td><b>Chief Applied Scientist</b> <sup>1</sup><span class="sub">Capsule AI</span></td><td><span class="k k-agentic">Agentic-pipeline</span> architecture, harness engineering, and <span class="k k-eval">evaluation</span> for AI over <span class="k k-life">life-sciences</span> data.</td></tr>
+              <tr id="apc"><td class="yr">2024–26</td><td><b>Principal AI Consultant</b><span class="sub">Independent</span></td><td>Guiding and building for companies in four areas:
+                <ul class="cl">
+                  <li><b>EMR and AI clinical workflows</b> <i><span class="k k-onc">MOC Cancer Care &amp; Research Centre</span></i> (Apr–Aug 2025)</li>
+                  <li><b>AI knowledge bases</b> <i>i3 Digital Health</i></li>
+                  <li><b>Silicon sampling and agentic search</b> <i>Keplar.io</i></li>
+                  <li><b><span class="k k-agentic">Agentic automation</span> for ed-tech</b> <i>CuePilot AI</i></li>
+                </ul>
+                <span class="hon">Innovation Excellence award, i3 Digital Health, Q4 2025</span></td></tr>
+              <tr id="ap2"><td class="yr">2022–24</td><td><b>Research Scientist II</b> <sup>2</sup><span class="sub">Amazon · Ad Measurement and Optimization</span></td><td><span class="k k-causal">Causal model calibration</span>, statistical noise reduction, and portfolio planning for advertising.</td></tr>
+              <tr id="ap3"><td class="yr">2019–22</td><td><b>Data Scientist I &amp; II</b><span class="sub">Amazon · Ad Measurement and Optimization</span></td><td><span class="k k-causal">Causal inference</span> and recommender systems for advertising measurement.</td></tr>
+              <tr id="ap4"><td class="yr">2018</td><td><b>Visiting Researcher</b> <sup>3</sup><span class="sub">UC Berkeley</span></td><td>Adversarial-ML defense with Prof. Dawn Song, on certified robustness for deep networks.</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <aside class="margin rv"><span class="note">Superscripts match the affiliations on the title page. Select one there to jump here.</span></aside>
+      </section>
 
-      <a href="#experience" class="hero-scroll-label hero-stage">
-        <span class="explore-label-text">or just scroll down</span>
-        <svg class="scroll-arrow" width="24" height="22" viewBox="0 0 24 22" fill="none">
-          <path d="M4 4 Q12 4 12 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-          <path d="M8 11 L12 16 L16 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
+      <!-- 5 publications -->
+      <section id="s5" class="row" data-title="Publications" data-n="5">
+        <div class="rv">
+          <h2 class="sec"><span class="n">5</span>Selected publications<a class="pil" href="#s5" aria-label="Link to section">¶</a></h2>
+          <ol class="refs" id="refs">
+            <li><span>Adaptive containerization for microservices in distributed cloud systems. <i>IEEE CCNC</i>, 2020.</span><span class="cb"><s data-c="27"></s>27</span></li>
+            <li><span>Neural networks based leaf identification using shape and structural decomposition. <i>IEEE GTSP</i>, 2016.<span class="hon">Best Paper of Session</span></span><span class="cb"><s data-c="13"></s>13</span></li>
+            <li><span>Content based image retrieval for leaf identification using structural features and neural networks. <i>SPIN</i>, 2017.</span><span class="cb"><s data-c="6"></s>6</span></li>
+            <li><span>A computational intelligence approach for <span class="k k-onc">cancer detection</span> using artificial immune system. <i>Computational Intelligence: Theories, Applications and Future Directions</i>, 2018.</span><span class="cb"><s data-c="1"></s>1</span></li>
+                      <li><span>Two Bayes Make Lesser Noise: A Risk-Aware Blind Filter for Improving Measurement Precision. <i>Amazon Consumer Science Summit (CSS)</i>, 2022.</span><span class="cb"><em>confidential</em></span></li>
+          </ol>
+          <p style="margin-top:14px;font-size:15.5px;">Bars show citations to date. <a href="https://scholar.google.com/citations?user=MlaT-RgAAAAJ" target="_blank" rel="noopener" style="color:var(--acc);text-decoration:none;border-bottom:1px solid var(--acc-mid);">Full list on Google Scholar →</a></p>
+        </div>
+        <aside class="margin rv">
+          <div class="metrics" id="metrics"><div><b data-to="10">0</b><span>papers</span></div><div><b data-to="54">0</b><span>citations</span></div><div><b data-to="4">0</b><span>h-index</span></div></div>
+        </aside>
+      </section>
+
+      <!-- 6 education -->
+      <section id="s6" class="row" data-title="Education" data-n="6">
+        <div class="rv">
+          <h2 class="sec"><span class="n">6</span>Education<a class="pil" href="#s6" aria-label="Link to section">¶</a></h2>
+          <div class="tw"><table>
+            <caption><b>Table 2.</b> Degrees and fellowships, most recent first.</caption>
+            <thead><tr><th style="width:84px">Year</th><th style="width:38%">Qualification</th><th>Institution</th></tr></thead>
+            <tbody>
+              <tr class="ip"><td class="yr">2025–</td><td><b>PG Diploma</b> <em class="tag">in progress</em><span class="sub">Computer Science &amp; Engineering</span></td><td>IIT Bombay</td></tr>
+              <tr><td class="yr">2024–25</td><td><b>Fellowship</b><span class="sub"><span class="k k-onc">Clinical Oncology</span> · CPD-UK accredited</span></td><td>Apollo Hospitals Educational and Research Foundation (AHERF)</td></tr>
+              <tr><td class="yr">2024</td><td><b>MDip</b><span class="sub">Counseling Psychology</span></td><td>IISDT</td></tr>
+              <tr><td class="yr">2023–25</td><td><b>MPS</b><span class="sub"><span class="k k-onc">Medical Oncology</span></span></td><td>Tech Global University</td></tr>
+              <tr><td class="yr">2019–21</td><td><b>Professional Certificate</b><span class="sub">Artificial Intelligence</span></td><td>Stanford University</td></tr>
+              <tr><td class="yr">2017–19</td><td><b>MS</b><span class="sub">Electrical &amp; Computer Engineering</span></td><td>Georgia Tech<span class="hon">GPA 4.0/4.0</span></td></tr>
+              <tr><td class="yr">2013–17</td><td><b>BTech</b><span class="sub">Electronics Engineering</span></td><td>VJTI, Mumbai<span class="hon">Gold Medal, Department Rank 1</span></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <aside class="margin rv"><span class="note">The counseling psychology diploma informs how I think about the people on the receiving end of a clinical decision.</span></aside>
+      </section>
+
+      <!-- correspondence -->
+      <section class="corr rv" id="corr" data-title="Correspondence" data-n="·">
+        <p class="kind">Correspondence</p>
+        <h2>If you are working at the intersection of AI and medicine, I would like to hear from you.</h2>
+        <p style="margin-top:14px;color:var(--muted);max-width:56ch;">Open to advisory, board, and leadership conversations.</p>
+        <div class="actions">
+          <a class="btn" href="mailto:nishant.keni@outlook.com">nishant.keni@outlook.com</a>
+          <a class="btn ghost" href="https://topmate.io/nishant_keni" target="_blank" rel="noopener">Book a call</a>
+          <button class="btn ghost" onclick="window.print()">Print as CV</button>
+        </div>
+        <div class="cite" id="cite">
+          <div class="tabs">
+            <button class="on" data-f="apa">APA</button><button data-f="bib">BibTeX</button><button data-f="plain">Plain</button>
+            <button class="copy" id="copy">Copy citation</button>
+          </div>
+          <pre id="citeTxt" class="plain"></pre>
+        </div>
+      </section>
     </div>
-  </section>
+  </div>
 
-  <!-- ════════════ EXPERIENCE ════════════ -->
-  <section id="experience" class="section-padding exp-section">
-    <div class="section-bg-text">EXPERIENCE</div>
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow reveal-up">Career</p>
-        <h2 class="section-title reveal-up">Professional Journey</h2>
-        <div class="accent-bar centered reveal-up"></div>
-      </div>
-      <div class="exp-bento">
-
-        <!-- Hero: current role -->
-        <div class="exp-card exp-card--hero reveal-up">
-          <div class="exp-card-head">
-            <span class="exp-live"><span class="exp-live-dot"></span>LIVE</span>
-            <span class="exp-date-badge">2026 – Present</span>
-          </div>
-          <h3 class="exp-title">Principal AI Engineer</h3>
-          <p class="exp-co"><i class="fas fa-circle-notch fa-spin"></i> CuePilot AI</p>
-          <p class="exp-desc">Building the AI-native Preschool OS. Leading agentic pipeline architecture, harness engineering for AI workflows, and observability systems for production LLM deployments.</p>
-          <div class="exp-stats">
-            <span><i class="fas fa-dollar-sign"></i> $1.8M raised</span>
-            <span><i class="fas fa-trophy"></i> 2026 GSV Cup 50</span>
-          </div>
-          <div class="exp-tags">
-            <span class="exp-tag--hot">Agentic AI</span>
-            <span class="exp-tag--hot">Harness Engineering</span>
-            <span class="exp-tag--hot">AI Observability</span>
-          </div>
-        </div>
-
-        <!-- Amazon RS-II -->
-        <div class="exp-card reveal-up" data-delay="80">
-          <div class="exp-card-head">
-            <span class="exp-date-badge">Apr 2022 – 2024</span>
-          </div>
-          <h3 class="exp-title">Research Scientist</h3>
-          <p class="exp-co"><i class="fab fa-amazon"></i> Amazon</p>
-          <p class="exp-desc">Causal model calibration, statistical noise reduction, and portfolio planning in Next Science / Customer Behavior Analytics at Amazon scale.</p>
-          <div class="exp-tags">
-            <span>Causal Inference</span>
-            <span>Statistical Modeling</span>
-            <span>Portfolio Optimization</span>
-          </div>
-        </div>
-
-        <!-- Amazon DS-II -->
-        <div class="exp-card reveal-up" data-delay="120">
-          <div class="exp-card-head">
-            <span class="exp-date-badge">2019 – 2022</span>
-          </div>
-          <h3 class="exp-title">Data Scientist</h3>
-          <p class="exp-co"><i class="fab fa-amazon"></i> Amazon</p>
-          <p class="exp-desc">Advertising Measurement and Talent Management — causal inference and recommender systems informing billion-dollar decisions.</p>
-          <div class="exp-tags">
-            <span>Causal Inference</span>
-            <span>Recommender Systems</span>
-            <span>A/B Testing</span>
-          </div>
-        </div>
-
-        <!-- UC Berkeley -->
-        <div class="exp-card reveal-up" data-delay="160">
-          <div class="exp-card-head">
-            <span class="exp-date-badge">Summer 2018</span>
-          </div>
-          <h3 class="exp-title">Visiting Researcher</h3>
-          <p class="exp-co"><i class="fas fa-university"></i> UC Berkeley</p>
-          <p class="exp-desc">Adversarial ML defense under Prof. Dawn Song — certified robustness for deep neural networks.</p>
-          <div class="exp-tags">
-            <span>Adversarial ML</span>
-            <span>Deep Learning</span>
-            <span>Security</span>
-          </div>
-        </div>
-
-        <!-- Amazon Intern -->
-        <div class="exp-card reveal-up" data-delay="200">
-          <div class="exp-card-head">
-            <span class="exp-date-badge">Fall 2018</span>
-          </div>
-          <h3 class="exp-title">Applied Scientist Intern</h3>
-          <p class="exp-co"><i class="fab fa-amazon"></i> Amazon.in</p>
-          <p class="exp-desc">Dynamic incentivization via reinforcement learning for marketplace engagement.</p>
-          <div class="exp-tags">
-            <span>Reinforcement Learning</span>
-            <span>Dynamic Pricing</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════ EDUCATION ════════════ -->
-  <section id="education" class="section-padding">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow reveal-up">Academic Background</p>
-        <h2 class="section-title reveal-up">Education</h2>
-        <div class="accent-bar centered reveal-up"></div>
-      </div>
-      <div class="edu-grid">
-        <div class="edu-card edu-card--gold reveal-up">
-          <div class="edu-medal">🥇 Gold Medal</div>
-          <div class="edu-icon edu-icon--gold"><i class="fas fa-star"></i></div>
-          <span class="edu-year">2013 – 2017</span>
-          <h3>B.Tech. Electronics Engineering</h3>
-          <p class="edu-school">VJTI, Mumbai</p>
-          <p class="edu-note">Department Rank 1 · Institute Gold Medal</p>
-          <p class="edu-desc">Signal theory, applied mathematics, and electronics — graduated top of department.</p>
-          <div class="edu-chips"><span>Electronics</span><span>Signal Theory</span><span>Applied Math</span></div>
-        </div>
-        <div class="edu-card reveal-up" data-delay="80">
-          <div class="edu-icon"><i class="fas fa-microchip"></i></div>
-          <span class="edu-year">2017 – 2019</span>
-          <h3>M.S. Electrical &amp; Computer Engineering</h3>
-          <p class="edu-school">Georgia Institute of Technology</p>
-          <p class="edu-note">Digital Signal Processing</p>
-          <p class="edu-desc">DSP, computer vision, adversarial ML research. IEEE Best Paper Award 2016.</p>
-          <div class="edu-chips"><span>DSP</span><span>Computer Vision</span><span>ML Research</span></div>
-        </div>
-        <div class="edu-card reveal-up" data-delay="160">
-          <div class="edu-icon"><i class="fas fa-brain"></i></div>
-          <span class="edu-year">2019 – 2021</span>
-          <h3>Artifical Intelligence</h3>
-          <p class="edu-school">Stanford University</p>
-          <p class="edu-note">NLP · Statistical Modelling · Graph Learning</p>
-          <p class="edu-desc">Advanced AI coursework from top Stanford faculty.</p>
-          <div class="edu-chips"><span>NLP</span><span>Graph Learning</span><span>Statistics</span></div>
-        </div>
-        <div class="edu-card edu-card--active reveal-up" data-delay="240">
-          <div class="edu-medal edu-medal--live">🟢 Active</div>
-          <div class="edu-icon"><i class="fas fa-code-branch"></i></div>
-          <span class="edu-year">Aug 2025 – Present</span>
-          <h3>Postgraduate Degree, CS &amp; Engineering</h3>
-          <p class="edu-school">Indian Institute of Technology, Bombay</p>
-          <p class="edu-note">Postgraduate Programme · IIT Bombay</p>
-          <p class="edu-desc">Postgraduate programme in CS &amp; Engineering at one of India's most prestigious institutes.</p>
-          <div class="edu-chips"><span>CS &amp; Engineering</span><span>IIT Bombay</span><span>PG Degree</span></div>
-        </div>
-      </div>
-      <div class="edu-grid edu-grid--medical">
-        <div class="edu-card reveal-up">
-          <div class="edu-icon"><i class="fas fa-stethoscope"></i></div>
-          <span class="edu-year">2024 – 2025</span>
-          <h3>Fellowship (CPD-UK)</h3>
-          <p class="edu-school">Apollo Hospitals Education &amp; Research Foundation</p>
-          <p class="edu-note">Clinical Oncology</p>
-          <p class="edu-desc">Clinical oncology fellowship accredited by the CPD Standards Office, UK.</p>
-          <div class="edu-chips"><span>Clinical Oncology</span><span>CPD-UK</span></div>
-        </div>
-        <div class="edu-card reveal-up" data-delay="80">
-          <div class="edu-icon"><i class="fas fa-dna"></i></div>
-          <span class="edu-year">2023 – 2025</span>
-          <h3>Master's, Medical Oncology</h3>
-          <p class="edu-school">TECH Global University</p>
-          <p class="edu-note">Medical Oncology</p>
-          <p class="edu-desc">Advanced graduate study in medical oncology, cancer biology, and treatment protocols.</p>
-          <div class="edu-chips"><span>Medical Oncology</span><span>Cancer Biology</span></div>
-        </div>
-        <div class="edu-card reveal-up" data-delay="160">
-          <div class="edu-icon"><i class="fas fa-brain"></i></div>
-          <span class="edu-year">2024</span>
-          <h3>Master's, Counseling Psychology</h3>
-          <p class="edu-school">IISDT</p>
-          <p class="edu-note">Counseling Psychology</p>
-          <p class="edu-desc">Postgraduate programme in counseling psychology and mental health.</p>
-          <div class="edu-chips"><span>Psychology</span><span>Counseling</span><span>Mental Health</span></div>
-        </div>
-        <div class="edu-card reveal-up" data-delay="240">
-          <div class="edu-icon"><i class="fas fa-ribbon"></i></div>
-          <span class="edu-year">Jan 2025</span>
-          <h3>Certified Cancer Coach</h3>
-          <p class="edu-school">Cancer Wellness Institute</p>
-          <p class="edu-note">Certification</p>
-          <p class="edu-desc">Professional certification in cancer coaching and patient wellness support.</p>
-          <div class="edu-chips"><span>Cancer Coaching</span><span>Wellness</span></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ════════════ PUBLICATIONS ════════════ -->
-  <section id="publications" class="section-padding pub-section">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow reveal-up">Research Output</p>
-        <h2 class="section-title reveal-up">Publications</h2>
-        <div class="accent-bar centered reveal-up"></div>
-        <p class="section-sub reveal-up">10 peer-reviewed publications · <strong>55 citations</strong> · h-index 4</p>
-      </div>
-      <div class="pub-grid">
-
-        <!-- Hero: top cited paper -->
-        <div class="pub-card pub-card--hero reveal-up">
-          <div class="pub-card-top">
-            <span class="pub-num">01</span>
-            <span class="pub-cite pub-cite--top"><i class="fas fa-star"></i> 27 citations</span>
-          </div>
-          <h4 class="pub-title">Adaptive Containerization for Microservices in Distributed Cloud Systems</h4>
-          <p class="pub-venue">IEEE CCNC 2020</p>
-          <div class="pub-chips"><span>Microservices</span><span>Cloud</span><span>IEEE</span></div>
-        </div>
-
-        <div class="pub-card reveal-up" data-delay="60">
-          <div class="pub-card-top">
-            <span class="pub-num">02</span>
-            <span class="pub-cite"><i class="fas fa-star"></i> 14</span>
-          </div>
-          <h4 class="pub-title">Neural Networks Based Leaf Identification Using Shape &amp; Structural Decomposition</h4>
-          <p class="pub-venue">GTSP 2016</p>
-          <div class="pub-chips"><span>Neural Networks</span><span>Signal Processing</span></div>
-        </div>
-
-        <div class="pub-card reveal-up" data-delay="100">
-          <div class="pub-card-top">
-            <span class="pub-num">03</span>
-            <span class="pub-cite"><i class="fas fa-star"></i> 6</span>
-          </div>
-          <h4 class="pub-title">Convex Optimization Based Sparse Dictionary Learning for Image Compression</h4>
-          <p class="pub-venue">SPIN 2017</p>
-          <div class="pub-chips"><span>Optimization</span><span>Sparse Coding</span><span>Compression</span></div>
-        </div>
-
-        <div class="pub-card reveal-up" data-delay="140">
-          <div class="pub-card-top">
-            <span class="pub-num">04</span>
-            <span class="pub-cite"><i class="fas fa-star"></i> 6</span>
-          </div>
-          <h4 class="pub-title">Content Based Image Retrieval Using Structural Features &amp; Neural Networks</h4>
-          <p class="pub-venue">SPIN 2017</p>
-          <div class="pub-chips"><span>Image Retrieval</span><span>Neural Nets</span></div>
-        </div>
-
-        <div class="pub-card reveal-up" data-delay="180">
-          <div class="pub-card-top">
-            <span class="pub-num">05</span>
-            <span class="pub-cite"><i class="fas fa-star"></i> 1</span>
-          </div>
-          <h4 class="pub-title">Reconstruction of Compressively Sensed Images via Regularized Sparse Dictionary Learning</h4>
-          <p class="pub-venue">IEEE ISM 2019</p>
-          <div class="pub-chips"><span>Compressed Sensing</span><span>IEEE ISM</span></div>
-        </div>
-
-        <div class="pub-card reveal-up" data-delay="220">
-          <div class="pub-card-top">
-            <span class="pub-num">06</span>
-            <span class="pub-cite"><i class="fas fa-star"></i> 1</span>
-          </div>
-          <h4 class="pub-title">Computational Intelligence for Cancer Detection Using Artificial Immune System</h4>
-          <p class="pub-venue">CI: Theories, Applications &amp; Future Directions 2018</p>
-          <div class="pub-chips"><span>Comp. Intelligence</span><span>Oncology</span></div>
-        </div>
-
-        <div class="pub-card pub-card--group reveal-up" data-delay="260">
-          <div class="pub-card-top">
-            <span class="pub-num">07–10</span>
-          </div>
-          <h4 class="pub-title">Industry Research: Causal Inference, Advertising Measurement &amp; ML Systems</h4>
-          <p class="pub-venue">Amazon ML Conference · Consumer Science Summit 2022</p>
-          <div class="pub-chips"><span>Causal Inference</span><span>Advertising</span><span>ML Systems</span></div>
-        </div>
-
-      </div>
-      <div class="centered-cta reveal-up">
-        <a href="https://scholar.google.com/citations?user=MlaT-RgAAAAJ" target="_blank" rel="noopener" class="btn-outline">
-          <i class="fas fa-graduation-cap"></i> Google Scholar
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════ AWARDS ════════════ -->
-  <section id="awards" class="section-padding awards-section">
-    <div class="section-bg-text">AWARDS</div>
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow reveal-up">Recognition</p>
-        <h2 class="section-title reveal-up">Awards &amp; Honors</h2>
-        <div class="accent-bar centered reveal-up"></div>
-      </div>
-      <div class="awards-grid">
-        <div class="award-card award-card--hero reveal-up">
-          <div class="award-icon award-icon--gold"><i class="fas fa-medal"></i></div>
-          <div>
-            <h3>🥇 Institute Gold Medal</h3>
-            <p class="award-meta">VJTI Mumbai · 2017</p>
-            <p>Department Rank 1 in Electronics Engineering — highest academic distinction by the institute.</p>
-          </div>
-        </div>
-        <div class="award-card reveal-up" data-delay="100">
-          <div class="award-icon"><i class="fas fa-trophy"></i></div>
-          <h3>IEEE Best Paper Award</h3>
-          <p class="award-meta">IEEE · 2016</p>
-          <p>Outstanding research in signal processing and neural network compression.</p>
-        </div>
-        <div class="award-card reveal-up" data-delay="150">
-          <div class="award-icon"><i class="fas fa-list-ol"></i></div>
-          <h3>JEE Mains AIR 695</h3>
-          <p class="award-meta">IIT-JEE · 2013</p>
-          <p>Top 0.05% of 1.4M+ candidates nationally.</p>
-        </div>
-        <div class="award-card reveal-up" data-delay="200">
-          <div class="award-icon"><i class="fas fa-satellite-dish"></i></div>
-          <h3>Top 1% · National Astronomy</h3>
-          <p class="award-meta">NSEA · 2013</p>
-          <p>Top 1 percentile nationally in the National Standard Examination in Astronomy.</p>
-        </div>
-        <div class="award-card reveal-up" data-delay="250">
-          <div class="award-icon"><i class="fas fa-atom"></i></div>
-          <h3>Dr. Homi Bhabha Young Scientist</h3>
-          <p class="award-meta">Silver Medal · 2009</p>
-          <p>Recognizing exceptional scientific aptitude among young Indian scientists.</p>
-        </div>
-        <div class="award-card reveal-up" data-delay="300">
-          <div class="award-icon"><i class="fas fa-award"></i></div>
-          <h3>Maharashtra State Scholarships</h3>
-          <p class="award-meta">2004 – 2008</p>
-          <p>Multiple consecutive state-level awards for academic excellence.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════ VISITORS ════════════ -->
-  <section id="visitors" class="section-padding visitors-section">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow reveal-up">Global Reach</p>
-        <h2 class="section-title reveal-up">Visitors by Country</h2>
-        <div class="accent-bar centered reveal-up"></div>
-        <p class="section-sub reveal-up">Tracking since January 9, 2023.</p>
-      </div>
-      <div class="flag-wrap reveal-up">
-        <a href="https://info.flagcounter.com/8r6o" target="_blank" rel="noopener">
-          <img src="https://s01.flagcounter.com/countxl/8r6o/bg_F5F1EB/txt_6B6360/border_E5E0D8/columns_4/maxflags_20/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" class="flag-img" />
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════ FOOTER ════════════ -->
   <footer>
-    <div class="footer-inner">
-      <a href="#hero" class="footer-logo">NK<span class="dot">.</span></a>
-      <p class="footer-copy">© 2026 Nishant Keni &nbsp;·&nbsp; 🤖 AI Research Engineer &nbsp;·&nbsp; 📐 Applied Mathematician &nbsp;·&nbsp; 🔬 Computational Oncologist</p>
-      <div class="footer-social">
-        <a href="https://linkedin.com/in/nishant-keni" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://scholar.google.com/citations?user=MlaT-RgAAAAJ" target="_blank" rel="noopener" aria-label="Scholar"><i class="fas fa-graduation-cap"></i></a>
-        <a href="https://topmate.io/nishant_keni" target="_blank" rel="noopener" aria-label="Topmate"><i class="fas fa-handshake"></i></a>
-        <a href="mailto:nishant.keni@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-      </div>
-    </div>
+    <span>© 2026 Nishant Keni · Set in EB Garamond and Newsreader</span>
+    <span><a href="https://linkedin.com/in/nishant-keni" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=MlaT-RgAAAAJ" target="_blank" rel="noopener">Scholar</a> · <a href="https://topmate.io/nishant_keni" target="_blank" rel="noopener">Topmate</a> · <a href="#top">Top ↑</a></span>
   </footer>
+</div>
 
-  <button id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
-  <script src="script.js"></script>
+<script>
+'use strict';
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+/* progress bar, running head, contents scrollspy */
+const prog = $('#prog'), runhead = $('#runhead'), cur = $('#cur'), title = $('.title');
+const secs = $$('section[data-title]'), tocLinks = $$('.toc a');
+function onScroll() {
+  const h = document.documentElement, y = h.scrollTop;
+  prog.style.width = (y / (h.scrollHeight - h.clientHeight) * 100) + '%';
+  runhead.classList.toggle('show', y > title.offsetTop + title.offsetHeight);
+  let active = secs[0];
+  for (const s of secs) if (s.getBoundingClientRect().top < innerHeight * .35) active = s;
+  cur.innerHTML = '<span>' + (active.dataset.n === '·' ? '§' : '§' + active.dataset.n) + '</span>' + active.dataset.title;
+  tocLinks.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + active.id));
+}
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+/* reveal on scroll; figures play their entrance when seen */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  e.target.classList.add('in'); io.unobserve(e.target);
+  if (e.target.id === 'metrics') countUp();
+  if (e.target.id === 'refs') citeBars();
+}), { threshold: .15 });
+$$('.rv, #fig1, #tl, #metrics, #refs').forEach(el => io.observe(el));
+
+/* footnotes: hover a reference to light its margin note */
+$$('.ref').forEach(r => {
+  const n = $('.note[data-n="' + r.dataset.n + '"]'); if (!n) return;
+  r.addEventListener('mouseenter', () => n.classList.add('on'));
+  r.addEventListener('mouseleave', () => n.classList.remove('on'));
+  r.addEventListener('click', e => { if (innerWidth > 860) { e.preventDefault(); n.classList.add('on'); setTimeout(() => n.classList.remove('on'), 1600); } });
+});
+
+/* title affiliations jump to and flash their table row */
+$$('.affil a').forEach(a => a.addEventListener('click', () => {
+  const row = document.getElementById(a.dataset.row);
+  setTimeout(() => { row.classList.remove('flash'); void row.offsetWidth; row.classList.add('flash'); }, 450);
+}));
+
+/* keywords: highlight every place a keyword appears */
+const kwBtns = $$('#kws button'), kwCnt = $('#kwcnt');
+kwBtns.forEach(b => b.addEventListener('click', () => {
+  const on = document.body.dataset.kw === b.dataset.k;
+  kwBtns.forEach(x => x.classList.remove('on'));
+  if (on) { delete document.body.dataset.kw; kwCnt.textContent = ''; return; }
+  document.body.dataset.kw = b.dataset.k; b.classList.add('on');
+  const n = $$('.k-' + b.dataset.k).length;
+  kwCnt.textContent = 'appears ' + n + '×, highlighted';
+}));
+
+/* equation (1): explain each term */
+const eqx = $('#eqx'), eqDefault = eqx.innerHTML;
+$$('#eq .t[data-x]').forEach(t => {
+  t.addEventListener('mouseenter', () => { eqx.innerHTML = t.dataset.x; });
+  t.addEventListener('mouseleave', () => { eqx.innerHTML = eqDefault; });
+  t.addEventListener('click', () => { eqx.innerHTML = t.dataset.x; });
+});
+
+/* figure 2: career timeline */
+(function () {
+  const svg = $('#tlsvg'), tip = $('#tip'), NS = 'http://www.w3.org/2000/svg';
+  const X0 = 2013, X1 = 2027, L = 132, R = 684, NOW = 2026.75;
+  const x = v => L + (v - X0) / (X1 - X0) * (R - L);
+  const tracks = [{ name: 'Mathematics', y: 30 }, { name: 'AI Engineering', y: 100 }, { name: 'Oncology', y: 166 }];
+  const LANE = 16;
+  // t: track, l: lane, a/b: span (dots use a only)
+  const items = [
+    { t: 0, l: 0, a: 2013.6, b: 2017.4, h: 'BTech, Electronics Engineering', s: 'VJTI, Mumbai · Gold Medal, Department Rank 1 · 2013–17' },
+    { t: 0, l: 1, a: 2016.3, h: 'Neural-network leaf identification', s: 'IEEE GTSP · 2016 · Best Paper of Session' },
+    { t: 0, l: 1, a: 2017.35, h: 'Sparse dictionary learning', s: 'SPIN · 2017 · convex optimization' },
+    { t: 0, l: 2, a: 2017.6, h: 'Content-based image retrieval', s: 'SPIN · 2017 · neural networks' },
+    { t: 0, l: 0, a: 2017.6, b: 2019.4, h: 'MS, Electrical & Computer Engineering', s: 'Georgia Tech · GPA 4.0/4.0 · 2017–19' },
+    { t: 0, l: 1, a: 2022.6, h: 'Two Bayes Make Lesser Noise', s: 'Amazon Consumer Science Summit · 2022' },
+    { t: 0, l: 0, a: 2022.25, b: 2024.2, h: 'Research Scientist II, Amazon', s: 'Apr 2022–Mar 2024 · causal model calibration' },
+    { t: 1, l: 2, a: 2019.6, b: 2021.5, h: 'Professional Certificate, Artificial Intelligence', s: 'Stanford University · 2019–21' },
+    { t: 1, l: 0, a: 2018.4, b: 2018.9, h: 'Visiting Researcher, UC Berkeley', s: '2018 · adversarial ML with Prof. Dawn Song' },
+    { t: 1, l: 0, a: 2019.5, b: 2022.25, h: 'Data Scientist I & II, Amazon', s: '2019–Apr 2022 · ad measurement' },
+    { t: 1, l: 1, a: 2020.1, h: 'Adaptive containerization for microservices', s: 'IEEE CCNC · 2020 · cited 27' },
+    { t: 1, l: 0, a: 2024.67, b: 2026.42, h: 'Principal AI Consultant, independent', s: 'Sep 2024–Jul 2026 · MOC Cancer Care, i3 Digital Health, Keplar.io, CuePilot AI' },
+    { t: 1, l: 2, a: 2025.6, b: NOW, ip: true, h: 'PG Diploma, Computer Science & Engineering', s: 'IIT Bombay · in progress, from 2025' },
+    { t: 1, l: 1, a: 2025.85, h: 'Innovation Excellence award', s: 'i3 Digital Health · Q4 2025' },
+    { t: 1, l: 0, a: 2026.5, b: NOW, now: true, h: 'Chief Applied Scientist, Capsule AI', s: 'Jul 2026–present · agentic AI for life sciences' },
+    { t: 2, l: 0, a: 2018.3, h: 'Cancer detection via artificial immune systems', s: 'CI: Theories & Applications · 2018' },
+    { t: 2, l: 0, a: 2023.0, b: 2025.5, h: 'MPS, Medical Oncology', s: 'Tech Global University · 2023–25' },
+    { t: 2, l: 1, a: 2024.0, b: 2024.95, h: 'MDip, Counseling Psychology', s: 'IISDT · 2024' },
+    { t: 2, l: 1, a: 2025.25, b: 2025.62, h: 'AI for clinical workflows & EMR', s: 'MOC Cancer Care & Research Centre · Apr–Aug 2025' },
+    { t: 2, l: 2, a: 2024.3, b: 2025.6, h: 'Fellowship, Clinical Oncology', s: 'AHERF · CPD-UK accredited · 2024–25' },
+  ];
+  document.body.appendChild(tip);
+  addEventListener('scroll', () => tip.classList.remove('on'), { passive: true });
+  const mk = (tag, a, p = svg) => { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); p.appendChild(e); return e; };
+
+  // year grid + axis
+  for (let yr = X0; yr <= 2026; yr++) {
+    mk('line', { x1: x(yr), x2: x(yr), y1: 14, y2: 226, class: 'gt' });
+    mk('text', { x: x(yr), y: 244, 'text-anchor': 'middle', class: 'tick' }).textContent = (yr % 2 && innerWidth < 700) ? '' : "'" + String(yr).slice(2);
+  }
+  // tracks
+  tracks.forEach(tr => {
+    mk('text', { x: 0, y: tr.y + 12, class: 'track' }).textContent = tr.name;
+    mk('line', { x1: L, x2: R, y1: tr.y + 48, y2: tr.y + 48, class: 'lane' });
+  });
+  // now marker
+  mk('line', { x1: x(NOW), x2: x(NOW), y1: 4, y2: 226, class: 'nowl' });
+  mk('text', { x: x(NOW) - 4, y: 10, 'text-anchor': 'end', class: 'nowt' }).textContent = 'now';
+
+  items.forEach((it, i) => {
+    const g = mk('g', { class: 'mk' });
+    const cy = tracks[it.t].y + 8 + it.l * LANE;
+    const delay = (.15 + i * .07).toFixed(2) + 's';
+    if (it.b) {
+      mk('rect', { x: x(it.a), y: cy - 3, width: Math.max(4, x(it.b) - x(it.a)), height: 6, rx: 3, class: 'bar' + (it.now ? ' now' : '') + (it.ip ? ' ip' : ''), style: 'animation-delay:' + delay }, g);
+      mk('rect', { x: x(it.a) - 4, y: cy - 9, width: Math.max(12, x(it.b) - x(it.a) + 8), height: 18, class: 'hit' }, g);
+    } else {
+      mk('circle', { cx: x(it.a), cy, r: 5, class: 'dotm', style: 'animation-delay:' + delay }, g);
+      mk('circle', { cx: x(it.a), cy, r: 11, class: 'hit' }, g);
+    }
+    const show = () => {
+      g.classList.add('hot');
+      tip.innerHTML = '<b>' + it.h + '</b><span>' + it.s + '</span>';
+      const r = g.getBoundingClientRect(), half = Math.min(140, tip.offsetWidth / 2 + 8);
+      const below = r.top < tip.offsetHeight + 24;            // no room above: show underneath
+      tip.classList.toggle('below', below);
+      tip.style.left = Math.min(Math.max(r.left + r.width / 2, half), innerWidth - half) + 'px';
+      tip.style.top = (below ? r.bottom : r.top) + 'px';
+      tip.classList.add('on');
+    };
+    const hide = () => { g.classList.remove('hot'); tip.classList.remove('on'); };
+    g.addEventListener('mouseenter', show); g.addEventListener('mouseleave', hide);
+    g.addEventListener('click', show);
+  });
+})();
+
+/* publications: citation bars; metrics count up */
+function citeBars() { const max = 27; $$('#refs s').forEach(s => s.style.width = (s.dataset.c / max * 56 + 2) + 'px'); }
+function countUp() {
+  $$('#metrics b').forEach(el => {
+    const to = +el.dataset.to, t0 = performance.now(), d = reduce ? 1 : 1300;
+    (function s(t) { const p = Math.min(1, (t - t0) / d); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(s); })(t0);
+  });
+}
+
+/* citation formats */
+const SITE = location.protocol === 'file:' ? 'https://nishkeni.github.io/' : (location.origin + location.pathname).replace(/index\.html$/, '');
+const CITE = {
+  apa: 'Keni, N. (2026). Mathematics, AI engineering, and oncology. Chief Applied Scientist, Capsule AI. Retrieved from ' + SITE,
+  bib: '@misc{keni2026profile,\n  author = {Keni, Nishant},\n  title  = {Mathematics, AI Engineering, and Oncology},\n  year   = {2026},\n  note   = {Chief Applied Scientist, Capsule AI},\n  url    = {' + SITE + '}\n}',
+  plain: 'Nishant Keni (2026). Mathematics, AI engineering, and oncology. Chief Applied Scientist, Capsule AI.'
+};
+const citeTxt = $('#citeTxt'); let fmt = 'apa';
+function setCite(f) { fmt = f; citeTxt.textContent = CITE[f]; citeTxt.className = f === 'bib' ? '' : 'plain'; $$('#cite .tabs [data-f]').forEach(b => b.classList.toggle('on', b.dataset.f === f)); }
+$$('#cite .tabs [data-f]').forEach(b => b.addEventListener('click', () => setCite(b.dataset.f)));
+setCite('apa');
+$('#copy').addEventListener('click', e => {
+  const b = e.currentTarget;
+  (navigator.clipboard ? navigator.clipboard.writeText(CITE[fmt]) : Promise.reject()).then(() => { b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy citation', 1600); }).catch(() => {});
+});
+
+</script>
 </body>
 </html>
