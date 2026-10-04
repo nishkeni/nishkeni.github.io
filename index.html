@@ -95,6 +95,7 @@ figcaption b{font-family:var(--display);font-weight:600;color:var(--ink);}
 .toc .print{margin-top:22px;font-size:14px;color:var(--muted);background:none;border:0;border-bottom:1px solid var(--rule);cursor:pointer;font-family:var(--display);padding:0 0 1px;}
 .toc .print:hover{color:var(--acc);border-color:var(--acc);}
 
+section.row{position:relative;}
 .row{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:50px;}
 .margin{font-size:14.5px;line-height:1.5;color:var(--muted);}
 section{padding:46px 0 10px;}
@@ -225,7 +226,6 @@ td ul.cl b{font-weight:500;color:var(--ink);margin-right:6px;}
 td ul.cl i{font-style:normal;color:var(--muted);}
 td ul.cl li{color:var(--muted);}
 .hon{display:block;font-family:var(--display);font-style:italic;font-size:15px;color:var(--acc);margin-top:1px;}
-td .prac{display:block;font-family:var(--display);font-style:italic;font-size:15px;color:var(--muted);margin-top:1px;}
 td .hon{display:block;font-family:var(--display);font-style:italic;font-size:15px;color:var(--acc);margin-top:1px;}
 td .tag{font-size:12.5px;color:var(--acc);border:1px solid var(--acc-mid);padding:0 6px;border-radius:2px;margin-left:4px;white-space:nowrap;}
 
@@ -546,7 +546,7 @@ footer a:hover{color:var(--acc);}
             <tbody>
               <tr class="ip"><td class="yr">2025–</td><td><b>PG Diploma</b> <em class="tag">in progress</em><span class="sub">Computer Science &amp; Engineering</span></td><td>IIT Bombay</td></tr>
               <tr><td class="yr">2024–25</td><td><b>Fellowship</b><span class="sub"><span class="k k-onc">Clinical Oncology</span> · CPD-UK accredited</span></td><td>Apollo Hospitals Educational and Research Foundation (AHERF)</td></tr>
-              <tr><td class="yr">2024</td><td><b>MDip</b><span class="sub">Counseling Psychology</span><span class="prac">Counsels people with anxiety disorders: generalized anxiety, panic, and OCD</span></td><td>IISDT</td></tr>
+              <tr id="mdip"><td class="yr">2024</td><td><b>MDip</b><a class="ref" data-n="4" href="#n4">4</a><span class="sub">Counseling Psychology</span></td><td>IISDT</td></tr>
               <tr><td class="yr">2023–25</td><td><b>MPS</b><span class="sub"><span class="k k-onc">Medical Oncology</span></span></td><td>Tech Global University</td></tr>
               <tr><td class="yr">2019–21</td><td><b>Professional Certificate</b><span class="sub">Artificial Intelligence</span></td><td>Stanford University</td></tr>
               <tr><td class="yr">2017–19</td><td><b>MS</b><span class="sub">Electrical &amp; Computer Engineering</span></td><td>Georgia Tech<span class="hon">GPA 4.0/4.0</span></td></tr>
@@ -554,7 +554,7 @@ footer a:hover{color:var(--acc);}
             </tbody>
           </table></div>
         </div>
-        <aside class="margin"></aside>
+        <aside class="margin"><span class="note" id="n4" data-n="4" data-align="mdip"><sup>4</sup>I studied counseling psychology to learn the science of perception, thinking, and therapy. I also counsel people with anxiety disorders: generalized anxiety, panic, and OCD.</span></aside>
       </section>
 
       <!-- correspondence -->
@@ -619,6 +619,20 @@ $$('.ref').forEach(r => {
   r.addEventListener('mouseleave', () => n.classList.remove('on'));
   r.addEventListener('click', e => { if (innerWidth > 860) { e.preventDefault(); n.classList.add('on'); setTimeout(() => n.classList.remove('on'), 1600); } });
 });
+
+/* margin notes that name a row sit level with it */
+function alignNotes() {
+  const topIn = (el, anc) => { let y = 0; while (el && el !== anc) { y += el.offsetTop; el = el.offsetParent; } return y; };
+  $$('.note[data-align]').forEach(n => {
+    const t = document.getElementById(n.dataset.align), sec = n.closest('section');
+    if (!t || innerWidth <= 860) { n.style.marginTop = ''; return; }
+    n.style.marginTop = '0px';
+    n.style.marginTop = Math.max(0, topIn(t, sec) - topIn(n, sec)) + 'px';
+  });
+}
+addEventListener('resize', alignNotes); addEventListener('load', alignNotes);
+if (document.fonts) document.fonts.ready.then(alignNotes);
+alignNotes();
 
 /* title affiliations jump to and flash their table row */
 $$('.affil a').forEach(a => a.addEventListener('click', () => {
