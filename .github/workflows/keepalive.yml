@@ -1,0 +1,36 @@
+# GitHub pauses scheduled workflows after 60 days without repository activity.
+# Twice a month this re-enables the hourly publish job and, only if the repo
+# has been idle for 45 days, records an empty commit so nothing is paused.
+name: Keep readership refresh active
+
+on:
+  schedule:
+    - cron: '41 3 1,15 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Re-enable the hourly publish job
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/pages.yml/enable"
+
+      - name: Record activity if the repo has been idle
+        run: |
+          idle=$(( $(date +%s) - $(git log -1 --format=%ct) ))
+          if [ "$idle" -gt $((45 * 86400)) ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898900+github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "Keep hourly readership refresh active"
+            git push
+          else
+            echo "Repo active $((idle / 86400)) days ago; nothing to do."
+          fi
