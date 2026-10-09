@@ -248,7 +248,8 @@ td .tag{font-size:12.5px;color:var(--acc);border:1px solid var(--acc-mid);paddin
 /* correspondence */
 .corr{margin-top:70px;padding:40px 0 30px;border-top:1.5px solid var(--ink);}
 .corr h2{font-family:var(--display);font-weight:400;color:var(--ink);font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.14;max-width:24ch;}
-.reach{margin:26px 0 4px;max-width:520px;background:#fff;border:1px solid var(--rule);padding:16px 20px 14px;}
+.corr-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,360px);gap:44px;align-items:center;}
+.reach{background:#fff;border:1px solid var(--rule);padding:16px 20px 14px;}
 .reach .rh{font-family:var(--display);font-size:1.25rem;color:var(--ink);}
 .reach .rs{font-size:13.5px;color:var(--muted);margin:0 0 12px;}
 .reach .bars{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 12px;align-items:center;font-size:14.5px;}
@@ -287,6 +288,7 @@ footer a:hover{color:var(--acc);}
   .margin{border-left:2px solid var(--rule);padding-left:14px;}
   .areas{grid-template-columns:1fr;gap:22px;}
   .refs li{grid-template-columns:32px minmax(0,1fr);}
+  .corr-top{grid-template-columns:minmax(0,1fr);gap:22px;}
   .degrees,.affil{overflow-wrap:anywhere;}
   table{min-width:520px;}
   .refs .cb{grid-column:2;}
@@ -575,16 +577,19 @@ footer a:hover{color:var(--acc);}
 
       <!-- correspondence -->
       <section class="corr rv" id="corr" data-title="Correspondence" data-n="·">
+        <div class="corr-top">
+        <div>
         <p class="kind">Correspondence</p>
         <h2>If you are working at the intersection of AI and medicine, I would like to hear from you.</h2>
         <p style="margin-top:14px;color:var(--muted);max-width:56ch;">Open to advisory, board, and leadership conversations.</p>
+        </div>
         <div class="reach" id="reach">
           <p class="rh">Read in <span id="rc">47</span> countries and regions</p>
           <p class="rs"><span id="rr">3,730</span> readers since January 2023</p>
           <div class="bars" id="rbars" role="img" aria-label="Readers by country"><span class="c">United States</span><span class="t"><i class="top" style="width:100.0%"></i></span><span class="n">1,614</span><span class="c">China</span><span class="t"><i style="width:73.4%"></i></span><span class="n">1,184</span><span class="c">India</span><span class="t"><i style="width:34.8%"></i></span><span class="n">561</span><span class="c">Singapore</span><span class="t"><i style="width:8.9%"></i></span><span class="n">144</span><span class="c">Germany</span><span class="t"><i style="width:2.4%"></i></span><span class="n">39</span></div>
           <p class="more" id="rmore">and 42 more</p>
         </div>
-        
+        </div>
         <div class="actions">
           <a class="btn" href="mailto:nishant.keni@outlook.com">nishant.keni@outlook.com</a>
           <a class="btn ghost" href="https://topmate.io/nishant_keni" target="_blank" rel="noopener">Book a call</a>
