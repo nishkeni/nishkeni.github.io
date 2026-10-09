@@ -1,0 +1,33 @@
+{
+  "updated": "2026-10-09T11:20:03.576Z",
+  "since": "2023-01",
+  "readers": 3730,
+  "countries": 47,
+  "top": [
+    {
+      "name": "United States",
+      "readers": 1614
+    },
+    {
+      "name": "China",
+      "readers": 1184
+    },
+    {
+      "name": "India",
+      "readers": 561
+    },
+    {
+      "name": "Singapore",
+      "readers": 144
+    },
+    {
+      "name": "Germany",
+      "readers": 39
+    }
+  ],
+  "last": {
+    "country": "India",
+    "at": "2026-10-09T11:10:03.576Z",
+    "exact": true
+  }
+}

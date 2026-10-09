@@ -1,0 +1,52 @@
+# Publishes the site, with a fresh readership snapshot, on every push and every hour.
+name: Publish site
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Assemble site with a readership snapshot
+        run: |
+          mkdir -p _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude 'mcp-server' --exclude '_site' ./ _site/
+          if node .github/scripts/readership.mjs _site/readership.json; then
+            echo "Fresh snapshot written."
+          elif curl -fsS https://nishkeni.github.io/readership.json -o _site/readership.json; then
+            echo "Flag Counter unavailable; kept the last published snapshot."
+          else
+            echo "Flag Counter unavailable; using the committed snapshot."
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

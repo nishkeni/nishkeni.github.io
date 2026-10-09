@@ -248,6 +248,17 @@ td .tag{font-size:12.5px;color:var(--acc);border:1px solid var(--acc-mid);paddin
 /* correspondence */
 .corr{margin-top:70px;padding:40px 0 30px;border-top:1.5px solid var(--ink);}
 .corr h2{font-family:var(--display);font-weight:400;color:var(--ink);font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.14;max-width:24ch;}
+.reach{margin:26px 0 4px;max-width:520px;}
+.reach .rh{font-family:var(--display);font-size:1.25rem;color:var(--ink);}
+.reach .rs{font-size:13.5px;color:var(--muted);margin:0 0 12px;}
+.reach .bars{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 12px;align-items:center;font-size:14.5px;}
+.reach .c{color:var(--ink);white-space:nowrap;}
+.reach .t{height:6px;background:var(--wash);border-radius:0 2px 2px 0;}
+.reach .t i{display:block;height:100%;background:var(--ink);border-radius:0 2px 2px 0;}
+.reach .t i.top{background:var(--acc);}
+.reach .n{font-size:13px;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums;}
+.reach .more{font-size:13px;font-style:italic;color:var(--dim);margin-top:8px;}
+#lastread b{font-weight:500;color:var(--ink);}
 .cite{margin-top:30px;border:1px solid var(--rule);}
 .cite .tabs{display:flex;border-bottom:1px solid var(--rule);font-family:var(--display);font-size:14.5px;}
 .cite .tabs button{background:none;border:0;padding:9px 16px;cursor:pointer;color:var(--muted);font:inherit;border-right:1px solid var(--rule);}
@@ -345,7 +356,7 @@ footer a:hover{color:var(--acc);}
     <span><b>Received</b> 1995, Mumbai</span>
     <span><b>Revised</b> continuously</span>
     <span><b>Correspondence</b> <a href="mailto:nishant.keni@outlook.com">nishant.keni@outlook.com</a></span>
-    <span><span class="live"></span><b>Status</b> open to advisory, board &amp; leadership conversations</span>
+    <span><span class="live"></span><b>Status</b> open to advisory, board &amp; leadership conversations<span id="lastread" hidden></span></span>
   </div>
 
   <div class="doc">
@@ -567,6 +578,13 @@ footer a:hover{color:var(--acc);}
         <p class="kind">Correspondence</p>
         <h2>If you are working at the intersection of AI and medicine, I would like to hear from you.</h2>
         <p style="margin-top:14px;color:var(--muted);max-width:56ch;">Open to advisory, board, and leadership conversations.</p>
+        <div class="reach" id="reach">
+          <p class="rh">Read in <span id="rc">47</span> countries and regions</p>
+          <p class="rs"><span id="rr">3,730</span> readers since January 2023</p>
+          <div class="bars" id="rbars" role="img" aria-label="Readers by country"><span class="c">United States</span><span class="t"><i class="top" style="width:100.0%"></i></span><span class="n">1,614</span><span class="c">China</span><span class="t"><i style="width:73.4%"></i></span><span class="n">1,184</span><span class="c">India</span><span class="t"><i style="width:34.8%"></i></span><span class="n">561</span><span class="c">Singapore</span><span class="t"><i style="width:8.9%"></i></span><span class="n">144</span><span class="c">Germany</span><span class="t"><i style="width:2.4%"></i></span><span class="n">39</span></div>
+          <p class="more" id="rmore">and 42 more</p>
+        </div>
+        
         <div class="actions">
           <a class="btn" href="mailto:nishant.keni@outlook.com">nishant.keni@outlook.com</a>
           <a class="btn ghost" href="https://topmate.io/nishant_keni" target="_blank" rel="noopener">Book a call</a>
@@ -747,6 +765,33 @@ function countUp() {
     (function s(t) { const p = Math.min(1, (t - t0) / d); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(s); })(t0);
   });
 }
+
+/* readership: hourly snapshot published next to the page */
+(function () {
+  const fmtN = n => n.toLocaleString('en-US');
+  const ago = ms => { const m = Math.round(ms / 6e4); if (m < 2) return 'a minute ago'; if (m < 60) return m + ' minutes ago'; const h = Math.round(m / 60); return h === 1 ? 'an hour ago' : h + ' hours ago'; };
+  let data = null;
+  function showLast() {
+    const el = document.getElementById('lastread'); if (!el || !data || !data.last) return;
+    const age = Date.now() - Date.parse(data.last.at);
+    if (data.last.exact && age >= 0 && age < 864e5) el.innerHTML = ` · last read from <b>${data.last.country}</b>, ${ago(age)}`;
+    else if (age >= 0 && age < 7 * 864e5) el.innerHTML = ` · recently read from <b>${data.last.country}</b>`;
+    else { el.hidden = true; return; }
+    el.hidden = false;
+  }
+  function showReach() {
+    const top = data.top || []; if (!top.length) return;
+    const mx = top[0].readers;
+    document.getElementById('rc').textContent = data.countries;
+    document.getElementById('rr').textContent = fmtN(data.readers);
+    document.getElementById('rmore').textContent = `and ${data.countries - top.length} more`;
+    document.getElementById('rbars').innerHTML = top.map((t, k) =>
+      `<span class="c">${t.name}</span><span class="t"><i${k ? '' : ' class="top"'} style="width:${(t.readers / mx * 100).toFixed(1)}%"></i></span><span class="n">${fmtN(t.readers)}</span>`).join('');
+  }
+  fetch('readership.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+    if (!d || !d.readers) return; data = d; showReach(); showLast(); setInterval(showLast, 60000);
+  }).catch(() => {});
+})();
 
 /* citation formats */
 const SITE = location.protocol === 'file:' ? 'https://nishkeni.github.io/' : (location.origin + location.pathname).replace(/index\.html$/, '');
