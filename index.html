@@ -248,7 +248,8 @@ td .tag{font-size:12.5px;color:var(--acc);border:1px solid var(--acc-mid);paddin
 /* correspondence */
 .corr{margin-top:70px;padding:40px 0 30px;border-top:1.5px solid var(--ink);}
 .corr h2{font-family:var(--display);font-weight:400;color:var(--ink);font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.14;max-width:24ch;}
-.corr-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,360px);gap:44px;align-items:center;}
+.corr-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,360px);gap:44px;align-items:end;}
+.corr-top .actions{margin-bottom:0;}
 .reach{background:#fff;border:1px solid var(--rule);padding:16px 20px 14px;}
 .reach .rh{font-family:var(--display);font-size:1.25rem;color:var(--ink);}
 .reach .rs{font-size:13.5px;color:var(--muted);margin:0 0 12px;}
@@ -582,6 +583,11 @@ footer a:hover{color:var(--acc);}
         <p class="kind">Correspondence</p>
         <h2>If you are working at the intersection of AI and medicine, I would like to hear from you.</h2>
         <p style="margin-top:14px;color:var(--muted);max-width:56ch;">Open to advisory, board, and leadership conversations.</p>
+        <div class="actions">
+          <a class="btn" href="mailto:nishant.keni@outlook.com">nishant.keni@outlook.com</a>
+          <a class="btn ghost" href="https://topmate.io/nishant_keni" target="_blank" rel="noopener">Book a call</a>
+          <button class="btn ghost" onclick="window.print()">Print as CV</button>
+        </div>
         </div>
         <div class="reach" id="reach">
           <p class="rh">Read in <span id="rc">47</span> countries and regions</p>
@@ -590,11 +596,7 @@ footer a:hover{color:var(--acc);}
           <p class="more" id="rmore">and 42 more</p>
         </div>
         </div>
-        <div class="actions">
-          <a class="btn" href="mailto:nishant.keni@outlook.com">nishant.keni@outlook.com</a>
-          <a class="btn ghost" href="https://topmate.io/nishant_keni" target="_blank" rel="noopener">Book a call</a>
-          <button class="btn ghost" onclick="window.print()">Print as CV</button>
-        </div>
+        
         <div class="cite" id="cite">
           <div class="tabs">
             <button class="on" data-f="apa">APA</button><button data-f="bib">BibTeX</button><button data-f="plain">Plain</button>
